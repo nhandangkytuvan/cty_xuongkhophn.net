@@ -98,8 +98,8 @@
                                 'insertdatetime media nonbreaking save table contextmenu directionality',
                                 'paste textcolor colorpicker textpattern imagetools toc'
                             ],
-                            toolbar1: 'undo redo | insert | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent',
-                            toolbar2: 'print preview media | forecolor backcolor | fontsizeselect | link image',
+                            toolbar1: 'undo redo insert styleselect bold italic alignleft aligncenter alignright alignjustify bullist numlist outdent indent',
+                            toolbar2: 'print preview media forecolor backcolor fontsizeselect link image',
                             image_advtab: true,
                             content_css: [
                                 '//www.tinymce.com/css/codepen.min.css'
