@@ -1,0 +1,74 @@
+.post-name{
+	text-align: center;
+	font-size: 18px;
+	font-weight: normal;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.post-detail {
+	line-height: 22px;
+}
+.post-detail img{
+    max-width: 100%;
+    display: block;
+    margin:10px auto;
+}
+.post-detail p{
+	margin-bottom: 10px;
+}
+.post-detail ul,.post-detail ol{
+	padding-left: 40px;
+}
+.post-footer{
+	line-height: 22px;
+	margin-top: 30px;
+}
+.post-footer .datkhambenh{
+	margin-top: 20px;
+}
+.post-footer .datkhambenh >div {
+    width: 49%;
+}
+.post-footer .datkhambenh a {
+    display: block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-radius: 0;
+    height: 46px;
+    line-height: 46px;
+    padding: 0 15px;
+    font-size: 17px;
+    color: #fff;
+}
+.post-footer .datkhambenh a {
+    border-radius: 0;
+    height: 46px;
+    line-height: 46px;
+    padding: 0 15px;
+    font-size: 18px;
+}
+.post-footer .datkhambenh a.btn-primary {
+    background-color: #f86a2c;
+    border-color: #f86a2c;
+    margin-right: 15px;
+}
+.post-footer .datkhambenh a.btn-danger {
+    background-color: #2982bb;
+    border-color: #2982bb;
+}

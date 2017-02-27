@@ -1,0 +1,109 @@
+main{
+	margin:20px auto;
+}
+main .bg1{
+	background-color: #eee;
+	padding:10px 0px;
+}
+main .flex1{
+	margin-right: 0px;
+	margin-left: 0px;
+}
+main .flex1col1{
+	padding:0;
+}
+main .flex1col1 .box{
+	background-color: #fff;
+	text-align: center;
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center; /* align vertical */
+	height: 100%;
+	border-right: 1px solid #ddd;
+}
+main .flex1col1 .box a{
+	display: block;
+	padding:13px 5px;
+	color: #333;
+	width: 100%;
+}
+main .flex1col1:last-child .box{
+	border-right: none;
+}
+main .lists{
+	margin-top: 20px;
+	padding:0px 5px;
+}
+main .lists .post{
+	border:1px solid #ddd;
+	border-radius: 10px;
+	margin-bottom:20px; 
+}
+main .lists .post h3{
+	padding:5px 10px;
+	border-bottom: 1px solid #ddd;
+	margin:0;
+	color: #008a9c;
+	font-weight: normal;
+	font-size: 15px;
+}
+main .lists .post h3 i{
+	background-repeat: no-repeat;
+	background-image: url('../../images/mobile/archive-6.png');
+	display: inline-block;
+	width: 20px;margin-right: 10px;height: 20px;
+	vertical-align: -5px;
+}
+main .lists .post p{
+	padding:8px;
+	margin-top: 0px;
+}
+main .lists .post p a{
+	color: red;
+	font-size: 12px;
+}
+main .my_pagination{
+	text-align: center;
+}
+main .pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+main .pagination>li {
+    display: inline-block;
+    margin-right: 5px;
+}
+main .pagination>li>a, .pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #337ab7;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+main .pagination-sm>li>a, .pagination-sm>li>span {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+main .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover ,.pagination>li>span.current{
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #008a9c;
+    border-color: #008a9c;
+}
+main .name-category{
+	color: #008a9c;
+	font-size: 16px;
+	border-left: 3px solid #008a9c;
+	padding:0px 10px;
+	margin-left: 10px;
+	margin-bottom: 0px;
+}

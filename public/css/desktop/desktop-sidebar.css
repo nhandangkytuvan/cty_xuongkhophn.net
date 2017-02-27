@@ -1,0 +1,138 @@
+.benhchinh .crub{
+	margin-top: 15px;
+	background-color: #f5f5f5;
+	border-radius: 5px;
+	border-bottom: 2px solid #ef6f30;
+	height: 40px; line-height: 40px;
+}
+.benhchinh .crub i{
+	display: inline-block;
+	margin-left: 10px;
+	width: 30px;height: 30px;
+	background-image: url('../../images/desktop/benhchinh-1.png');
+	background-position: 0px -174px;
+}
+.benhchinh .crub a{
+	vertical-align: 3px;
+	margin-left: 5px;
+	display: inline-block;
+}
+/**/
+.benhchinh .flex1{
+	margin-top: 15px;
+}
+.benhchinh .flex1 .flex1col1{
+	width: 715px;
+	padding-right: 46px;
+	border-right: 1px solid #787878;
+}
+.benhchinh .flex1 .flex1col2{
+	width:285px;
+	padding-left: 10px;
+}
+.benhchinh .flex1col2 .block1 h2{
+	color: #ee1212;
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+.benhchinh .flex1col2 .block1 h3{
+	border:2px solid #c09b60;
+}
+.benhchinh .flex1col2 .block1 h3 img{
+	display: block;
+	width: 100%;
+}
+.benhchinh .flex1col2 .block1 p{
+	text-align: justify;
+	margin-top: 20px;
+	color: #121212;
+}
+.benhchinh .flex2{
+	margin-top: 40px;
+}
+.benhchinh .flex2 .flex2col1{
+	flex-basis: 131px;
+	margin-bottom: 8px;
+}
+.benhchinh .flex2 .flex2col1 a{
+	height: 36px;
+	background-image: url('../../images/desktop/benhchinh-1.png');
+	background-position: 0px 76px;
+	font-size: 12px;
+	color: #a85d02;
+	padding-left: 50px;
+	text-align: center;
+}
+.benhchinh .flex2 .flex2col1 a.bg2{
+	background-position: -138px 76px;
+}
+.benhchinh .flex2 .flex2col1 a.bg3{
+	background-position: 0px 36px;
+}
+.benhchinh .flex2 .flex2col1 a.bg4{
+	background-position: -138px 36px;
+}
+/**/
+.benhchinh .flex1col2 .block2{
+	margin-top: 30px;
+}
+.benhchinh .flex1col2 .block2 h2{
+	color: #ee1212;
+	font-size: 18px;
+	margin-bottom: 30px;
+	border-bottom: 2px solid #ee1212;
+	padding-bottom: 5px;
+}
+.benhchinh .flex1col2 .block2 .item p{
+	margin-bottom: 15px;
+}
+#carousel1{
+	border:1px solid #d8d8d8;
+	padding:10px;
+	border-radius: 3px;
+}
+
+/**/
+.benhchinh .flex1col2 .block3{
+	margin-top: 30px;
+}
+.benhchinh .flex1col2 .block3 h3{
+	margin-bottom: 10px;
+}
+.benhchinh .flex1col2 .block3 a{
+	height: 44px;
+	display: block;width: 100%;
+	background-image: url('../../images/desktop/benhchinh-1.png');
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}
+.benhchinh .flex1col2 .block3 a.bg2{
+	background-position: 0px -51px;
+}
+.benhchinh .flex1col2 .block3 a.bg3{
+	background-position: 0px -101px;
+}
+/**/
+.benhchinh .flex1col2 .block4 h2{
+	color: #ee1212;
+	font-size: 18px;
+	margin-top: 40px;
+	border-bottom: 2px solid #ee1212;
+	padding-bottom: 5px;
+	position: relative;
+	margin-bottom: 20px;
+}
+.benhchinh .flex1col2 .block4 h2 a{
+	font-size: 12px;
+	position: absolute;
+	top:4px;
+	right: 0;
+	color: #000;
+}
+.benhchinh .flex1col2 .block4 h2 a i{
+	display: inline-block;
+	width: 20px;
+	height: 15px;vertical-align: -3px;
+	background-image: url('../../images/desktop/benhchinh-1.png');
+	background-position: -38px -189px;
+}

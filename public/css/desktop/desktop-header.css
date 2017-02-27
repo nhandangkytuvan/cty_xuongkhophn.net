@@ -1,0 +1,123 @@
+header .flex1{margin:40px 0px;}
+menu{
+	background-color: rgb(170, 122, 0);
+	color: #fff;
+}
+menu .flex1col1{
+	flex-basis: 142px;
+}
+menu .flex1col1 >h3{
+	font-weight: normal;
+	text-align: center;
+	height: 63px;
+	border-left: 1px solid #a09e9e;
+}
+menu .flex1col1 >h3>a{
+	padding:0px 10px;
+	text-transform: uppercase;
+	font-size: 14px;
+	text-align: center;
+}
+/*hover*/
+menu .chidanbenh{
+	position: relative;
+}
+menu .chidanbenh .menu-items{
+	display: none;
+	position: absolute;
+	z-index: 1;
+}
+menu .chidanbenh:hover .menu-items{
+	display: block;
+}
+menu .chidanbenh .menu-items >.menu-item{
+	position: relative;
+}
+menu .chidanbenh .menu-items >.menu-item >.item{
+	display: none;
+	position: absolute;
+	z-index: 1;
+	top:0;
+	left: 100%;
+}
+menu .chidanbenh .menu-items >.menu-item:hover >.item{
+	display: block;
+}
+menu .chidanbenh .menu-items >.menu-item >h4{
+	margin:0;
+	padding:15px 20px;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	background-color: #04bbbe;
+	font-size: 14px;
+	line-height: 16px;
+}
+menu .chidanbenh .menu-items >.menu-item >.item >.khung{
+	position: relative;
+}
+menu .chidanbenh .menu-items >.menu-item >.item >.khung >.khung-opacity{
+	width: 500px;
+	background-color: #000;
+	opacity: 0.7;height: 520px;
+}
+menu .chidanbenh .menu-items >.menu-item >.item >.khung >.khung-content{
+	position: absolute;
+	top:0;
+	width: 500px;
+	padding:0px 15px 15px 15px;
+}
+menu .chidanbenh .menu-items >.menu-item >.item >.khung >.khung-content{
+	color: #efefef;
+}
+menu .chidanbenh .menu-items >.menu-item >.item >.khung >.khung-content .flex5col1 a{
+	font-size: 18px;font-weight: bold;
+}
+menu .chidanbenh .menu-items >.menu-item >.item >.khung >.khung-content .flex5col2 *{
+	font-size: 12px;
+}
+menu .chidanbenh .menu-items >.menu-item >.item >.khung >.khung-content .flex5col2 span{
+	color: #ff0000;font-size: 12px;
+}
+menu .chidanbenh .menu-items >.menu-item >.item >.khung >.khung-content .flex5col2 a{
+	color: #fba100;font-size: 12px;
+}
+menu .chidanbenh .menu-items >.menu-item >.item >.khung >.khung-content .flex6{
+	margin-top: 10px;
+}
+menu .chidanbenh .menu-items >.menu-item >.item >.khung >.khung-content .flex6col1 a{
+	display: block;
+	font-size: 12px;
+}
+menu .chidanbenh .menu-items >.menu-item >.item >.khung >.khung-content .flex6col1 a:nth-child(1){
+	margin-bottom: 5px;
+}
+menu .chidanbenh .menu-items >.menu-item >.item >.khung >.khung-content .flex6col1{
+	flex-basis: 33.33%;
+}
+menu .chidanbenh .menu-items >.menu-item >.item >.khung >.khung-content .flex6col1 span{
+	position: relative;top:-6px;
+}
+menu .chidanbenh .menu-items >.menu-item >.item >.khung >.khung-content .khung-content-khoa{
+	padding:15px 0px;
+	border-bottom: 1px solid #6b6b6b;
+}
+menu .chidanbenh .menu-items >.menu-item >.item >.khung >.khung-content .khung-content-khoa:last-child{
+	border-bottom: none;
+}
+menu .chidanbenh .menu-items >.menu-item >.item >.khung{
+}
+menu .chidanbenh .menu-items >.menu-item >.item >.khung:after {
+	right: 100%;
+	top: 32px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-right-color: #013839;
+	border-width: 10px;
+	margin-top: -10px;
+}

@@ -1,0 +1,43 @@
+/**/
+.flex1col1 .benhprimary{
+  margin-bottom: 40px;
+}
+.flex1col1 .benhprimary h3{
+    height: 39px;
+    /*background-color: #dadada;*/
+    line-height: 30px;
+    background-image: url('../../images/desktop/benhchinh-0.jpg');
+    background-repeat: no-repeat;
+}
+.flex1col1 .benhprimary h3 a.pull-left{
+  color: #fff;
+  padding:0px 60px 0px 10px;
+  background-color: #a64228;
+  display: inline-block;
+}
+.flex1col1 .benhprimary h3 a.pull-right{
+  color: #a64228;
+  padding-right: 15px;
+  font-weight: normal;
+  font-size: 14px;
+}
+.flex1col1 .benhprimary .flex3{
+  justify-content:space-between;
+  margin-top: 15px;
+}
+.flex1col1 .benhprimary .flex3col1{
+  flex-basis: 230px;
+}
+.flex1col1 .benhprimary .flex3col1 img{
+  width: 100%;
+}
+.flex1col1 .benhprimary .flex3col2{
+  flex-basis: 400px;
+}
+.flex1col1 .benhprimary .flex3col2 ul{
+    margin-top: -5px;
+}
+.flex1col1 .benhprimary .flex3col2 ul li{
+  padding:10px 0px;
+  border-bottom: 1px dashed #d8d8d8;
+}

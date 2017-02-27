@@ -1,0 +1,72 @@
+h1.post-name{
+	text-align: center;
+	margin:0px auto;
+	padding:10px;
+	margin-top: 20px;
+}
+div.post-detail{
+	padding:10px;
+	line-height: 20px;
+}
+div.post-detail img{
+	display: block;
+	margin:0px auto;
+	max-width: 100%;
+    height: auto;
+}
+div.post-detail p{
+    margin-bottom: 10px;
+}
+div.post-detail ul,div.post-detail ol{
+    padding-left: 20px;
+}
+.breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+.breadcrumb>li {
+    display: inline-block;
+}
+.breadcrumb>li+li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "/\00a0";
+}
+.tuvan{
+    margin:0px;
+}
+.tuvan>div{
+    padding:0px 10px;
+}
+.tuvan .box{
+    background-color: #2fadbd;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    height: 100%;
+}
+.tuvan .box a{
+    display: block;
+    padding:10px;
+    height: 100%;
+} 
+.bai-lien-quan h4{
+    text-align: center;
+    font-size: 15px;
+    margin:10px auto;
+    color: #2fadbd;
+}
+.bai-lien-quan ul{
+    list-style: none;
+    padding-left:0px;
+    margin-top: 5px;
+}
+.bai-lien-quan ul li{
+    border-bottom: 1px solid #f3f3f3;
+    margin:0px 15px;
+    padding:10px 0px;
+}

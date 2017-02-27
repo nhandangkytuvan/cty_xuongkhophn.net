@@ -1,0 +1,307 @@
+.home .flex1{
+	margin:30px 0px;
+}
+.home .flex1col1{
+	flex-basis: 25%;
+}
+.home .flex1col1 a{
+	display: block;
+	height: 91px;
+	background-image: url('../../images/desktop/home-1.png');
+	background-position: 0px 0px;
+	width: 100%;
+	background-repeat: no-repeat;
+	padding-left: 90px;padding-top: 15px;color: #666666;
+}
+.home .flex2col1{
+	flex-basis: 690px;
+	height: 390px;
+	border:1px solid #ddd;
+	padding:15px 25px;
+}
+.home .flex2col1 > h2{
+	background-image: url('../../images/desktop/home-2.png');
+	height: 52px;
+	background-repeat: no-repeat;
+}
+.home .flex2col2{
+	flex-basis: 290px;
+	height: 390px;
+	border:1px solid #ddd;
+}
+.home .flex2col2 > h2{
+	background-image: url('../../images/desktop/home-2.png');
+	height: 61px;
+	background-repeat: no-repeat;
+	background-position: -2px -83px;
+}
+.home .flex3{
+	margin-top: 30px;
+}
+.home .flex3col1{
+	flex-basis: 310px;
+}
+.home .flex3col1 h4{
+	margin-bottom: 15px;font-weight: normal;
+}
+.home .flex3col1 h4 a{
+	text-transform: uppercase;
+	color: #a64d02;
+}
+.home .flex3col1 p{
+	text-align: justify;color: #666666;
+}
+.home .flex3col1 p a{
+	color: #fe6100;display: inline-block;
+}
+.home .flex3col1 >div:nth-child(1){
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;margin-bottom: 10px;
+}
+.home .flex2col2 .order3 h4{
+	margin-top: 5px;
+	padding:0px 10px;
+}
+.home .flex2col2 .order3 h4 a{
+	text-transform: uppercase;
+	color: #904802;
+	font-weight: normal;
+}
+.home .flex2col2 .order3 p{
+	padding:0px 10px;
+	margin-top: 5px;
+	color: #666666;
+}
+.home .flex2col2 .order3 p a{
+	color: #fe6100;display: inline-block;
+}
+.home .flex4{
+	padding:0px 15px;
+	margin-top: 12px;
+}
+.home .flex4col1{
+	flex-basis: 125px;
+	height: 40px;
+	background-color: #c9995a;
+	color: #fff;
+	margin-bottom: 10px;
+}
+.home .flex4col1 a{
+	padding:0px 6px;
+	justify-content:space-between;
+}
+.home .flex4col1 a i{
+	display: inline-block;
+	width: 30px;
+	height: 23px;
+	background-image: url('../../images/desktop/icon-1.png');
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}
+.home .flex4col1 a span{
+	display: inline-block;
+	text-align: center;
+}
+/**/
+.home .flex5{
+	margin-top: 35px;
+}
+.home .flex5col1{
+	flex-basis: 165px;
+	height: 50px;
+	background-color: #953b08;
+	color: #fff;
+	text-transform: uppercase;
+}
+.home .tabs-content-1-1{
+	background-color: #d2aa7b;
+	color: #fff;
+	height: 33px;
+}
+.home .tabs-content-1-1 >div{
+	display: none;
+}
+.home .tabs-content-1-1 >div.active{
+	display: block;
+}
+.home .flex7{
+	height: 33px;
+}
+.home .flex7col1{
+	margin:0px 8px;
+}
+.home .flex6{
+	height: 100%;
+	padding-left: 8px;
+}
+.home .col6col1 i{
+	display: inline-block;
+	width: 22px;
+	height: 30px;
+	background-image: url('../../images/desktop/icon-2.png');
+	background-position: 0px 0px;
+	margin-right: 10px;
+}
+.home .flex5col1.active{
+	background-color: #c9995a;
+}
+.home .flex8{
+	margin-top: 20px;
+}
+.home .flex8col1{
+	padding-top:55px;
+	flex-basis: 230px;
+	height: 430px;
+	border-right: 1px solid #ddd;
+}
+.home .flex8col2{
+	flex-basis: 445px;
+	height: 430px;
+	padding:0px 20px;
+}
+.home .flex8col3{
+	flex-basis: 325px;
+	height: 430px;
+	border-left: 1px solid #ddd;
+	padding-left: 35px;
+	padding-top: 28px;
+}
+.home .flex8col2 .flex8col2_topbv >div >div:nth-child(1){
+	border-bottom: 1px dashed #ddd;
+	padding-bottom: 20px;
+}
+.home .flex8col2 .flex8col2_topbv >div >div:nth-child(1) h3{
+	color: #953b08;
+	text-align: center;
+	margin-top: 15px;
+}
+.home .flex8col2 .flex8col2_topbv >div >div:nth-child(1) p{
+	margin-top: 10px;color: #333333;
+}
+.home .flex8col2 .flex8col2_topbv >div >div:nth-child(1) p a{
+	color: #f26522;
+	display: inline-block;
+}
+.home .flex8col2 .flex8col2_topbv >div >div:nth-child(2){
+	border-bottom: 1px dashed #ddd;
+	padding-bottom: 20px;
+}
+.home .flex8col2 .flex8col2_topbv >div >div:nth-child(2) ul{
+	list-style: none;
+}
+.home .flex8col2 .flex8col2_topbv >div >div:nth-child(2) ul li{
+	margin-top: 15px;
+}
+.home .flex8col2 .flex8col2_topbv >div >div:nth-child(2) ul li span{
+	display: inline-block;
+	border:1px solid #ddd;
+	width: 95px;
+	color: #c9995a;
+	text-align: center;
+	padding:2px;
+}
+.home .flex8col2 .flex8col2_topbv >div{
+	display: none;
+}
+.home .flex8col2 .flex8col2_topbv >div.active{
+	display: block;
+}
+.home .flex9col2 img{
+	display: none;
+}
+.home .flex9col2 img.active{
+	display: block;
+}
+.home .flex8col2 >div:nth-child(2)  >p:nth-child(1){
+	margin-top: 5px;
+}
+.home .flex8col2 >div:nth-child(2)  >p:nth-child(1){
+	text-align: right;
+	color: #953b08;
+}
+.home .flex10{
+	margin-top: 10px;
+}
+.home .flex10col1{
+	flex-basis: 22%;
+	background-color: #fab075;
+	text-align: center;
+	color: #fff;
+	padding:5px 1px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+.home .flex11{
+	margin-top: 60px;
+	border-bottom:1px solid #ddd;
+	padding-bottom: 8px;
+}
+.home .flex11col1{
+	font-size: 18px;
+	color: #953b08;
+	border-bottom: 2px solid #b6b6b6;
+	padding-bottom: 5px;
+}
+.home .flex11col2{
+	color: #953b08;
+}
+.home .flex12{
+	margin-top: 10px;
+}
+.home .flex12col1{
+	margin-right: 30px;
+}
+.home .flex12col2 h3{
+	font-size: 24px;
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
+.home .flex12col2 p{
+	line-height: 24px;
+	font-size: 16px;
+	color: #373737;
+}
+.home .flex12col2 ul{
+	list-style-type:decimal;
+	padding-left: 20px;
+}
+.home .flex12col2 ul li{
+	margin-top: 30px;
+	font-size: 16px;
+	color: #373737;
+}
+.home .flex13{
+	margin-top: 25px;
+	padding:0px 20px;
+}
+.home .flex13col1{
+	background-image: url('../../images/desktop/home-9-2.png');
+	background-repeat: no-repeat;
+	height: 356px;
+	flex-basis: 214px;
+}
+.home .flex13col2{
+	height: 356px;
+	overflow-y: hidden;
+}
+.home .flex13col2 >div{
+	display: none;
+}
+.home .flex13col2 >div.active{
+	display: block;
+}
+.home .flex14col1{
+	width: 154px;
+	height: 50px;
+	margin-top:32px;
+}
+.home .flex14col1 >div{
+	background-image: url('../../images/desktop/icon-3.png');
+	background-position: 0px 0px;padding:0px 25px;
+	text-transform: uppercase;
+	color: #aa4f1b;
+}
+.home .flex14col1 >div.active{
+	background-position: 0px -81px;
+	color: #fff;
+}

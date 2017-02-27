@@ -1,0 +1,94 @@
+*{
+	box-sizing: border-box;
+	color: inherit;
+	font-size: inherit;
+	text-decoration: none;
+}
+body{
+	font-size: 14px;
+	font-family: Arial;
+	color: #333;
+	margin:0;
+	padding:0;
+}
+menu{
+	margin:0;
+	padding:0;
+}
+.container{margin:0 auto;max-width: 640px;}
+.center-block{display: block;margin:0px auto;}
+.img-responsive{max-width: 100%;}
+/**/
+.flex{display: flex!important;}
+.justify-content-start{justify-content: flex-start;}
+.justify-content-end{justify-content: flex-end;}
+.justify-content-center{justify-content: center;}
+.justify-content-between{justify-content: space-between;}
+.justify-content-around{justify-content: space-around;}
+
+.align-items-stretch{align-items: stretch;}
+.align-items-start{align-items: flex-start;}
+.align-items-end{align-items: flex-end;}
+.align-items-center{align-items: center;}
+.align-items-baseline{align-items: baseline;}
+
+.align-content-stretch{align-content: stretch;}
+.align-content-start{align-content: flex-start;}
+.align-content-end{align-content: flex-end;}
+.align-content-center{align-content: center;}
+.align-content-between{align-content: space-between;}
+.align-content-around{align-content: space-around;}
+.text-container-center{
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center; /* align vertical */
+}
+.pull-left{
+	float: left;
+}
+.pull-right{
+	float: right;
+}
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+
+/*-------------------------*/
+#LRfloater0{
+	display: none!important;
+}
+
+/*-------------popup--------------------*/
+#my_popup{
+	border:2px solid #2facbe;
+	background-color: #fff;
+	padding: 20px;
+	text-align: center!important;
+	border-radius: 5px;
+}
+#my_popup p{
+	text-align: center;
+	margin-top: 0px;
+	font-size: 14px;
+}
+#my_popup a{
+	display: inline-block;
+	padding: 5px 20px;
+	border-radius: 2px;
+	text-align: center;
+}
+#my_popup a:nth-child(2){
+	background: #2facbe;
+    color: #fff;font-size: 14px;
+}
+#my_popup a:nth-child(3){
+	background: #ff5649;
+	color: #fff;
+	margin-left: 10px;font-size: 14px;
+}

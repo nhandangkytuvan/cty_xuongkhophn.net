@@ -1,0 +1,50 @@
+footer .flex1{
+	background-color: #008a9c;
+	color: #fff;
+	padding: 10px 0px;
+}
+footer .flex1 .flex1col1{
+	text-align: center;
+	font-size: 13px;
+	padding:0px 2px;
+}
+footer .flex1 .flex1col2{
+	padding-left: 10px;
+}
+footer .flex1 .flex1col2 p{
+	margin-bottom: 5px;
+	font-size: 13px;
+	margin-top: 0;
+}
+footer .flex2{
+	margin:0;
+}
+footer .flex2col1{
+	padding:0 5px;
+	background-color: #0dbed5;
+}
+footer .flex2col1.bg2{
+	background-color: #f69802;
+}
+footer .flex2col1 a{
+	display: block;
+	padding:15px 0px;
+	text-align: center;
+	color: #fff;
+}
+footer .flex2col1 a i{
+	display: inline-block;
+	margin-right: 5px;
+	width: 33px;
+	height: 33px;
+	background-image: url('../../images/mobile/footer-1.png');
+	background-repeat: no-repeat;
+}
+footer .flex2col1 a i.bg3{
+	background-position: -48px 0px;
+	width: 40px;
+}
+footer .flex2col1 a i.bg4{
+	width: 40px;
+	background-position: -96px 0px;
+}

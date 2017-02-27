@@ -1,0 +1,104 @@
+main{
+	margin:30px auto;
+}
+main .flex1{
+	margin:0px 5px;
+}
+main .flex1col1{
+	text-align: center;
+	margin-bottom: 10px;
+	padding:0px 5px;
+}
+main .flex1col1 .box{
+	height: 100%;
+}
+main .flex1col1 a{
+	border-radius: 8px;
+	padding:35px 5px;
+	background-color: #01c1c4;
+	text-transform: uppercase;
+	height: 100%;
+	color: #fff;
+	font-size: 12px;
+	background-image: url('../../images/mobile/bg-container1.png');
+	background-repeat: no-repeat;
+	background-position:top left;
+}
+main .flex1col1 a.bg2{
+	background-color: #ff6c67;
+	background-image: url('../../images/mobile/bg-container2.png');
+}
+main .flex1col1 a.bg3{
+	background-color: #e8a017;
+	background-image: url('../../images/mobile/bg-container3.png');
+}
+main .flex1col1 a.bg4{
+	background-color: #65e45e;
+	background-image: url('../../images/mobile/bg-container4.png');
+}
+main .flex1col1 a.bg5{
+	background-color: #f57c1c;
+	background-image: url('../../images/mobile/bg-container5.png');
+}
+main .flex1col1 a.bg6{
+	background-color: #28b9df;
+	background-image: url('../../images/mobile/bg-container6.png');
+}
+main .flex1col1 a.bg7{
+	background-color: #cba75f;
+	background-image: url('../../images/mobile/bg-container7.png');
+}
+main .toico{
+	color: #2fadbd;
+	font-size: 14px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 25px;
+	font-weight: bold;
+	border-bottom: 2px solid #2fadbd;
+	padding-bottom: 20px;
+}
+.arrow_box {
+	position: relative;
+	background: #2fadbd;
+}
+.arrow_box:after {
+	top: 20px;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(47, 173, 189, 0);
+	border-top-color: #2fadbd;
+	border-width: 10px;
+	margin-left: -10px;
+}
+.lists{
+	margin:15px 20px;
+}
+.lists .box{
+	background-color: #2fadbd;
+	color: #fff;
+	height: 100%;
+}
+.lists .row{
+	margin:0px;
+}
+.lists .row .flex2col1,.flex4col1{
+	padding:0px 2px;
+}
+.lists .row .flex2col2{
+	padding:0px;
+}
+.lists a{
+	padding:10px 5px;
+	text-align: center;
+	height: 100%;
+}
+.lists .flex3col1{
+	flex-basis: 33.33%;
+	padding:0px 2px;
+}

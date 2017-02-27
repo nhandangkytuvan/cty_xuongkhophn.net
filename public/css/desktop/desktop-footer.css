@@ -1,0 +1,41 @@
+footer{
+	margin-top: 50px;
+	background-color: #016d77;
+	min-height: 250px;
+	background-image: url('../../images/desktop/footer-bg1.png');
+	background-repeat: no-repeat;
+	padding:40px 0px;
+	color: #fff;
+}
+footer .flex1col1{
+	flex-basis: 260px;
+	text-align: center;
+}
+footer .flex1col1 h3{
+	font-weight: normal;
+	font-size: 14px;
+}
+footer .flex1col1 img{
+	margin-bottom: 10px;
+}
+footer .flex1col2{
+	flex-basis: 340px;
+	padding-left: 40px;
+}
+footer .flex1col2 p{
+	margin-bottom: 10px;
+	line-height: 20px;
+}
+footer .flex1col3{
+	padding-top: 30px;
+}
+footer .flex1col3 h4{
+	text-transform: uppercase;
+	font-size: 17px;
+	margin-top: 20px;
+	font-weight: normal;
+	text-align: center;
+}
+footer .phone-footer a{
+	font-size: 18px;
+}

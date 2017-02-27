@@ -1,0 +1,37 @@
+header .box1{
+	padding:15px 20px;
+}
+header .box2{
+	background-color: #2facbe;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	font-weight: bold;
+	padding:10px;
+	font-family: '[UTMSeagullBold]';
+}
+menu .box{
+	text-align: center;
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center; /* align vertical */
+}
+menu .box a{
+	padding:13px 5px;
+}
+menu .box{
+	border:1px solid #ddd;
+	border-top: none;
+	height: 100%;
+}
+menu .flex1{
+	margin-right: 0px;
+	margin-left: 0px;
+}
+menu .flex1col1{
+	padding:0;
+}
+menu .box.border1{
+	border-left: none;
+	border-right: none;
+}

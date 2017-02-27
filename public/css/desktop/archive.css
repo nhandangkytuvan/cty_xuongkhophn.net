@@ -1,0 +1,177 @@
+body{
+	background-color: #f6f6f6;
+}
+.flex1 .flex1col1{
+	flex-basis: 255px;
+}
+.flex1 .flex1col1 .order1{
+	padding:10px;
+	background-color: #fff;
+}
+.flex1 .flex1col2{
+	flex-basis: 730px;
+}
+.flex1 .flex1col1 .order1 p.mota{
+	line-height: normal;
+	font-size: 13.33px;
+	margin-top: 19px;
+}
+.flex1 .flex1col1 .order1 p.mota a{
+	color: #f1991e;
+}
+.order2{
+	margin-top: 15px;
+}
+.order2 .bg1{
+	background-image: url('../image/archive-3.png');
+	background-repeat: no-repeat;
+	height: 47px;
+	width: 100%;
+	background-position: 0px 0px;
+}
+.order2 .flex2{
+	margin-top: 15px;
+}
+.order2 .flex2col1{
+	flex-basis: 68px;
+	text-align: center;
+}
+.order2 .flex2col1 span{
+	line-height: normal;
+	display: block;
+}
+.order2 .flex2col1 i{
+	display: block;
+	width: 100%;
+	height: 68px;
+	background-image: url('../image/archive-3.png');
+	background-position: -13px -68px; 
+	margin-bottom: 5px;
+}
+.order2 .flex2col1 i.bg2{
+	background-position: -13px -68px; 
+}
+.order2 .flex2col1 i.bg3{
+	background-position: -91px -68px; 
+}
+.order2 .flex2col1 i.bg4{
+	background-position: -172px -68px; 
+}
+.order2 .phone1{
+	padding-left: 15px;
+	margin-top: 25px;
+	margin-bottom: 0px;
+}
+.order2 .phone1 i{
+	background-image: url('../image/archive-3.png');
+	display: inline-block;
+	position: relative;
+	height: 32px;width: 32px;
+	background-repeat: no-repeat;
+	background-position: -13px -142px;
+	margin-right:15px;top:5px;
+}
+.order2 .phone1 a{
+	font-size: 28px;
+	color: #333;
+}
+.order2 .thoigian{
+	padding-left: 15px;
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+.order2 .thoigian i{
+	background-image: url('../image/archive-3.png');
+	display: inline-block;
+	position: relative;
+	height: 32px;width: 32px;
+	background-repeat: no-repeat;
+	background-position: -59px -142px;
+	margin-right:10px;top:8px;
+}
+.order2 .thoigian span:nth-child(2){
+	font-size: 28px;
+	color: #333;
+	display: inline-block;
+	line-height: normal;
+}
+.order2 .thoigian span:nth-child(3){
+	margin-left: 45px;
+	line-height: normal;
+	display: block;
+}
+.order2 .address{
+	padding-left: 15px;
+	margin-top: -5px;
+	line-height: normal;
+}
+.order2 .address i{
+	background-image: url('../image/archive-3.png');
+	display: inline-block;
+	position: relative;
+	height: 33px;width: 32px;
+	background-repeat: no-repeat;
+	background-position: -110px -142px;
+	margin-right:10px;top:18px;
+}
+.order2 .address span{
+	display: block;
+	margin-left: 45px;
+	padding-bottom: 30px;
+}
+.maps h3 span{
+	display: inline-block;
+	padding-bottom: 5px;
+	border-bottom:  2px solid #c66905;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+/**/
+.flex1col2{
+	background-color: #fff;
+	padding:10px;
+}
+.flex1col2 .crub{
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 5px;
+}
+.flex1col2 .name-category h3{
+	text-transform: uppercase;
+	color: #008691;
+	border-left: 2px solid #008691;
+	padding-left: 10px;
+	font-size: 15px;
+	margin:15px 0px;
+}
+.lists{
+
+}
+.post{
+	border-top: 1px dashed #ddd;
+	padding:25px 0px;
+}
+.post h3{
+	font-size: 14px;
+	margin:0;
+}
+.post p{
+	margin-top: 15px;
+}
+.post p a{
+	color: #008690;
+}
+.lists .flex3col1 {
+	flex-basis: 180px;
+	height: 130px;
+	overflow: hidden;
+}
+.lists .flex3col2 {
+	flex-basis: 510px;
+}
+.pagination li{
+	margin-right:5px;
+	display: inline-block;
+}
+.pagination li a{
+	border-radius: 4px;
+}
