@@ -143,7 +143,7 @@ class MediaController extends Controller{
                 return back();
             }
         }else{
-            Session::flash('msg-error','Nếu chắc ảnh không thuộc bài viết nào thì hẵng xóa đi. Còn không thì đừng xóa.');
+            Session::flash('msg-info','Nếu chắc ảnh không thuộc bài viết nào thì hẵng xóa đi. Còn không thì đừng xóa.');
             $data['media'] = $media;
             $data['menu'] = 'menu.menuUser'; 
             $data['blade'] = 'user.media.delete';
