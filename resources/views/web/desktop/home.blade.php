@@ -14,8 +14,23 @@
 @section('content')
 <div class="baner">
 	<div class="slick-home">
-		<div><img src="{{ asset('public/images/desktop/slide-1.png') }}" alt="" class="center-block"></div>
+		<div>
+			<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">
+				<img src="{{ asset('public/images/desktop/slide-0.png') }}" alt="" class="center-block img-responsive">
+			</a>
+		</div>
+		<div>
+			<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">
+				<img src="{{ asset('public/images/desktop/slide-1.png') }}" alt="" class="center-block img-responsive">
+			</a>
+		</div>
 	</div>
+	<script>
+		$('.slick-home').slick({
+			autoplay: true,
+				autoplaySpeed: 5000,
+		});
+	</script>
 </div>
 <main class="container home">
 	<div class="flex flex1">
@@ -42,7 +57,7 @@
 		</div>
 		<div class="flex1col1">
 			<div class="box">
-				<a href="" style="background-position: -801px 0px;">
+				<a href="{{ MyAPI::getUrlPost(2) }}" style="background-position: -801px 0px;">
 					Địa chỉ<br>phòng khám 
 				</a>
 			</div>
@@ -54,23 +69,23 @@
 			<div class="flex flex3 justify-content-between">
 				<div class="flex3col1">
 					<div>
-						<h4><a href="">BỆNH GOUT 7 NĂM CỦA ÔNG, ĐÃ ĐƯỢC HỒI PHỤC TẠI PHÒNG KHÁM ĐA KHOA NHÂN ÁI</a></h4>
+						<h4><a href="#">BỆNH GOUT 7 NĂM CỦA ÔNG, ĐÃ ĐƯỢC HỒI PHỤC TẠI PHÒNG KHÁM ĐA KHOA NHÂN ÁI</a></h4>
 						<p>
 							(Thông tin liên quan của bệnh nhân này, đã được 
 							phòng khám đối chiếu kiểm tra nghiêm túc, xác thực 
 							là đúng. Nếu không được chúng tôi đồng ý các đồng 
 							nghiệp và các tổ chức, ...
-							<a href="">[Xem thêm]</a>
+							<a href="#">[Xem thêm]</a>
 						</p>
 					</div>
 					<div>
-						<h4><a href="">4 NĂM BỊ VIÊM MÀNG HOẠT DỊCH KHỚP GỐI CUỐI CÙNG ĐÃ ĐƯỢC CHỮA KHỎI</a></h4>
+						<h4><a href="#">4 NĂM BỊ VIÊM MÀNG HOẠT DỊCH KHỚP GỐI CUỐI CÙNG ĐÃ ĐƯỢC CHỮA KHỎI</a></h4>
 						<p>
 							(Thông tin liên quan của bệnh nhân này, đã được 
 							phòng khám đối chiếu kiểm tra nghiêm túc, xác thực 
 							là đúng. Nếu không được chúng tôi đồng ý các đồng 
 							nghiệp và các tổ chức, ...
-							<a href="">[Xem thêm]</a>
+							<a href="#">[Xem thêm]</a>
 						</p>
 					</div>
 				</div>
@@ -81,13 +96,13 @@
 		</div>
 		<div class="flex2col2">
 			<h2></h2>
-			<img src="{{ asset('public/images/desktop/home-3.png') }}" class="center-block">
+			<a href="{{ MyAPI::getUrlPost(3) }}"><img src="{{ asset('public/images/desktop/home-3.png') }}" class="center-block"></a>
 			<div class="order3">
-				<h4><a href="">Giới thiệu phòng khám</a></h4>
+				<h4><a href="{{ MyAPI::getUrlPost(3) }}">Giới thiệu phòng khám</a></h4>
 				<p>
 					Hiện nay số người mắc bệnh viêm quanh 
 					khớp vai ngày càng nhiều và tỷ lệ mắc bệnh 
-					tăng lên hàng năm, thậm  ... <a href="">[chi tiết]</a>
+					tăng lên hàng năm, thậm  ... <a href="{{ MyAPI::getUrlPost(3) }}">[chi tiết]</a>
 				</p>
 			</div>
 			<div class="flex flex4 flex-wrap-wrap justify-content-between">
@@ -98,7 +113,7 @@
 					</a>
 				</div>
 				<div class="flex4col1">
-					<a href="" class="text-container-center">
+					<a href="{{ MyAPI::getUrlPost(2) }}" class="text-container-center">
 						<i style="background-position: -30px 0px;"></i>
 						<span>Địa chỉ<br>phòng khám</span>
 					</a>
@@ -189,120 +204,120 @@
 		<div class="active">
 			<div class="flex flex7 justify-content-center">
 				<div class="flex7col1 text-container-center">
-					<a href="">Xưng đau cổ tay</a>
+					<a href="#">Xưng đau cổ tay</a>
 				</div>
 				<div class="flex7col1 text-container-center">
-					<a href="">Mệt mỏi</a>
+					<a href="#">Mệt mỏi</a>
 				</div>
 				<div class="flex7col1 text-container-center">
-					<a href="">Giảm cân</a>
+					<a href="#">Giảm cân</a>
 				</div>
 				<div class="flex7col1 text-container-center">
-					<a href="">Khớp biến tính</a>
-				</div>
-			</div>
-		</div>
-		<div>
-			<div class="flex flex7 justify-content-center">
-				<div class="flex7col1 text-container-center">
-					<a href="">Đau lưng </a>
-				</div>
-				<div class="flex7col1 text-container-center">
-					<a href="">Không vươn vai được </a>
-				</div>
-				<div class="flex7col1 text-container-center">
-					<a href="">Chán ăn</a>
-				</div>
-				<div class="flex7col1 text-container-center">
-					<a href="">Khớp có tiếng cọt kẹt</a>
+					<a href="#">Khớp biến tính</a>
 				</div>
 			</div>
 		</div>
 		<div>
 			<div class="flex flex7 justify-content-center">
 				<div class="flex7col1 text-container-center">
-					<a href="">Khớp đau nhói </a>
+					<a href="#">Đau lưng </a>
 				</div>
 				<div class="flex7col1 text-container-center">
-					<a href="">Đầu ngón chân xưng đau nhức</a>
+					<a href="#">Không vươn vai được </a>
 				</div>
 				<div class="flex7col1 text-container-center">
-					<a href="">Xưng khớp</a>
+					<a href="#">Chán ăn</a>
 				</div>
 				<div class="flex7col1 text-container-center">
-					<a href="">Khớp chân tay nổi cục</a>
-				</div>
-				<div class="flex7col1 text-container-center">
-					<a href="">Ớn lạnh, sốt</a>
-				</div>
-				<div class="flex7col1 text-container-center">
-					<a href="">Axit uric quá cao</a>
+					<a href="#">Khớp có tiếng cọt kẹt</a>
 				</div>
 			</div>
 		</div>
 		<div>
 			<div class="flex flex7 justify-content-center">
 				<div class="flex7col1 text-container-center">
-					<a href="">Đau khớp</a>
+					<a href="#">Khớp đau nhói </a>
 				</div>
 				<div class="flex7col1 text-container-center">
-					<a href="">Xưng khớp</a>
+					<a href="#">Đầu ngón chân xưng đau nhức</a>
 				</div>
 				<div class="flex7col1 text-container-center">
-					<a href="">Mệt mỏi</a>
+					<a href="#">Xưng khớp</a>
 				</div>
 				<div class="flex7col1 text-container-center">
-					<a href="">Cử động khó khăn</a>
+					<a href="#">Khớp chân tay nổi cục</a>
 				</div>
 				<div class="flex7col1 text-container-center">
-					<a href="">Ngồi xổm khó chịu</a>
+					<a href="#">Ớn lạnh, sốt</a>
 				</div>
 				<div class="flex7col1 text-container-center">
-					<a href="">Đau khi gặp gió</a>
-				</div>
-			</div>
-		</div>
-		<div>
-			<div class="flex flex7 justify-content-center">
-				<div class="flex7col1 text-container-center">
-					<a href="">Đau khớp</a>
-				</div>
-				<div class="flex7col1 text-container-center">
-					<a href="">Xưng khớp</a>
-				</div>
-				<div class="flex7col1 text-container-center">
-					<a href="">Mệt mỏi</a>
-				</div>
-				<div class="flex7col1 text-container-center">
-					<a href="">Cử động khó khăn</a>
-				</div>
-				<div class="flex7col1 text-container-center">
-					<a href="">Ngồi xổm khó chịu</a>
-				</div>
-				<div class="flex7col1 text-container-center">
-					<a href="">Đau khi gặp gió</a>
+					<a href="#">Axit uric quá cao</a>
 				</div>
 			</div>
 		</div>
 		<div>
 			<div class="flex flex7 justify-content-center">
 				<div class="flex7col1 text-container-center">
-					<a href="">Đau khớp</a>
+					<a href="#">Đau khớp</a>
 				</div>
 				<div class="flex7col1 text-container-center">
-					<a href="">Xưng khớp</a>
+					<a href="#">Xưng khớp</a>
 				</div>
 				<div class="flex7col1 text-container-center">
-					<a href="">Mệt mỏi</a>
+					<a href="#">Mệt mỏi</a>
 				</div>
 				<div class="flex7col1 text-container-center">
-					<a href="">Cử động khó khăn</a>
+					<a href="#">Cử động khó khăn</a>
 				</div>
 				<div class="flex7col1 text-container-center">
-					<a href="">Ngồi xổm khó chịu</a>
+					<a href="#">Ngồi xổm khó chịu</a>
 				</div>
 				<div class="flex7col1 text-container-center">
-					<a href="">Đau khi gặp gió</a>
+					<a href="#">Đau khi gặp gió</a>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="flex flex7 justify-content-center">
+				<div class="flex7col1 text-container-center">
+					<a href="#">Đau khớp</a>
+				</div>
+				<div class="flex7col1 text-container-center">
+					<a href="#">Xưng khớp</a>
+				</div>
+				<div class="flex7col1 text-container-center">
+					<a href="#">Mệt mỏi</a>
+				</div>
+				<div class="flex7col1 text-container-center">
+					<a href="#">Cử động khó khăn</a>
+				</div>
+				<div class="flex7col1 text-container-center">
+					<a href="#">Ngồi xổm khó chịu</a>
+				</div>
+				<div class="flex7col1 text-container-center">
+					<a href="#">Đau khi gặp gió</a>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="flex flex7 justify-content-center">
+				<div class="flex7col1 text-container-center">
+					<a href="#">Đau khớp</a>
+				</div>
+				<div class="flex7col1 text-container-center">
+					<a href="#">Xưng khớp</a>
+				</div>
+				<div class="flex7col1 text-container-center">
+					<a href="#">Mệt mỏi</a>
+				</div>
+				<div class="flex7col1 text-container-center">
+					<a href="#">Cử động khó khăn</a>
+				</div>
+				<div class="flex7col1 text-container-center">
+					<a href="#">Ngồi xổm khó chịu</a>
+				</div>
+				<div class="flex7col1 text-container-center">
+					<a href="#">Đau khi gặp gió</a>
 				</div>
 			</div>
 		</div>
@@ -328,73 +343,75 @@
 				<div class="flex8col2_topbv">
 					<div class="active">
 						<div>
-							<h3><a href="">Nguyên nhân bệnh viêm khớp dạng thấp</a></h3>
+							<h3><a href="#">Nguyên nhân bệnh viêm khớp dạng thấp</a></h3>
 							<p>
 								Số liệu thống kê cho thấy, tỷ lệ mắc bệnh viêm xương khớp ở 
-								con của những người mắc ...>>> <a href="">[chi tiết]</a>
+								con của những người mắc ...>>> <a href="#">[chi tiết]</a>
 							</p>
 						</div>
 						<div>
 							<ul>
-								<li><a href=""><span>Nguyên nhân</span> Lorem ipsum dolor sit amet</a></li>
-								<li><a href=""><span>Triệu trứng</span> Lorem ipsum dolor sit amet</a></li>
-								<li><a href=""><span>Nguy hại</span> Lorem ipsum dolor sit amet</a></li>
-								<li><a href=""><span>Điều trị</span> Lorem ipsum dolor sit amet</a></li>
-								<li><a href=""><span>Phòng tránh</span> Lorem ipsum dolor sit amet</a></li>
+								<li><a href="#"><span>Nguyên nhân</span> Lorem ipsum dolor sit amet</a></li>
+								<li><a href="#"><span>Triệu trứng</span> Lorem ipsum dolor sit amet</a></li>
+								<li><a href="#"><span>Nguy hại</span> Lorem ipsum dolor sit amet</a></li>
+								<li><a href="#"><span>Điều trị</span> Lorem ipsum dolor sit amet</a></li>
+								<li><a href="#"><span>Phòng tránh</span> Lorem ipsum dolor sit amet</a></li>
 							</ul>
 						</div>
 					</div>
 					<div>
 						<div>
-							<h3><a href="">Nguyên nhân bệnh viêm xương cột sống dính khớp</a></h3>
+							<h3><a href="#">Nguyên nhân bệnh viêm xương cột sống dính khớp</a></h3>
 							<p>
 								Số liệu thống kê cho thấy, tỷ lệ mắc bệnh viêm xương khớp ở 
-								con của những người mắc ...>>> <a href="">[chi tiết]</a>
+								con của những người mắc ...>>> <a href="#">[chi tiết]</a>
 							</p>
 						</div>
 						<div>
 							<ul>
-								<li><a href=""><span>Nguyên nhân</span> Lorem ipsum dolor sit amet</a></li>
-								<li><a href=""><span>Triệu trứng</span> Lorem ipsum dolor sit amet</a></li>
-								<li><a href=""><span>Nguy hại</span> Lorem ipsum dolor sit amet</a></li>
-								<li><a href=""><span>Điều trị</span> Lorem ipsum dolor sit amet</a></li>
-								<li><a href=""><span>Phòng tránh</span> Lorem ipsum dolor sit amet</a></li>
+								<li><a href="#"><span>Nguyên nhân</span> Lorem ipsum dolor sit amet</a></li>
+								<li><a href="#"><span>Triệu trứng</span> Lorem ipsum dolor sit amet</a></li>
+								<li><a href="#"><span>Nguy hại</span> Lorem ipsum dolor sit amet</a></li>
+								<li><a href="#"><span>Điều trị</span> Lorem ipsum dolor sit amet</a></li>
+								<li><a href="#"><span>Phòng tránh</span> Lorem ipsum dolor sit amet</a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
 				<div>
-					<p><a href="">Bạn muốn tìm hiểu điều gì?</a></p>
+					<p><a href="#">Bạn muốn tìm hiểu điều gì?</a></p>
 					<div class="flex flex10 flex-wrap-wrap">
 						<div class="flex10col1">
-							<a href="" class="text-container-center">Hỏi về<br>bệnh tình</a>
+							<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" class="text-container-center">Hỏi về<br>bệnh tình</a>
 						</div>
 						<div class="flex10col1" style="background-color: #7ecca0;">
-							<a href="" class="text-container-center">Hỏi về hiệu<br>quả điều trị </a>
+							<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" class="text-container-center">Hỏi về hiệu<br>quả điều trị </a>
 						</div>
 						<div class="flex10col1">
-							<a href="" class="text-container-center">Hẹn với<br>bác sĩ </a>
+							<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" class="text-container-center">Hẹn với<br>bác sĩ </a>
 						</div>
 						<div class="flex10col1" style="flex-basis: 107px;margin-right: 0;background-color: #ef92b7;">
-							<a href="" class="text-container-center">Phương pháp<br>điều trị</a>
+							<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" class="text-container-center">Phương pháp<br>điều trị</a>
 						</div>
 						<div class="flex10col1" style="background-color: #7ecca0;">
-							<a href="" class="text-container-center">Tư vấn<br>dùng thuốc</a>
+							<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" class="text-container-center">Tư vấn<br>dùng thuốc</a>
 						</div>
 						<div class="flex10col1" style="background-color: #ef92b7;">
-							<a href="" class="text-container-center">Hỏi về<br>chi phí</a>
+							<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" class="text-container-center">Hỏi về<br>chi phí</a>
 						</div>
 						<div class="flex10col1" style="background-color: #7ecca0;">
-							<a href="" class="text-container-center">Thời gian<br>điều trị</a>
+							<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" class="text-container-center">Thời gian<br>điều trị</a>
 						</div>
 						<div class="flex10col1" style="flex-basis: 107px;margin-right: 0;">
-							<a href="" class="text-container-center">Điều cần chú ý<br>khi hồi phục</a>
+							<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" class="text-container-center">Điều cần chú ý<br>khi hồi phục</a>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="flex8col3">
-				<img src="{{ asset('public/images/desktop/home-7-2.png') }}" alt="">
+				<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">
+					<img src="{{ asset('public/images/desktop/home-7-2.png') }}" alt="">
+				</a>
 			</div>
 		</div>
 	</div>
@@ -408,7 +425,7 @@
 	</div>
 	<div class="flex flex12 justify-content-between" style="border-bottom: 1px dashed #e0e0e0;padding-bottom: 20px;">
 		<div class="flex12col1">
-			<h4><a href=""><img src="{{ asset('public/images/desktop/home-8-1.png') }}" alt=""></a></h4>
+			<h4><a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en"><img src="{{ asset('public/images/desktop/home-8-1.png') }}" alt=""></a></h4>
 		</div>
 		<div class="flex12col2">
 			<div>
@@ -428,7 +445,7 @@
 	</div>
 	<div class="flex flex12 justify-content-between" style="border-bottom: 1px solid #e0e0e0;padding-bottom: 40px;">
 		<div class="flex12col1">
-			<h4><a href=""><img src="{{ asset('public/images/desktop/home-8-2.png') }}" alt=""></a></h4>
+			<h4><a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en"><img src="{{ asset('public/images/desktop/home-8-2.png') }}" alt=""></a></h4>
 		</div>
 		<div class="flex12col2">
 			<div>

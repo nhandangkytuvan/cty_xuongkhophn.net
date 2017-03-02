@@ -13,7 +13,6 @@
     <link rel="shortcut icon" href="{{ asset('public/img/'.$setting_web['web_avatar']) }}" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="{{ asset('public/css/global/font-awesome/css/font-awesome.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('public/css/global/slick/slick.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('public/css/global/slick/slick.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('public/css/global/slick/slick-theme.css') }}">
 
 	<link rel="stylesheet" type="text/css" href="{{ asset('public/css/desktop/desktop.css') }}">
@@ -241,9 +240,11 @@
 		<div class="container">
 			<div class="flex flex1 justify-content-between">
 				<div class="flex1col1">
-					<h3>
-						<img src="{{ asset('public/images/desktop/logo-footer.png') }}" class="center-block mar-b-20">
-						Phòng khám đa khoa Nhân Ái Hà Nội
+					<h3 style="text-transform: uppercase;">
+						<a href="{{ url('/') }}">
+							<img src="{{ asset('public/images/desktop/logo-footer.png') }}" class="center-block">
+							Phòng khám đa khoa Nhân Ái <br>Hà Nội
+						</a>
 					</h3>
 				</div>
 				<div class="flex1col2">
@@ -252,11 +253,11 @@
 						( 8:00 -20:00) bao gồm cả ngày lễ tết 
 					</p>
 					<p>	 
-						Địa chỉ : <a href="">709 Giải Phóng - Hoàng Mai - Hà Nội</a>
+						Địa chỉ : <a href="{{ MyAPI::getUrlPost(2) }}">709 Giải Phóng - Hoàng Mai - Hà Nội</a>
 					</p>
 					<p class="phone-footer">
 						Điện thoại liên hệ : <br>
-						<a href="tel:04 36241999">04 36241999</a> - 
+						<a href="tel:0436 241 999">0436 241 999</a> - 
 						<a href="tel:0911 501 709">0911 501 709</a>
 					</p>
 					<p>

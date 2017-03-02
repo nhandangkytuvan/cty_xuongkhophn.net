@@ -17,7 +17,6 @@ button,input,input:not([type]),input[type=color],input[type=text],input[type=tim
 .post-detail ol li,.post-detail ul li{margin-left:10px;margin-bottom:10px;color:#626262}
 .post-detail ul{list-style-type:disc}
 .post-detail ol{list-style-type:decimal}
-.post-detail a[href]{text-decoration:underline}
 .post-detail table{width:100%;border-spacing:0;border-collapse:separate;border:1px solid #aaa}
 .post-detail table tr:nth-child(even){background:#FAFAFA}
 .post-detail table caption,.post-detail table td,.post-detail table th{padding:15px 7px;font:inherit}

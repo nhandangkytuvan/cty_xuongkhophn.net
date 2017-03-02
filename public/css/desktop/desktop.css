@@ -4,6 +4,10 @@ a,a:hover,a:focus{color: inherit;}
 a{text-decoration: none;}
 .container{width: 1000px;margin:0px auto;}
 .center-block{display: block;margin:0px auto;}
+.img-responsive{
+  max-width: 100%;
+  height: auto;
+}
 /*display*/
 .dis-block{display: block!important;}
 .dis-inline{display: inline!important;}
