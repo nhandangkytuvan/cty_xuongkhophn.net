@@ -86,43 +86,43 @@
         <div class="row flex2 justify-content-between" style="margin-bottom: 4px;">
             <div class="col-xs-3 flex2col1">
                 <div class="box">
-                    <a href="" class="text-container-center">Đau đốt sống cổ</a>
+                    <a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" class="text-container-center">Đau đốt sống cổ</a>
                 </div>
             </div>
             <div class="col-xs-9 flex2col2">
                 <div class="flex flex3 justify-content-between" style="margin-bottom: 4px;">
                     <div class="flex3col1">
-                        <div class="box"><a href="" class="text-container-center">Đau lưng</a></div>
+                        <div class="box"><a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" class="text-container-center">Đau lưng</a></div>
                     </div>
                     <div class="flex3col1">
-                        <div class="box"><a href="" class="text-container-center">Tê khớp</a></div>
+                        <div class="box"><a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" class="text-container-center">Tê khớp</a></div>
                     </div>
                     <div class="flex3col1">
-                        <div class="box"><a href="" class="text-container-center">khó vận động</a></div>
+                        <div class="box"><a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" class="text-container-center">khó vận động</a></div>
                     </div>
                 </div>
                 <div class="flex flex3 justify-content-between">
                     <div class="flex3col1">
-                        <div class="box"><a href="" class="text-container-center">Cứng khớp</a></div>
+                        <div class="box"><a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" class="text-container-center">Cứng khớp</a></div>
                     </div>
                     <div class="flex3col1">
-                        <div class="box"><a href="" class="text-container-center">Hai chân tê bì</a></div>
+                        <div class="box"><a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" class="text-container-center">Hai chân tê bì</a></div>
                     </div>
                     <div class="flex3col1">
-                        <div class="box"><a href="" class="text-container-center">Đau lưng</a></div>
+                        <div class="box"><a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" class="text-container-center">Đau lưng</a></div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row flex4">
             <div class="col-xs-4 flex4col1">
-                <div class="box"><a href="" class="text-container-center">Đau khớp do bị nhiễm lạnh</a></div>
+                <div class="box"><a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" class="text-container-center">Đau khớp do bị nhiễm lạnh</a></div>
             </div>
             <div class="col-xs-4 flex4col1">
-                <div class="box"><a href="" class="text-container-center">Đau ở phía mặt bên của chân</a></div>
+                <div class="box"><a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" class="text-container-center">Đau ở phía mặt bên của chân</a></div>
             </div>
             <div class="col-xs-4 flex4col1">
-                <div class="box"><a href="" class="text-container-center">Đau khớp gối do đi bộ</a></div>
+                <div class="box"><a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" class="text-container-center">Đau khớp gối do đi bộ</a></div>
             </div>
         </div>
     </div>

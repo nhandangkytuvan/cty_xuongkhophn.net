@@ -11,7 +11,6 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('public/css/global/flexboxgrid/css/flexboxgrid.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('public/css/global/font-awesome/css/font-awesome.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('public/css/global/slick/slick.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('public/css/global/slick/slick.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('public/css/global/slick/slick-theme.css') }}">
 
 	<link rel="stylesheet" type="text/css" href="{{ asset('public/css/mobile/mobile.css') }}">
@@ -58,8 +57,23 @@
 	</menu>
 	<div class="banner container">
 		<div class="slick-home">
-			<div><img src="{{ asset('public/images/mobile/banner.png') }}" alt="" class="center-block img-responsive"></div>
+			<div>
+				<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">
+					<img src="{{ asset('public/images/mobile/banner0.png') }}" alt="" class="center-block img-responsive">
+				</a>
+			</div>
+			<div>
+				<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">
+					<img src="{{ asset('public/images/mobile/banner.png') }}" alt="" class="center-block img-responsive">
+				</a>
+			</div>
 		</div>
+		<script>
+			$('.slick-home').slick({
+				autoplay: true,
+					autoplaySpeed: 5000,
+			});
+		</script>
 	</div>
 	<main>
 	@yield('content')	

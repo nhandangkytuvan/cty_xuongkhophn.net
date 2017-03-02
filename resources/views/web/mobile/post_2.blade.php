@@ -32,10 +32,10 @@
 				</iframe>
 			</div>
 			<div style="text-align: center;">
-				<a href="" style="display: inline-block;" style="margin-right: 10px;">
+				<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" style="display: inline-block;" style="margin-right: 10px;">
 					<img src="{{ asset('public/images/desktop/diachi-1.gif') }}" alt="">
 				</a>
-				<a href="" style="display: inline-block;">
+				<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" style="display: inline-block;">
 					<img src="{{ asset('public/images/desktop/diachi-2.gif') }}" alt="">
 				</a>
 			</div>
