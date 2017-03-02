@@ -37,14 +37,14 @@
             <td>ID</td>
             <td>Tên</td>
             <td>Cấp trên</td>
-            <td>Số bài viết</td>
+            <td>Số bài</td>
             <td>#</td>
         </tr>
         @foreach($data['terms'] as $key => $term)
         <tr>
             <td>{{ $term->id }}</td>
             <td><a href="{{ url($term->term_alias.'/'.$term->id) }}">{{ $term->term_name }}</a></td>
-            <td>{{ isset($term->term) ? $term->term->term_name : '' }}</td>
+            <td>{{ isset($term->parent) ? $term->parent->term_name : '' }}</td>
             <td>{{ count($term->post) }}</td>
             <td>
                 <div class="clearfix">

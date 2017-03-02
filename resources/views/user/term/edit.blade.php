@@ -1,7 +1,7 @@
 <form method="post"  enctype="multipart/form-data">
     {{ csrf_field() }}
     <div class="panel panel-default">
-        <div class="panel-heading text-center">Tạo term</div>
+        <div class="panel-heading text-center">Sửa term</div>
         <div class="panel-body">
             <div class="form-group">
                 <label class="control-label">Tên</label>

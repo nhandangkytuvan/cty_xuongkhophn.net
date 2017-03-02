@@ -48,8 +48,8 @@
         <div class="row" style="display: flex;flex-wrap: wrap;">    
             @foreach($data['medias'] as $key => $media)
             <div class="col-sm-4">
-                <p><a href="{{ asset('public/img/'.$media->media_file) }}"><img src="{{ asset('public/img/'.$media->media_file) }}" class="img-responsive img-thumbnail center-block"></a></p>
-                <p class="text-center"><a href="{{ asset('public/img/'.$media->media_file) }}">{{ $media->media_name }}</a></p>
+                <p style="border:1px solid #f5f5f5;"><a href="{{ asset('public/img/'.$media->media_file) }}"><img  style="height: 130px;" src="{{ asset('public/img/'.$media->media_file) }}" class="img-responsive center-block"></a></p>
+                <p class="text-center" style="background-color: #f5f5f5;padding:5px 0px;margin-top: -10px;font-size: 14px;"><a href="{{ asset('public/img/'.$media->media_file) }}">{{ $media->media_name }}</a></p>
             </div>
             @endforeach
         </div>

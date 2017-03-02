@@ -4,6 +4,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Post;
 use App\Setting;
+use App\View;
 use Session;
 use BrowserDetect;
 class PostController extends Controller{
@@ -14,9 +15,19 @@ class PostController extends Controller{
         if(!$post){
             return redirect('/');
         }
-    	$data['post'] = $post;
-    	$data['setting'] = $setting;
-    	if(BrowserDetect::isDesktop()){
+        // --------------
+        if(View::where('post_id',$post_id)->exists()){
+            $view = View::where('post_id',$post_id)->first();
+        }else{
+            $view = new View;
+            $view->post_id = $post_id;
+        }
+        $view->view_sum ++;
+        $view->save();
+        // ------------
+        $data['post'] = $post;
+        $data['setting'] = $setting;
+        if(BrowserDetect::isDesktop()){
     		if($post_id == 2){
     			return view('web.desktop.post_2',['data'=>$data]); 
     		}

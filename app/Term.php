@@ -9,10 +9,13 @@ class Term extends Model{
     public function post(){
     	return $this->hasMany('App\Post','term_id','id');
     }
-    public function term(){
+    public function view(){
+        return $this->hasOne('App\View','term_id','id');
+    }
+    public function parent(){
     	return $this->belongsTo('App\Term','term_id','id');
     }
-    public function childTerm(){
+    public function children(){
         return $this->hasMany('App\Term','term_id','id');
     }
 }

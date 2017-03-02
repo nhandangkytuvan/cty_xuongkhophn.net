@@ -48,8 +48,8 @@
             <td>ID</td>
             <td>Ảnh</td>
             <td>Tên</td>
-            <td>Danh mục</td>
-            <td>Trạng thái</td>
+            <td>Mục</td>
+            <td>T.thái</td>
             <td>#</td>
         </tr>
         @foreach($data['posts'] as $key => $post)
@@ -64,7 +64,12 @@
             </td>
             <td><a href="{{ url($post->post_alias.'/'.$post->id.'.htm') }}">{{ $post->post_name }}</a></td>
             <td><a href="{{ url($post->term->term_alias.'/'.$post->term->id) }}">{{ $post->term->term_name }}</a></td>
-            <td>{{ $post->post_status == 1 ? 'Đã đăng' : 'Nháp' }}</td>
+            <td>
+                <div class="radio {{ $post->post_status == 1 ? 'radio-success' : 'radio-default' }} radio-inline">
+                    <input type="radio" checked="">
+                    <label></label>
+                </div>
+            </td>
             <td>
                 <div class="clearfix">
                     <div class="pull-right">

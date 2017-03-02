@@ -23,7 +23,7 @@
 	<div class="flex flex1 justify-content-between">
 		<div class="flex1col1">
 			@php 
-				$term_childs = $data['term']->childTerm;
+				$term_childs = $data['term']->children;
 			@endphp
 			@foreach($term_childs as $term_child)
 			<div class="benhprimary">

@@ -21,7 +21,7 @@
 		<i></i>
 		<a href="{{ url('/') }}">Trang chủ ></a>
 		@php 
-			$term_parent = $data['term']->term;
+			$term_parent = $data['term']->parent;
 		@endphp
 		@if($term_parent)
 		<a href="{{ url($term_parent->term_alias.'/'.$term_parent->id) }}">{{ $term_parent->term_name }} ></a>

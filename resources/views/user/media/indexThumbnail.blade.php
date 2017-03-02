@@ -57,7 +57,7 @@
         @foreach($data['medias'] as $key => $media)
         <tr>
             <td>{{ $media->id }}</td>
-            <td><a href="{{ asset('public/img/'.$media->media_file) }}"><img src="{{ asset('public/img/'.$media->media_file) }}" class="img-responsive img-thumbnail" style="max-width: 90px;"></a></td>
+            <td><a href="{{ asset('public/img/'.$media->media_file) }}"><img src="{{ asset('public/img/'.$media->media_file) }}" class="img-responsive" style="max-width: 90px;"></a></td>
             <td><a href="{{ asset('public/img/'.$media->media_file) }}">{{ $media->media_name }}</a></td>
             <td>{{ isset($media->term) ? $media->term->term_name : '' }}</td>
             <td>{{ $media->user->user_name }}</td>

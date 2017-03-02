@@ -6,14 +6,14 @@
         <tr class="active">
             <td>ID</td>
             <td>Tên</td>
-            <td>Parent</td>
-            <td>Số bài viết</td>
+            <td>Cấp trên</td>
+            <td>Số bài</td>
         </tr>
         <tr>
             <td>{{ $data['term']->id }}</td>
             <td>{{ $data['term']->term_name }}</td>
-            <td>{{ isset($data['term']->term) ? $data['term']->term->term_name : '' }}</td>
-            <td></td>
+            <td>{{ isset($data['term']->parent) ? $data['term']->parent->term_name : '' }}</td>
+            <td>{{ count($data['term']->post) }}</td>
         </tr>
     </table>
     <div class="panel-body">
