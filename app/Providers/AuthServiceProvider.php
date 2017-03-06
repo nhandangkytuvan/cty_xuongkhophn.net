@@ -40,7 +40,11 @@ class AuthServiceProvider extends ServiceProvider
             return $user->id == $term->user_id;
         });
         Gate::define('delete-term', function ($user, $term) {
-            return $user->id == $term->user_id;
+            if($user->id == $term->user_id||$user->user_group=='admin'){
+                return true;
+            }else{
+                return false;
+            }
         });
     }
 }

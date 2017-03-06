@@ -1,3 +1,8 @@
+@extends('layout.user')
+@section('menu')
+    @include('menu.menuUser')
+@endsection('menu')
+@section('content')
 <div style="margin-bottom: 10px;">
     <form action="{{ url('user/term/index') }}" class="form-inline">
         <div class="form-group">
@@ -78,4 +83,5 @@
         @endforeach
     </table>
 </div>
+@endsection('content')
 

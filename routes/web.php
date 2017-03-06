@@ -6,18 +6,18 @@ Route::get('/{term_alias?}/{term_id?}', 'Web\TermController@show')->where(['term
 // Post
 Route::get('/{post_alias?}/{post_id?}.htm', 'Web\PostController@show')->where(['post_alias'=>'[-a-z0-9]+','post_id'=>'[0-9]+']);
 
-Route::any('user/login','User\UserController@login');
+Route::any('web/user/login','Web\UserController@login');
 
-Route::group(['middleware' => ['checklogin']], function () {
+Route::group(['middleware' => ['check-user']], function () {
 	// user
-	Route::any('user/create','User\UserController@create')->middleware('checkadmin');
-	Route::get('user/logout','User\UserController@logout');
-	Route::get('user/index','User\UserController@index');
-	Route::any('user/edit','User\UserController@edit');
-	Route::any('user/editGroup/{user_id?}','User\UserController@editGroup')->middleware('checkadmin');
-	Route::any('user/block/{user_id?}','User\UserController@block')->middleware('checkadmin');
-	Route::any('user/delete/{user_id?}','User\UserController@delete')->middleware('checkadmin');
-	Route::post('user/forget','User\UserController@forget');
+	Route::any('user/user/create','User\UserController@create')->middleware('check-admin');
+	Route::get('user/user/logout','User\UserController@logout');
+	Route::get('user/user/index','User\UserController@index');
+	Route::any('user/user/edit','User\UserController@edit');
+	Route::any('user/user/group/{user_id?}','User\UserController@group')->middleware('check-admin');
+	Route::any('user/user/block/{user_id?}','User\UserController@block')->middleware('check-admin');
+	Route::any('user/user/delete/{user_id?}','User\UserController@delete')->middleware('check-admin');
+	Route::post('user/user/password','User\UserController@password');
 	// post
 	Route::any('user/post/create','User\PostController@create');
 	Route::any('user/post/edit/{post_id?}','User\PostController@edit');
@@ -32,10 +32,10 @@ Route::group(['middleware' => ['checklogin']], function () {
 	Route::any('user/media/index{query?}','User\MediaController@index');
 
 	// term
-	Route::any('user/term/create','User\TermController@create')->middleware('checkadmin');
-	Route::any('user/term/edit/{term_id?}','User\TermController@edit');
-	Route::any('user/term/delete/{term_id?}','User\TermController@delete')->middleware('checkadmin');
+	Route::any('user/term/create','User\TermController@create')->middleware('check-admin');
+	Route::any('user/term/edit/{term_id?}','User\TermController@edit')->middleware('check-admin');
+	Route::any('user/term/delete/{term_id?}','User\TermController@delete')->middleware('check-admin');
 	Route::any('user/term/index{query?}','User\TermController@index');
 	// setting
-	Route::any('user/setting/web', 'User\SettingController@web');
+	Route::any('user/setting/web', 'User\SettingController@web')->middleware('check-admin');
 });

@@ -8,10 +8,17 @@ use Session;
 class MyAPI {
     public static function getUrlPost($post_id){
         $post = Post::find($post_id);
-        return url($post->post_alias.'/'.$post->id.'.htm');
+        if($post){
+        	return url($post->post_alias.'/'.$post->id.'.htm');
+        }else{
+        	return url('/');
+        }
     }
     public static function getUrlTerm($term_id){
         $term = Term::find($term_id);
-        return url($term->term_alias.'/'.$term->id);
+        	return url($term->term_alias.'/'.$term->id);
+        }else{
+        	return url('/');
+        }
     }
 }

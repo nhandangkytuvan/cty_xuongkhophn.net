@@ -7,6 +7,7 @@ use App\User;
 use App\Term;
 use File;
 use Session;
+use Config;
 class SettingController extends Controller{
     protected $rules = [
         'web_name' => 'required',
@@ -25,7 +26,11 @@ class SettingController extends Controller{
         }
         $setting_web = json_decode($setting->setting_web,true);
         if($request->isMethod('post')){
-            if($request->hasFile('web_avatar')){
+            // $my_groups = Config::get('groups');
+            // if(isset($my_groups[$user->user_group])){
+            //     $request = $request->only($my_groups[$user->user_group]['web']);
+            // }
+            if($request->has('web_avatar')&&$request->hasFile('web_avatar')){
                 $file = $request->file('web_avatar');
                 $extension = $file->extension();
                 $web_avatar = str_slug($request->input('web_name'),'-').'-'.time().'.'.$extension;
@@ -33,7 +38,7 @@ class SettingController extends Controller{
                 $setting_web['web_avatar'] = $web_avatar;
             }
             $input = $request->except(['_token','web_avatar']);
-            if($request->hasFile('web_logo')){
+            if($request->has('web_logo')&&$request->hasFile('web_logo')){
                 $file = $request->file('web_logo');
                 $extension = $file->extension();
                 $web_logo = str_slug($request->input('web_name'),'-').'-'.time().'.'.$extension;
@@ -44,16 +49,16 @@ class SettingController extends Controller{
             foreach ($input as $key => $value) {
                 $setting_web[$key] = $value;
             }
+
+
             $setting->setting_web = json_encode($setting_web);
             $setting->save();
-            Session::flash('msg-success','Cập nhật thành công.');
+            Session::flash('success','Cập nhật thành công.');
             return back();
         }else{
             $data['request'] = $request;
             $data['setting'] = $setting;
-            $data['menu'] = 'menu.menuUser'; 
-            $data['blade'] = 'user.setting.web';
-            return view('layout.admin',['data'=>$data]);
+            return view('user.setting.web',['data'=>$data]);
         }
     }
 }

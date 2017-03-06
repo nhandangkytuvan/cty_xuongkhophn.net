@@ -1,3 +1,8 @@
+@extends('layout.user')
+@section('menu')
+    @include('menu.menuUser')
+@endsection('menu')
+@section('content')
 <div style="margin-bottom: 10px;">
     <form action="{{ url('user/post/index') }}" class="form-inline">
         <input type="hidden" name="view" value="{{ $data['request']->input('view') }}">
@@ -98,4 +103,5 @@
         @endforeach
     </table>
 </div>
+@endsection('content')
 

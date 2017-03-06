@@ -6,11 +6,11 @@
     <div class="panel-collapse collapse in" id="menuOrder1"> 
         <ul class="list-group">
             <li class="list-group-item">
-                <a href="{{ url('user/create') }}">
+                <a href="{{ url('user/user/create') }}">
                 <i class="fa fa-user" aria-hidden="true"></i> Thêm user</a>
             </li>
             <li class="list-group-item">
-                <a href="{{ url('user/index') }}">
+                <a href="{{ url('user/user/index') }}">
                 <i class="glyphicon glyphicon-sort-by-alphabet"></i> Danh sách user</a>
             </li>
             <li class="list-group-item" style="border-top: 1px solid #ddd;">
@@ -34,7 +34,7 @@
             <li class="list-group-item"><a href="{{ url('user/post/index?view=icon') }}"><i class="glyphicon glyphicon-sort-by-alphabet"></i> Danh sách bài viết</a></li>
             <li class="list-group-item"><a href="{{ url('user/media/create') }}"><i class="glyphicon glyphicon-send"></i> Gửi ảnh</a></li>
             <li class="list-group-item"><a href="{{ url('user/media/index?view=icon') }}"><i class="glyphicon glyphicon-picture"></i> Thư viện ảnh</a></li>
-            <li class="list-group-item"><a href="{{ url('user/edit') }}"><i class="glyphicon glyphicon-user"></i> Sửa tài khoản</a></li>
+            <li class="list-group-item"><a href="{{ url('user/user/edit') }}"><i class="glyphicon glyphicon-user"></i> Sửa tài khoản</a></li>
         </ul>
     </div>
 </div>
@@ -51,3 +51,4 @@
         </ul>
     </div> 
 </div> 
+<h1><button class="btn-block btn btn-danger">www.xuongkhophn.net</button></h1>

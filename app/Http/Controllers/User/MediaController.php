@@ -45,18 +45,16 @@ class MediaController extends Controller{
             $media->media_file = $media_file;
 
             if($media->save()){
-                Session::flash('msg-success','Upload ảnh thành công.');
+                Session::flash('success','Upload ảnh thành công.');
                 return redirect('user/media/edit/'.$media->id);
             }else{
-                Session::flash('msg-error','Upload ảnh lỗi hỏi trường.');
+                Session::flash('error','Upload ảnh lỗi hỏi trường.');
                 return back();
             }
         }else{
             $data['user'] = $user;
             $data['terms'] = $terms;
-            $data['menu'] = 'menu.menuUser'; 
-            $data['blade'] = 'user.media.create';
-            return view('layout.admin',['data'=>$data]); 
+            return view('user.media.create',['data'=>$data]); 
         }
     }
     public function edit($media_id,Request $request){
@@ -65,26 +63,24 @@ class MediaController extends Controller{
         $media = Media::find($media_id);
         if($request->isMethod('post')){
             if (Gate::forUser($user)->denies('edit-media', $media)) {
-                Session::flash('msg-error','Ảnh không phải của bạn.');
+                Session::flash('error','Ảnh không phải của bạn.');
                 return back();
             }
             $this->validate($request,$this->rules_edit,$this->messages_edit);
             $media->media_name = $request->input('media_name');
             $media->media_alias = str_slug($request->input('media_name'),'-');
             if($media->save()){
-                Session::flash('msg-success','Sửa thông tin ảnh thành công.');
+                Session::flash('success','Sửa thông tin ảnh thành công.');
                 return redirect('user/media/edit/'.$media->id);
             }else{
-                Session::flash('msg-error','Sửa thông tin ảnh lỗi hỏi trường');
+                Session::flash('error','Sửa thông tin ảnh lỗi hỏi trường');
                 return back();
             }
         }else{
             $data['user'] = $user;
         	$data['media'] = $media;
             $data['terms'] = $terms;
-            $data['menu'] = 'menu.menuUser'; 
-            $data['blade'] = 'user.media.edit';
-            return view('layout.admin',['data'=>$data]); 
+            return view('user.media.edit',['data'=>$data]); 
         }
     }
     public function index(Request $request){
@@ -118,36 +114,33 @@ class MediaController extends Controller{
         $data['terms'] = $terms;
         $data['menu'] = 'menu.menuUser'; 
         if($request->input('view')=='list'){
-            $data['blade'] = 'user.media.indexList';
+            return view('user.media.indexList',['data'=>$data]);
         }elseif($request->input('view')=='icon'){
-            $data['blade'] = 'user.media.indexIcon';
+            return view('user.media.indexIcon',['data'=>$data]);
         }else{
-            $data['blade'] = 'user.media.indexThumbnail';
+            return view('user.media.indexThumbnail',['data'=>$data]);
         }
-        return view('layout.admin',['data'=>$data]);
     }
     public function delete($media_id,Request $request){
         $user = Session::get('user');
         $media = Media::find($media_id);
         if($request->isMethod('post')){
             if (Gate::forUser($user)->denies('delete-media', $media)) {
-                Session::flash('msg-error','Ảnh không phải của bạn.');
+                Session::flash('error','Ảnh không phải của bạn.');
                 return back();
             }
             if($media->delete()){
-                Session::flash('msg-success','delete > success.');
+                Session::flash('success','Xóa thành công.');
                 File::delete(public_path().'/img/'.$media->media_file);
                 return redirect('user/media/index');
             }else{
-                Session::flash('msg-error','Xóa ảnh thành công.');
+                Session::flash('error','Xóa ảnh thành công.');
                 return back();
             }
         }else{
-            Session::flash('msg-info','Nếu chắc ảnh không thuộc bài viết nào thì hẵng xóa đi. Còn không thì đừng xóa.');
+            Session::flash('info','Nếu chắc ảnh không thuộc bài viết nào thì hẵng xóa đi. Còn không thì đừng xóa.');
             $data['media'] = $media;
-            $data['menu'] = 'menu.menuUser'; 
-            $data['blade'] = 'user.media.delete';
-            return view('layout.admin',['data'=>$data]); 
+            return view('user.media.delete',['data'=>$data]); 
         }
     }
 }

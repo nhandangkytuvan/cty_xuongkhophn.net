@@ -4,6 +4,6 @@
 		@if(isset($setting_web['web_logo']))
 		<p><img src="{{ asset('public/img/'.$setting_web['web_logo']) }}" class="img-responsive center-block"></p>
 		@endif
-		<h4 class="text-center">xuongkhophn.net</h4>
+		<h1><button class="btn-block btn btn-danger">www.xuongkhophn.net</button></h1>
 	</div>
 </div>

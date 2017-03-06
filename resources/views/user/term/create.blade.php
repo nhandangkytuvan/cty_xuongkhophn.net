@@ -1,3 +1,8 @@
+@extends('layout.user')
+@section('menu')
+    @include('menu.menuUser')
+@endsection('menu')
+@section('content')
 <form method="post"  enctype="multipart/form-data">
     {{ csrf_field() }}
     <div class="panel panel-default">
@@ -48,3 +53,4 @@
         </div>
     </div>
 </form>
+@endsection('content')

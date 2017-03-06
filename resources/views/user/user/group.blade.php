@@ -1,3 +1,8 @@
+@extends('layout.user')
+@section('menu')
+    @include('menu.menuUser')
+@endsection('menu')
+@section('content')
 <div class="panel panel-default">
     <div class="panel-heading text-center">
         Chỉnh sửa nhóm
@@ -47,12 +52,12 @@
                     </a>
                     <ul class="dropdown-menu" style="border-radius: 0;left: auto;right: 0;">
                         <li>
-                            <a href="{{ url('user/block/'.$data['user']->id) }}">
+                            <a href="{{ url('user/user/block/'.$data['user']->id) }}">
                                 <span class="glyphicon glyphicon-lock"></span> Khóa user
                             </a> 
                         </li>
                         <li>
-                            <a href="{{ url('user/delete/'.$data['user']->id) }}">
+                            <a href="{{ url('user/user/delete/'.$data['user']->id) }}">
                                 <span class="glyphicon glyphicon-trash"></span> Xóa user
                             </a> 
                         </li> 
@@ -62,3 +67,4 @@
         </div> 
     </div>
 </div>
+@endsection('content')

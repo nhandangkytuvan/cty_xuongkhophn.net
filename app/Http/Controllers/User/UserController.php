@@ -19,14 +19,6 @@ class UserController extends Controller{
         'password' => 'required|min:6|confirmed',
         'password_confirmation' => 'required|min:6',
     ];
-    protected $messages_login = [
-	    'username.required' => 'Chúng tôi cần biết username của bạn.',
-	    'password.required' => 'Chúng tôi cần biết password của bạn.',
-	];
-	protected $rules_login = [
-        'username' => 'required|max:255',
-        'password' => 'required|min:6',
-    ];
     protected $rules_edit = [
     	'user_name' => 'required',
     	'user_email' => 'required|email',
@@ -51,51 +43,22 @@ class UserController extends Controller{
 			$user->password = Hash::make($request->input('password'));
 			$user->user_group = $request->input('user_group');
 			if($user->save()){
-				Session::flash('msg-success','Đăng ký thành công.');
-				return redirect('user/index');
+				Session::flash('success','Đăng ký thành công.');
+				return redirect('user/user/index');
 			}else{
-				Session::flash('msg-error','Đăng ký gặp lỗi.');
+				Session::flash('error','Đăng ký gặp lỗi.');
 				return back();
 			}
 		}else{
-			$data['blade'] ='user.create';
-			$data['menu'] ='menu.menuUser';
-			return view('layout.admin',['data'=>$data]);
-		}
-	}
-	public function login(Request $request){
-		$setting = Setting::first();
-		if(Session::get('user')){
-			return redirect('user/edit');
-		}
-		if ($request->isMethod('post')) {
-			$this->validate($request,$this->rules_login,$this->messages_login);
-			$user = User::where('username',$request->input('username'))->first();
-			if($user){
-				if(Hash::check($request->input('password'),$user->password)){
-	                Session::put('user', $user);
-	                return redirect('user/post/create');
-	            }else{
-	            	Session::flash('msg-error','Passowrd không đúng.');
-					return back();
-	            }
-			}else{
-				Session::flash('msg-error','Username không đúng.');
-				return back();
-			}
-		}else{
-			$data['setting'] =$setting;
-			$data['blade'] ='user.login';
-			$data['menu'] ='menu.menuHome';
-			return view('layout.admin',['data'=>$data]);
+			return view('user.user.create');
 		}
 	}
 	public function logout(Request $request){
 		Session::flush();
-		Session::flash('msg-info','Hẹn gặp lại.');
+		Session::flash('info','Hẹn gặp lại.');
 		return redirect('/');
 	}
-	public function forget(Request $request){
+	public function password(Request $request){
 		$user = Session::get('user');
 		if ($request->isMethod('post')) {
 			$this->validate($request,$this->rules_forget,$this->messages_forget);
@@ -103,10 +66,10 @@ class UserController extends Controller{
 				$user->password = Hash::make($request->input('password_new'));
 				$user->save();
 				Session::flush();
-				Session::flash('msg-info','Đăng nhập lại.');
-				return redirect('user/login');
+				Session::flash('info','Đăng nhập lại.');
+				return redirect('web/user/login');
 			}else{
-				Session::flash('msg-info','Password cũ không đúng.');
+				Session::flash('info','Password cũ không đúng.');
 				return back();
 			}
 		}else{
@@ -127,13 +90,11 @@ class UserController extends Controller{
                 $user->user_avatar = $user_avatar;
             }
             $user->save();
-            Session::flash('msg-success','Sửa thông tin thành công.');
+            Session::flash('success','Sửa thông tin thành công.');
             return back();
 		}else{
 			$data['user'] = $user;
-			$data['blade'] = 'user.edit';
-			$data['menu'] = 'menu.menuUser';
-			return view('layout.admin',['data'=>$data]);
+			return view('user.user.edit',['data'=>$data]);
 		}
 	}
 	public function index(Request $request){
@@ -147,46 +108,49 @@ class UserController extends Controller{
 		$users = $users->get();
 		$data['users'] = $users;
 		$data['request'] = $request;
-		$data['menu'] = 'menu.menuUser';
-		$data['blade'] = 'user.index';
-		return view('layout.admin',['data'=>$data]);
+		return view('user.user.index',['data'=>$data]);
 	}
-	public function editGroup($user_id,Request $request){
+	public function group($user_id,Request $request){
 		$user = User::find($user_id);
 		if ($request->isMethod('post')) {
 			$user->user_group = $request->input('user_group');
 			if($user->save()){
-				Session::flash('msg-success','Chỉnh sửa thành công.');
-				return redirect('user/index');
+				Session::flash('success','Chỉnh sửa thành công.');
+				return redirect('user/user/index');
 			}else{
-				Session::flash('msg-error','Chỉnh sửa lỗi.');
+				Session::flash('error','Chỉnh sửa lỗi.');
 				return back();
 			}
 		}else{
 			$data['user'] = $user;
-			$data['blade'] ='user.editGroup';
-			$data['menu'] ='menu.menuUser';
-			return view('layout.admin',['data'=>$data]);
+			return view('user.user.group',['data'=>$data]);
 		}
 	}
 	public function delete($user_id,Request $request){
 		$user = User::find($user_id);
 		if($request->isMethod('post')){
 			if($user->delete()){
-				Session::flash('msg-success','Xóa user '.$user->username.' thành công.');
-				return redirect('user/index');
+				Session::flash('success','Xóa user '.$user->username.' thành công.');
+				return redirect('user/user/index');
 			}else{
-				Session::flash('msg-error','Xóa user '.$user->username.' gặp lỗi.');
+				Session::flash('error','Xóa user '.$user->username.' gặp lỗi.');
 				return back();
 			}
 		}else{
 			$data['user'] = $user;
-			$data['menu'] = 'menu.menuUser';
-			$data['blade'] = 'user.delete';
-			return view('layout.admin',['data'=>$data]);
+			return view('user.user.delete',['data'=>$data]);
 		}
 	}
 	public function block($user_id,Request $request){
-		
+		$user = User::find($user_id);
+		if($request->isMethod('post')){
+			$user->user_block = 1;
+			$user->save();
+			Session::flash('success','Khóa thành công.');
+			return redirect('user/user/index');
+		}else{
+			$data['user'] = $user;
+			return view('user.user.block',['data'=>$data]);
+		}
 	}
 }

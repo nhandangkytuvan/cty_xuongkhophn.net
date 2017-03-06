@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Pham Van Truong</title>
+    <title>168 - Quản trị</title>
     <link rel="stylesheet" href="{{ asset('public/css/global/bootstrap/css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('public/css/global/font-awesome/css/font-awesome.css') }}">
     <link rel="stylesheet" href="{{ asset('public/css/admin/admin-checkbox.css') }}">   
@@ -46,7 +46,7 @@
                             <ul class="nav navbar-nav navbar-right">
                                 @if(Session::get('user'))
                                     <li>
-                                        <a href="{{ url('user/edit') }}">
+                                        <a href="{{ url('user/user/edit') }}">
                                         @if(Session::get('user')->user_avatar)   
                                             <img src="{{ asset('public/img/'.Session::get('user')->user_avatar) }}" 
                                             style="max-width: 30px;max-height: 30px;position: absolute;top:10px;left: -10%;" class="img-circle center-block">
@@ -62,7 +62,7 @@
                                         <a href="{{ url('user/post/create') }}"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> Viết bài</a>
                                     </li>
                                     <li>
-                                        <a href="{{ url('user/logout') }}"><i class="fa fa-sign-out"></i> Đăng xuất</a>
+                                        <a href="{{ url('user/user/logout') }}"><i class="fa fa-sign-out"></i> Đăng xuất</a>
                                     </li>
                                 @else
                                 @endif
@@ -84,22 +84,22 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-9">
-                    @if(Session::has('msg-success'))
+                    @if(Session::has('success'))
                         <div class="alert alert-success">
                             <span class="glyphicon glyphicon-check"></span> 
-                            {!! Session::get('msg-success') !!}
+                            {!! Session::get('success') !!}
                         </div>
                     @endif
-                    @if(Session::has('msg-error'))
+                    @if(Session::has('error'))
                         <div class="alert alert-danger">
                             <span class="glyphicon glyphicon-warning-sign"></span>
-                            {!! Session::get('msg-error') !!}
+                            {!! Session::get('error') !!}
                         </div>
                     @endif
-                    @if(Session::has('msg-info'))
+                    @if(Session::has('info'))
                         <div class="alert alert-info">
                             <span class="glyphicon glyphicon-question-sign"></span>
-                            {!! Session::get('msg-info') !!}
+                            {!! Session::get('info') !!}
                         </div>
                     @endif
                     @if (count($errors) > 0)

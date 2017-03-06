@@ -1,3 +1,8 @@
+@extends('layout.user')
+@section('menu')
+    @include('menu.menuHome')
+@endsection('menu')
+@section('content')
 <div class="panel panel-default">
     <div class="panel-heading text-center">
         Đăng nhập
@@ -28,3 +33,4 @@
         </div>
     </div>
 </div>
+@endsection('content')

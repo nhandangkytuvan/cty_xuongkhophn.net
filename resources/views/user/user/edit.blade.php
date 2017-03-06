@@ -1,3 +1,8 @@
+@extends('layout.user')
+@section('menu')
+    @include('menu.menuUser')
+@endsection('menu')
+@section('content')
 <div class="panel panel-default">
     <div class="panel-heading text-center">
         Sửa tài khoản
@@ -46,7 +51,7 @@
                         </div>    
                     </form>
                     <hr>
-                    <form class="form-horizontal" action="{{ url('user/forget') }}" method="post" enctype="multipart/form-data">
+                    <form class="form-horizontal" action="{{ url('user/user/password') }}" method="post" enctype="multipart/form-data">
                         {{ csrf_field() }}
                         <div class="form-group">
                             <label class="control-label">Password cũ</label>
@@ -84,3 +89,4 @@
         </div>
     </div>
 </div>
+@endsection('content')

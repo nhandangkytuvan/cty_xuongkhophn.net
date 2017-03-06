@@ -5,7 +5,8 @@ use Closure;
 use App\User;
 use Session;
 use Response;
-class CheckLogin
+use Config;
+class CheckUser
 {
     /**
      * Handle an incoming request.
@@ -23,10 +24,17 @@ class CheckLogin
                 $response->header('Content-Type', 'application/json');
                 return $response;
             }else{
-                Session::flash('msg-info','Thông báo: Bạn chưa đăng nhập !');
+                Session::flash('error','Thông báo: Bạn chưa đăng nhập !');
                 return back();
             }
         }
+        //if(Session::get('user')->user_group=='bien-tap'){
+            // $my_groups = Config::get('groups');
+            // if(isset($my_groups[$user->user_group])){
+            //     $request->only($my_groups[$user->user_group]['web']);
+            //     $request->only($my_groups[$user->user_group]['term']);
+            // }
+        //}
         return $next($request);
     }
 }

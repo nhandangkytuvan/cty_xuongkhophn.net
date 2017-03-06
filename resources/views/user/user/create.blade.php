@@ -1,3 +1,8 @@
+@extends('layout.user')
+@section('menu')
+    @include('menu.menuUser')
+@endsection('menu')
+@section('content')
 <div class="panel panel-default">
     <div class="panel-heading text-center">
         Tạo user
@@ -68,3 +73,4 @@
         </div>
     </div>
 </div>
+@endsection('content')

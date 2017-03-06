@@ -1,3 +1,8 @@
+@extends('layout.user')
+@section('menu')
+    @include('menu.menuUser')
+@endsection('menu')
+@section('content')
 <form method="post"  enctype="multipart/form-data">
     {{ csrf_field() }}
     @php 
@@ -56,3 +61,4 @@
         </div>
     </div>
 </form>
+@endsection('content')

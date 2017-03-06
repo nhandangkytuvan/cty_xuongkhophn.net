@@ -46,18 +46,16 @@ class PostController extends Controller{
                 $post->post_avatar = $post_avatar;
             }
             if($post->save()){
-                Session::flash('msg-success','Thêm thành công.');
+                Session::flash('success','Thêm thành công.');
                 return redirect('user/post/edit/'.$post->id);
             }else{
-                Session::flash('msg-error','Thêm lỗi.');
+                Session::flash('error','Thêm lỗi.');
                 return back();
             }
         }else{
             $data['user'] = $user;
             $data['terms'] = $terms;
-            $data['menu'] = 'menu.menuUser'; 
-            $data['blade'] = 'user.post.create';
-            return view('layout.admin',['data'=>$data]); 
+            return view('user.post.create',['data'=>$data]); 
         }
     }
     public function edit($post_id,Request $request){
@@ -66,7 +64,7 @@ class PostController extends Controller{
         $post = Post::find($post_id);
         if($request->isMethod('post')){
             if (Gate::forUser($user)->denies('edit-post', $post)) {
-                Session::flash('msg-error','Bài viết không phải của bạn.');
+                Session::flash('error','Bài viết không phải của bạn.');
                 return back();
             }
             $this->validate($request,$this->rules,$this->messages);
@@ -89,19 +87,17 @@ class PostController extends Controller{
                 $post->post_avatar = $post_avatar;
             }
             if($post->save()){
-                Session::flash('msg-success','Sửa thành công.');
+                Session::flash('success','Sửa thành công.');
                 return redirect('user/post/edit/'.$post->id);
             }else{
-                Session::flash('msg-error','Sửa lỗi.');
+                Session::flash('error','Sửa lỗi.');
                 return back();
             }
         }else{
             $data['user'] = $user;
         	$data['post'] = $post;
             $data['terms'] = $terms;
-            $data['menu'] = 'menu.menuUser'; 
-            $data['blade'] = 'user.post.edit';
-            return view('layout.admin',['data'=>$data]); 
+            return view('user.post.edit',['data'=>$data]); 
         }
     }
     public function index(Request $request){
@@ -132,37 +128,34 @@ class PostController extends Controller{
         $data['users'] = $users;
         $data['request'] = $request;
         $data['posts'] = $posts;
-        $data['terms'] = $terms;
-        $data['menu'] = 'menu.menuUser'; 
+        $data['terms'] = $terms; 
         if($request->input('view')=='list'){
-            $data['blade'] = 'user.post.indexList';
+            return view('user.post.indexList',['data'=>$data]);
         }elseif($request->input('view')=='icon'){
-            $data['blade'] = 'user.post.indexIcon';
+            return view('user.post.indexIcon',['data'=>$data]);
         }else{
-            $data['blade'] = 'user.post.indexList';
+            return view('user.post.indexList',['data'=>$data]);
         }
-        return view('layout.admin',['data'=>$data]);
     }
     public function delete($post_id,Request $request){
         $user = Session::get('user');
         $post = Post::find($post_id);
         if($request->isMethod('post')){
             if (Gate::forUser($user)->denies('delete-post', $post)) {
-                Session::flash('msg-error','Bài viết không phải của bạn.');
+                Session::flash('error','Bài viết không phải của bạn.');
                 return back();
             }
             if($post->delete()){
-                Session::flash('msg-success','Xóa thành công.');
+                Session::flash('success','Xóa thành công.');
+                File::delete(public_path().'/img/'.$post->post_avatar);
                 return redirect('user/post/index');
             }else{
-                Session::flash('msg-error','Xóa lỗi.');
+                Session::flash('error','Xóa lỗi.');
                 return back();
             }
         }else{
             $data['post'] = $post;
-            $data['menu'] = 'menu.menuUser'; 
-            $data['blade'] = 'user.post.delete';
-            return view('layout.admin',['data'=>$data]); 
+            return view('user.post.delete',['data'=>$data]); 
         }
     }
 }
