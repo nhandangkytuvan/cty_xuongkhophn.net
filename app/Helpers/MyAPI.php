@@ -16,6 +16,7 @@ class MyAPI {
     }
     public static function getUrlTerm($term_id){
         $term = Term::find($term_id);
+        if($term){
         	return url($term->term_alias.'/'.$term->id);
         }else{
         	return url('/');
