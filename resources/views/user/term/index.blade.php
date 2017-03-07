@@ -49,8 +49,8 @@
         <tr>
             <td>{{ $term->id }}</td>
             <td><a href="{{ url($term->term_alias.'/'.$term->id) }}">{{ $term->term_name }}</a></td>
-            <td>{{ isset($term->parent) ? $term->parent->term_name : '' }}</td>
-            <td>{{ count($term->post) }}</td>
+            <td>{{ $term->parent()->exists() ? $term->parent->term_name : '' }}</td>
+            <td>{{ $term->post()->count() }}</td>
             <td>
                 <div class="clearfix">
                     <div class="pull-right">

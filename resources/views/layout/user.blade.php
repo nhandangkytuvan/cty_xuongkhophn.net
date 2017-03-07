@@ -92,13 +92,13 @@
                     @endif
                     @if(Session::has('error'))
                         <div class="alert alert-danger">
-                            <span class="glyphicon glyphicon-warning-sign"></span>
+                            <span class="glyphicon glyphicon-alert"></span>
                             {!! Session::get('error') !!}
                         </div>
                     @endif
                     @if(Session::has('info'))
                         <div class="alert alert-info">
-                            <span class="glyphicon glyphicon-question-sign"></span>
+                            <span class="fa fa-lightbulb-o"></span>
                             {!! Session::get('info') !!}
                         </div>
                     @endif
@@ -106,7 +106,7 @@
                         <div class="alert alert-danger">
                             <ul style="list-style: none;">
                                 @foreach ($errors->all() as $error)
-                                    <li><span class="glyphicon glyphicon-warning-sign"></span> {{ $error }}</li>
+                                    <li><span class="glyphicon glyphicon-alert"></span> {{ $error }}</li>
                                 @endforeach
                             </ul>
                         </div>
