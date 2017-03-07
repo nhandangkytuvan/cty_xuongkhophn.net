@@ -94,7 +94,7 @@ class MediaController extends Controller{
         if($request->input('term_id')){
             $term_ids = [];
             $term = Term::find($request->input('term_id'));
-            $term_childs = $term->childTerm;
+            $term_childs = $term->children;
             if(count($term_childs)){
                 foreach ($term_childs as $key => $term_child) {
                     $term_ids[] = $term_child->id;
