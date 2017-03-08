@@ -10,7 +10,7 @@
     <meta property="og:site_name" content="xuongkhophn.net">
     <meta property="og:type" content="website">
     @yield('keyword')
-    <link rel="shortcut icon" href="{{ asset('public/img/'.$setting_web['web_avatar']) }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('public/img/'.$setting->web_icon) }}" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="{{ asset('public/css/global/font-awesome/css/font-awesome.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('public/css/global/slick/slick.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('public/css/global/slick/slick-theme.css') }}">

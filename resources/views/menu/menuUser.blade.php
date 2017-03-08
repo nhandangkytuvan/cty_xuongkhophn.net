@@ -45,10 +45,13 @@
     </div> 
     <div class="panel-collapse collapse in" id="menuOrder3"> 
         <ul class="list-group">
-            <li class="list-group-item"><a href="{{ url('user/setting/web') }}">
+            <li class="list-group-item"><a href="{{ url('user/setting/create') }}">
                 <i class="glyphicon glyphicon-home"></i> Web</a>
             </li>
         </ul>
     </div> 
 </div> 
-<h1><button class="btn-block btn btn-danger">www.xuongkhophn.net</button></h1>
+<div>
+    <p><img src="{{ asset('public/img/'.$setting->web_logo) }}" class="img-responsive center-block"></p>
+    <a href="{{ url('/') }}" class="btn-block btn btn-success">www.xuongkhophn.net</a>
+</div>

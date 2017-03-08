@@ -37,5 +37,6 @@ Route::group(['middleware' => ['check-user']], function () {
 	Route::any('user/term/delete/{term_id?}','User\TermController@delete')->middleware('check-admin');
 	Route::any('user/term/index{query?}','User\TermController@index');
 	// setting
-	Route::any('user/setting/web', 'User\SettingController@web')->middleware('check-admin');
+	Route::any('user/setting/create', 'User\SettingController@create')->middleware('check-admin');
+	Route::any('user/setting/edit/{setting_id}', 'User\SettingController@edit')->middleware('check-admin');
 });

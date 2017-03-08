@@ -1,10 +1,9 @@
-@php $setting_web = json_decode($data['setting']->setting_web,true) @endphp
 @extends('layout.desktop')
 @section('title')
-	<title>{{ $data['term']->term_name }} - Khoa xương khớp - Phòng khám Nhân Ái</title>
+	<title>{{ $data['term']->term_name }} - {{ $setting->web_name }}</title>
 @endsection('title')
 @section('keyword')
-<meta property="og:image" content="{{ asset('public/img/'.$setting_web['web_logo']) }}">
+<meta property="og:image" content="{{ asset('public/img/'.$setting->web_logo) }}">
 <meta id="metaDescription" name="description" content="{{ $data['term']->term_name }}">
 <meta id="metaKeywords" name="keywords" content="{{ $data['term']->term_keyword }}">
 @endsection('keyword')

@@ -4,61 +4,69 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Setting;
 use App\User;
-use App\Term;
 use File;
 use Session;
-use Config;
 class SettingController extends Controller{
     protected $rules = [
         'web_name' => 'required',
         'web_description' => 'required',
         'web_keyword' => 'required',
     ];
-    public function web(Request $request){
+    public function create(Request $request){
+        if(Setting::exists()){
+            return redirect('user/setting/edit/1');
+        }
         $user = Session::get('user');
-        if(Setting::first()){
-            $setting = Setting::first();
-        }else{
+        if($request->isMethod('post')){
             $setting = new Setting;
             $setting->user_id = $user->id;
-            $setting->setting_web = json_encode([]);
+            foreach ($setting->column as $key => $value) {
+                if($request->has($value)){
+                    $setting->$value = $request->input($value);
+                }
+            }
+            if($setting->column_avatar){
+                foreach ($setting->column_avatar as $key => $value) {
+                    if($request->hasFile($value)){
+                        $file = $request->file($value);
+                        $file_name = time().'.'.$file->extension();
+                        $file->move(public_path().'/img',$file_name);
+                        $setting->$value = $file_name;
+                    }
+                }
+            }
             $setting->save();
-        }
-        $setting_web = json_decode($setting->setting_web,true);
-        if($request->isMethod('post')){
-            // $my_groups = Config::get('groups');
-            // if(isset($my_groups[$user->user_group])){
-            //     $request = $request->only($my_groups[$user->user_group]['web']);
-            // }
-            if($request->has('web_avatar')&&$request->hasFile('web_avatar')){
-                $file = $request->file('web_avatar');
-                $extension = $file->extension();
-                $web_avatar = str_slug($request->input('web_name'),'-').'-'.time().'.'.$extension;
-                $path = $file->move(public_path().'/img',$web_avatar);
-                $setting_web['web_avatar'] = $web_avatar;
-            }
-            $input = $request->except(['_token','web_avatar']);
-            if($request->has('web_logo')&&$request->hasFile('web_logo')){
-                $file = $request->file('web_logo');
-                $extension = $file->extension();
-                $web_logo = str_slug($request->input('web_name'),'-').'-'.time().'.'.$extension;
-                $path = $file->move(public_path().'/img',$web_logo);
-                $setting_web['web_logo'] = $web_logo;
-            }
-            $input = $request->except(['_token','web_logo']);
-            foreach ($input as $key => $value) {
-                $setting_web[$key] = $value;
-            }
-
-
-            $setting->setting_web = json_encode($setting_web);
-            $setting->save();
-            Session::flash('success','Cập nhật thành công.');
+            Session::flash('success','Create thành công.');
             return back();
         }else{
-            $data['request'] = $request;
+            return view('user.setting.create');
+        }
+    }
+    public function edit($setting_id,Request $request){
+        $user = Session::get('user');
+        $setting = Setting::find($setting_id);
+        if($request->isMethod('post')){
+            foreach ($setting->column as $key => $value) {
+                if($request->has($value)){
+                    $setting->$value = $request->input($value);
+                }
+            }
+            if($setting->column_avatar){
+                foreach ($setting->column_avatar as $key => $value) {
+                    if($request->hasFile($value)){
+                        $file = $request->file($value);
+                        $file_name = time().'.'.$file->extension();
+                        $file->move(public_path().'/img',$file_name);
+                        $setting->$value = $file_name;
+                    }
+                }
+            }
+            $setting->save();
+            Session::flash('success','Edit thành công.');
+            return back();
+        }else{
             $data['setting'] = $setting;
-            return view('user.setting.web',['data'=>$data]);
+            return view('user.setting.edit',['data'=>$data]);
         }
     }
 }

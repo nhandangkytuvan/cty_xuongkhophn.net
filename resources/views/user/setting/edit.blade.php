@@ -5,9 +5,6 @@
 @section('content')
 <form method="post"  enctype="multipart/form-data">
     {{ csrf_field() }}
-    @php 
-    $setting_web = json_decode($data['setting']->setting_web,true);
-    @endphp
     <div class="panel panel-default">
         <div class="panel-heading text-center">Cài đặt trang web</div>
         <div class="panel-body">
@@ -17,13 +14,13 @@
                         <label class="control-label">Favicon</label>
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
-                            <input type="file" class="form-control" name="web_avatar">
+                            <input type="file" class="form-control" name="web_icon">
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    @if(isset($setting_web['web_avatar']))
-                    <img src="{{ asset('public/img/'.$setting_web['web_avatar']) }}" class="img-responsive img-thumbnail center-block">
+                    @if(isset($data['setting']->web_icon))
+                    <img src="{{ asset('public/img/'.$data['setting']->web_icon) }}" class="img-responsive img-thumbnail center-block">
                     @endif
                 </div>
             </div>
@@ -38,22 +35,22 @@
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    @if(isset($setting_web['web_logo']))
-                    <img src="{{ asset('public/img/'.$setting_web['web_logo']) }}" class="img-responsive img-thumbnail center-block">
+                    @if(isset($data['setting']->web_logo))
+                    <img src="{{ asset('public/img/'.$data['setting']->web_logo) }}" class="img-responsive img-thumbnail center-block">
                     @endif
                 </div>
             </div>
             <div class="form-group">
                 <label class="control-label">Tên</label>
-                <input type="text" class="form-control" name="web_name" value="{{ isset($setting_web['web_name']) ? $setting_web['web_name'] : '' }}">
+                <input type="text" class="form-control" name="web_name" value="{{ isset($data['setting']->web_name) ? $data['setting']->web_name : '' }}">
             </div>
             <div class="form-group">
                 <label class="control-label">Mô tả</label>
-                <textarea type="text" class="form-control" name="web_description" rows="5">{{ isset($setting_web['web_description']) ? $setting_web['web_description'] : '' }}</textarea>
+                <textarea type="text" class="form-control autosize" name="web_description">{{ isset($data['setting']->web_description) ? $data['setting']->web_description : '' }}</textarea>
             </div>
             <div class="form-group">
                 <label class="control-label">Keyword</label>
-                <textarea type="text" class="form-control" name="web_keyword" rows="5">{{ isset($setting_web['web_keyword']) ? $setting_web['web_keyword'] : '' }}</textarea>
+                <textarea type="text" class="form-control autosize" name="web_keyword">{{ isset($data['setting']->web_keyword) ? $data['setting']->web_keyword : '' }}</textarea>
             </div>
             <div class="form-group">
                 <button class="btn btn-success" type="submit"><span class="glyphicon glyphicon-bookmark"></span>  Lưu cài đặt</button>

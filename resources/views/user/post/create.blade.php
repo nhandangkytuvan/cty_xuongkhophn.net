@@ -65,7 +65,7 @@
             </div>
             <div class="form-group">
                 <label class="control-label">Tóm tắt</label>
-                <textarea type="text" class="form-control" name="post_description" rows="3">{{ old('post_description') }}</textarea>
+                <textarea type="text" class="form-control autosize" name="post_description">{{ old('post_description') }}</textarea>
             </div>
             <div class="form-group">
                 <label class="control-label">Chi tiết 
@@ -91,7 +91,7 @@
                                 'paste textcolor colorpicker textpattern imagetools toc'
                             ],
                             toolbar1: 'undo redo insert styleselect bold italic alignleft aligncenter alignright alignjustify bullist numlist outdent indent',
-                            toolbar2: 'print preview media forecolor backcolor fontsizeselect link image',
+                            toolbar2: 'print preview media forecolor backcolor fontsizeselect link image code',
                             image_advtab: true,
                             content_css: [
                                 '//www.tinymce.com/css/codepen.min.css'
@@ -103,7 +103,7 @@
             </div>
             <div class="form-group">
                 <label class="control-label">Keyword</label>
-                <textarea type="text" class="form-control" name="post_keyword" rows="3">{{ old('post_keyword') }}</textarea>
+                <textarea type="text" class="form-control autosize" name="post_keyword">{{ old('post_keyword') }}</textarea>
             </div>
             <div class="form-group">
                 <button class="btn btn-success" type="submit"><span class="glyphicon glyphicon-edit"></span>  Thêm bài viết</button>

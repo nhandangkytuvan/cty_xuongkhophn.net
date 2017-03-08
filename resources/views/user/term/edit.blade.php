@@ -41,11 +41,11 @@
             </div>
             <div class="form-group">
                 <label class="control-label">Mô tả</label>
-                <textarea type="text" class="form-control" name="term_description" rows="3">{{ $data['term']->term_description }}</textarea>
+                <textarea type="text" class="form-control autosize" name="term_description">{{ $data['term']->term_description }}</textarea>
             </div>
             <div class="form-group">
                 <label class="control-label">Keyword</label>
-                <textarea type="text" class="form-control" name="term_keyword" rows="5">{{ $data['term']->term_keyword }}</textarea>
+                <textarea type="text" class="form-control autosize" name="term_keyword">{{ $data['term']->term_keyword }}</textarea>
             </div>
             <div class="form-group">
                 <button class="btn btn-success" type="submit"><span class="fa fa-puzzle-piece"></span>  Sửa term</button> 

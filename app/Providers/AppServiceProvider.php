@@ -1,11 +1,8 @@
 <?php
-
 namespace App\Providers;
-
 use Illuminate\Support\ServiceProvider;
-use App\User;
-use App\UserCategory;
-use Session;
+use App\Setting;
+use View;
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -14,6 +11,7 @@ class AppServiceProvider extends ServiceProvider
      * @return void
      */
     public function boot(){
+        View::share('setting',Setting::first());
     }
     /**
      * Register any application services.
