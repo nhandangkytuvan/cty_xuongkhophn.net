@@ -59,6 +59,9 @@
             @endforeach
         </div>
     </div>
+    <div class="panel-footer">
+        {{ $data['medias']->appends(['view' => $data['request']->input('view')])->links() }}
+    </div>
 </div>
 @endsection('content')
 

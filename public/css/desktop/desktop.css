@@ -321,9 +321,8 @@ a{text-decoration: none;}
 .pagination > .disabled > a,
 .pagination > .disabled > a:hover,
 .pagination > .disabled > a:focus {
-  color: #fff;
-  background-color: #a54228;
-  border-color: #a54228;
+  background-color: #ffffff;
+  border-color: #dddddd;
   cursor: not-allowed;
 }
 .pagination-lg > li > a,
@@ -362,7 +361,7 @@ a{text-decoration: none;}
 	margin-right: 5px;
 	display: inline-block;
 }
-.my_pagination ul li a{
+.my_pagination ul li a,.my_pagination ul li span{
 	border-radius: 5px;
 }
 .my_pagination{

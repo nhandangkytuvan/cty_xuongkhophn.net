@@ -102,6 +102,9 @@
         </tr>
         @endforeach
     </table>
+    <div class="panel-footer">
+        {{ $data['posts']->appends(['view' => $data['request']->input('view')])->links() }}
+    </div>
 </div>
 @endsection('content')
 

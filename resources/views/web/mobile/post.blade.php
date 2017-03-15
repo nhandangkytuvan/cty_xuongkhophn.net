@@ -56,7 +56,6 @@
 				@endforeach
 			</ul>
 		</div>
-		<div style="background-color: #f3f3f3;height: 10px;margin: 20px auto; "></div>
 	</div>
 	@endif
 </main>

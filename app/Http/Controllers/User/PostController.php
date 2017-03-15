@@ -123,7 +123,7 @@ class PostController extends Controller{
         if($request->input('user_id')){
             $posts = $posts->where('user_id',$request->input('user_id'));
         }
-        $posts = $posts->get();
+        $posts = $posts->paginate(22);
         $data['user'] = $user;
         $data['users'] = $users;
         $data['request'] = $request;
