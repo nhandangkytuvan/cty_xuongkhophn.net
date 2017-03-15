@@ -38,7 +38,7 @@
 				</div>
 			</div>
 			@php 
-				$posts = $data['term']->post()->paginate(5);
+				$posts = $data['term']->post()->paginate(6);
 			@endphp
 			@foreach($posts as $key => $post)
 			<div class="benhnormal" {{ $key==0 ? 'style="border-top: none;padding-top: 0px;"' : '' }}>

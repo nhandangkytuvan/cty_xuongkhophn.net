@@ -3,6 +3,7 @@ h1.post-name{
 	margin:0px auto;
 	padding:10px;
 	margin-top: 20px;
+    font-size: 16px;
 }
 div.post-detail{
 	padding:10px;
@@ -59,6 +60,7 @@ div.post-detail ul,div.post-detail ol{
     font-size: 15px;
     margin:10px auto;
     color: #2fadbd;
+    text-transform: uppercase;
 }
 .bai-lien-quan ul{
     list-style: none;
