@@ -41,18 +41,23 @@
 			</div>
 		</div>
 	</div>
+	@php
+		$term = $data['post']->term;
+		$posts = $term->post()->where('id','<>',$data['post']->id)->limit(5)->get();
+	@endphp
+	@if(count($posts)>0)
 	<div class="container">
 		<div style="background-color: #fff;height: 10px;margin: 20px auto; "></div>
 		<div class="bai-lien-quan">
 			<h4>Đọc bài liên quan</h4>
 			<ul>
-				<li class=""><a title="Lorem ipsum dolor sit amet." href="#">Lorem ipsum dolor sit amet.</a></li>
-				<li class=""><a title="Lorem ipsum dolor sit amet." href="#">Lorem ipsum dolor sit amet.</a></li>
-				<li class=""><a title="Lorem ipsum dolor sit amet." href="#">Lorem ipsum dolor sit amet.</a></li>
-				<li class=""><a title="Lorem ipsum dolor sit amet." href="#">Lorem ipsum dolor sit amet.</a></li>
+				@foreach($posts as $post)
+				<li class=""><a title="{{ $post->post_name }}" href="{{ MyAPI::getUrlPost($post->id) }}">{{ $post->post_name }}</a></li>
+				@endforeach
 			</ul>
 		</div>
 		<div style="background-color: #f3f3f3;height: 10px;margin: 20px auto; "></div>
 	</div>
+	@endif
 </main>
 @endsection('content')

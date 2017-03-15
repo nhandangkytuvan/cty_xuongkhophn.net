@@ -40,53 +40,19 @@
 </div>
 <div class="container">
     <div class="lists">
+        @php $posts = $data['term']->post()->paginate(5); @endphp
+        @foreach($posts as $post)
         <div class="post">
-            <h3><a title="" href="#"><i></i> Lorem ipsum dolor sit amet, consectetur.</a></h3>
+            <h3><a title="{{ $post->post_name }}" href="{{ MyAPI::getUrlPost($post->id) }}"><i></i> {{ $post->post_name }}</a></h3>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia consequatur, nihil optio similique nostrum!
-                <a  title=""  href="#">[ Chi tiết ]</a>
+                {{ MyAPI::limitWord($post->post_description,30) }}
+                <a  title="{{ $post->post_name }}"  href="{{ MyAPI::getUrlPost($post->id) }}">[ Chi tiết ]</a>
             </p>
         </div>
-        <div class="post">
-            <h3><a title="" href="#"><i></i> Lorem ipsum dolor sit amet, consectetur.</a></h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia consequatur, nihil optio similique nostrum!
-                <a  title=""  href="#">[ Chi tiết ]</a>
-            </p>
-        </div>
-        <div class="post">
-            <h3><a title="" href="#"><i></i> Lorem ipsum dolor sit amet, consectetur.</a></h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia consequatur, nihil optio similique nostrum!
-                <a  title=""  href="#">[ Chi tiết ]</a>
-            </p>
-        </div>
-        <div class="post">
-            <h3><a title="" href="#"><i></i> Lorem ipsum dolor sit amet, consectetur.</a></h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia consequatur, nihil optio similique nostrum!
-                <a  title=""  href="#">[ Chi tiết ]</a>
-            </p>
-        </div>
+        @endforeach
     </div>
     <nav class="my_pagination">
-        <ul class="pagination">
-            <li>
-                <a href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                </a>
-            </li>
-            <li  class="active"><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li>
-                <a href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                </a>
-            </li>
-        </ul>
+        {{ $posts->links() }}
     </nav>
 </div>
 @endsection('content')

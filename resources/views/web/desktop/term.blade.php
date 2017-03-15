@@ -32,19 +32,23 @@
 						<a href="{{ url($term_child->term_alias.'/'.$term_child->id) }}" class="pull-right">+ Xem thêm</a>
 					</h3>
 					<div class="flex flex3">
+						@php 
+							$posts = $term_child->post()->limit(4)->get();
+						@endphp
+						@if(count($posts)>0)
 						<div class="flex3col1">
-							<a href="">
-								<img src="{{ asset('public/images/desktop/baiviet-1.jpg') }}" class="">
+							<a href="{{ MyAPI::getUrlPost($posts[0]->id) }}">
+								<img src="{{ asset('public/img/'.$posts[0]->post_avatar) }}" class="">
 							</a>
 						</div>
 						<div class="flex3col2">
 							<ul>
-								<li><a href="">Nguyên nhân gây thoái hóa đốt sống cổ</a></li>
-								<li><a href="">Những dấu hiệu thoái hóa đốt sống cổ</a></li>
-								<li><a href="">Thoái hóa đốt sống cổ, ai có nguy cơ này</a></li>
-								<li><a href="">Phương pháp chữa trị bệnh viêm đốt sống cổ bằng liệu pháp hồi phục tuần hoàn kinh lạc</a></li>
+								@foreach($posts as $post)
+								<li><a href="{{ MyAPI::getUrlPost($post->id) }}" title="{{ $post->post_name }}">{{ $post->post_name }}</a></li>
+								@endforeach
 							</ul>
 						</div>
+						@endif
 					</div>
 				</div>
 			</div>

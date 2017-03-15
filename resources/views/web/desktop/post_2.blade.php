@@ -33,7 +33,7 @@
 			<h1 class="post-name">{{ $data['post']->post_name }}</h1>
 			<div class="post-detail">
 				<div style="text-align: center;">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.111079979727!2d105.83896731548593!3d20.988183986020303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac688733b5bd%3A0x8e25d03b43b2f04f!2zNzA5IEdp4bqjaSBQaMOzbmcsIFBoxrDGoW5nIExp4buHdCwgVGhhbmggWHXDom4sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1483496300089" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.1104763899693!2d105.83899591548588!3d20.988208186020344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac6884bcff95%3A0x7f13d52db6cfd04b!2zNzA4IEdp4bqjaSBQaMOzbmcsIEdpw6FwIELDoXQsIFRoYW5oIFh1w6JuLCBIw6AgTuG7mWksIFZpZXRuYW0!5e0!3m2!1sen!2sus!4v1489465724699" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen>
 						
 					</iframe>
 				</div>

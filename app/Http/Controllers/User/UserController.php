@@ -54,7 +54,7 @@ class UserController extends Controller{
 		}
 	}
 	public function logout(Request $request){
-		Session::flush();
+		Session::forget('user');
 		Session::flash('info','Hẹn gặp lại.');
 		return redirect('/');
 	}

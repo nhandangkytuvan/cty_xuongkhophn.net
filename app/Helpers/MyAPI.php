@@ -22,4 +22,8 @@ class MyAPI {
         	return url('/');
         }
     }
+    public static function limitWord($text, $limit) {
+        $words = explode(" ",$text);
+        return implode(" ",array_splice($words,0,$limit));
+    }
 }

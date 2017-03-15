@@ -8,7 +8,7 @@
 		</a>
 	</h3>
 	<p>
-		Khoa xương khớp phòng khám Nhân Ái được thành lập nhiều năm. Là phòng khám chuyên khoa điều trị, phòng tránh, chăm sóc sức khỏe và nghiên cứu là chủ yếu. Phòng khám chuyên chẩn đoán và điều trị các bệnh viêm khớp dạng thấp, viêm khớp do gout, viêm cột sống dính khớp, thoát vị đĩa đệm, viêm khớp vai, viêm khớp xương (tăng sinh xương), là cơ sở chuyên khoa hiện 
+		Khoa xương khớp phòng khám Nhân Việt được thành lập nhiều năm. Là phòng khám chuyên khoa điều trị, phòng tránh, chăm sóc sức khỏe và nghiên cứu là chủ yếu. Phòng khám chuyên chẩn đoán và điều trị các bệnh viêm khớp dạng thấp, viêm khớp do gout, viêm cột sống dính khớp, thoát vị đĩa đệm, viêm khớp vai, viêm khớp xương (tăng sinh xương), là cơ sở chuyên khoa hiện 
 	</p>
 	<div class=" flex flex2 flex-wrap-wrap justify-content-between">
 		<div class="flex2col1">
@@ -96,6 +96,6 @@
 	<h2 style="margin-top: 20px;">Bản đồ
 	</h2>
 	<h3>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14900.444318524198!2d105.841156!3d20.988184!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac688733b5bd%3A0x8e25d03b43b2f04f!2zNzA5IEdp4bqjaSBQaMOzbmcsIFBoxrDGoW5nIExp4buHdCwgVGhhbmggWHXDom4sIEjDoCBO4buZaSwgVmlldG5hbQ!5e0!3m2!1sen!2sus!4v1487326524732" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.1104763899693!2d105.83899591548588!3d20.988208186020344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac6884bcff95%3A0x7f13d52db6cfd04b!2zNzA4IEdp4bqjaSBQaMOzbmcsIEdpw6FwIELDoXQsIFRoYW5oIFh1w6JuLCBIw6AgTuG7mWksIFZpZXRuYW0!5e0!3m2!1sen!2sus!4v1489465724699" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
 	</h3>
 </div>

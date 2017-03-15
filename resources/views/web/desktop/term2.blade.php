@@ -33,7 +33,7 @@
 				<div>
 					<h3 class="clearfix">
 						<a href="#" class="pull-left">{{ $data['term']->term_name }}</a>
-						<a href="" class="pull-right"><i class="fa fa-comments" aria-hidden="true"></i> Tư vấn trực tuyến</a>
+						<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" class="pull-right"><i class="fa fa-comments" aria-hidden="true"></i> Tư vấn trực tuyến</a>
 					</h3>
 				</div>
 			</div>
@@ -50,7 +50,7 @@
 					</div>
 					<div class="flex3col2">
 						<h3><a href="{{ MyAPI::getUrlPost($post->id) }}">{{ $post->post_name }}</a></h3>
-						<p>{{ $post->post_description }}
+						<p>{{ MyAPI::limitWord($post->post_description,40) }}
 						<a href="{{ MyAPI::getUrlPost($post->id) }}">【Xem thêm】</a></p>
 						<p class="clearfix">
 							<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" class="pull-right">Bác sĩ tư vấn <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>

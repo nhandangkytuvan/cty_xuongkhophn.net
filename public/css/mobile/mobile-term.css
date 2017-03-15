@@ -57,6 +57,7 @@ main .lists .post h3 i{
 main .lists .post p{
 	padding:8px;
 	margin-top: 0px;
+	line-height: 20px;
 }
 main .lists .post p a{
 	color: red;
