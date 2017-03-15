@@ -37,81 +37,31 @@
 					</h3>
 				</div>
 			</div>
-			<div class="benhnormal" style="border-top: none;padding-top: 0px;">
+			@php 
+				$posts = $data['term']->post()->paginate(5);
+			@endphp
+			@foreach($posts as $key => $post)
+			<div class="benhnormal" {{ $key==0 ? 'style="border-top: none;padding-top: 0px;"' : '' }}>
 				<div class="flex flex3">
 					<div class="flex3col1">
-						<a href="">
-							<img src="{{ asset('public/images/desktop/baiviet-1.jpg') }}" class="">
+						<a href="{{ MyAPI::getUrlPost($post->id) }}">
+							<img src="{{ asset('public/img/'.$post->post_avatar) }}" class="">
 						</a>
 					</div>
 					<div class="flex3col2">
-						<h3><a href=""></a>Nguyên nhân gây thoái hóa đốt sống cổ</h3>
-						<p>
-							Viêm khớp phong thấp rất dễ tái phát nhiều lần, người bệnh thường có triệu chứng sưng tấy, đau nhức khớp, người bị nặng có thể bị tàn phế, thậm chí ảnh hưởng đến tim. Bệnh này thời kì đầu khó chẩn đoán... <a href="">【Xem thêm】</a>
-						</p>
+						<h3><a href="{{ MyAPI::getUrlPost($post->id) }}">{{ $post->post_name }}</a></h3>
+						<p>{{ $post->post_description }}
+						<a href="{{ MyAPI::getUrlPost($post->id) }}">【Xem thêm】</a></p>
 						<p class="clearfix">
-							<a href="" class="pull-right">Bác sĩ tư vấn <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-							<a href="" class="pull-right">Trả lời trực tuyến <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+							<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" class="pull-right">Bác sĩ tư vấn <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+							<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" class="pull-right">Trả lời trực tuyến <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
 						</p>
 					</div>
 				</div>
 			</div>
-			<div class="benhnormal">
-				<div class="flex flex3">
-					<div class="flex3col1">
-						<a href="">
-							<img src="{{ asset('public/images/desktop/baiviet-1.jpg') }}" class="">
-						</a>
-					</div>
-					<div class="flex3col2">
-						<h3><a href=""></a>Nguyên nhân gây thoái hóa đốt sống cổ</h3>
-						<p>
-							Viêm khớp phong thấp rất dễ tái phát nhiều lần, người bệnh thường có triệu chứng sưng tấy, đau nhức khớp, người bị nặng có thể bị tàn phế, thậm chí ảnh hưởng đến tim. Bệnh này thời kì đầu khó chẩn đoán... <a href="">【Xem thêm】</a>
-						</p>
-						<p class="clearfix">
-							<a href="" class="pull-right">Bác sĩ tư vấn <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-							<a href="" class="pull-right">Trả lời trực tuyến <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="benhnormal">
-				<div class="flex flex3">
-					<div class="flex3col1">
-						<a href="">
-							<img src="{{ asset('public/images/desktop/baiviet-1.jpg') }}" class="">
-						</a>
-					</div>
-					<div class="flex3col2">
-						<h3><a href=""></a>Nguyên nhân gây thoái hóa đốt sống cổ</h3>
-						<p>
-							Viêm khớp phong thấp rất dễ tái phát nhiều lần, người bệnh thường có triệu chứng sưng tấy, đau nhức khớp, người bị nặng có thể bị tàn phế, thậm chí ảnh hưởng đến tim. Bệnh này thời kì đầu khó chẩn đoán... <a href="">【Xem thêm】</a>
-						</p>
-						<p class="clearfix">
-							<a href="" class="pull-right">Bác sĩ tư vấn <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-							<a href="" class="pull-right">Trả lời trực tuyến <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-						</p>
-					</div>
-				</div>
-			</div>
+			@endforeach
 			<div class="my_pagination">
-			  	<ul class="pagination">
-			    	<li>
-			      		<a href="#" aria-label="Previous">
-			        		<span aria-hidden="true">&laquo;</span>
-			      		</a>
-			    	</li>
-			    	<li  class="active"><a href="#">1</a></li>
-			    	<li><a href="#">2</a></li>
-			    	<li><a href="#">3</a></li>
-			    	<li><a href="#">4</a></li>
-			    	<li><a href="#">5</a></li>
-			    	<li>
-			      		<a href="#" aria-label="Next">
-			        		<span aria-hidden="true">&raquo;</span>
-			      		</a>
-			    	</li>
-			  	</ul>
+				{{ $posts->links() }}
 			</div>
 		</div>
 		<div class="flex1col2">
