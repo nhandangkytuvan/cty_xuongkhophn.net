@@ -1,7 +1,7 @@
 <?php 
 if($_SESSION["verify"] != "FileManager4TinyMCE") die('forbidden');
 
-$root = rtrim($_SERVER['DOCUMENT_ROOT'],'/'); // don't touch this configuration
+$root = rtrim($_SERVER['DOCUMENT_ROOT'],'/').'cty_xuongkhophn.net'; // don't touch this configuration
 
 //**********************
 //Path configuration
@@ -16,12 +16,10 @@ $root = rtrim($_SERVER['DOCUMENT_ROOT'],'/'); // don't touch this configuration
 //   |    |   |    |-   |- filemanager
 //   |    |   |    |-   |-      |- thumbs <- folder of thumbs [must have the write permission]
 
-// $base_url="http://localhost"; //url base of site if you want only relative url leave empty
-// $upload_dir = '/tinymce/source/'; // path from base_url to upload base dir
-// $current_path = '../../../../source/'; // relative path from filemanager folder to upload files folder
-$base_url="http://localhost/cty_xuongkhophn.net"; // base url of site (without final /). If you prefer relative urls leave empty
-$upload_dir = '/cty_xuongkhophn.net/public/upload/'; // path from base_url to base of upload folder (with start and final /)
-$current_path = '../../../../../../../upload/'; // relative path from filemanager folder to upload folder (with final /)
+$base_url="http://localhost/cty_xuongkhophn.net"; //url base of site if you want only relative url leave empty
+$upload_dir = '/public/img/'; // path from base_url to upload base dir
+$current_path = '../../../public/img/'; // relative path from filemanager folder to upload files folder
+
 $MaxSizeUpload=100; //Mb
 
 //**********************
