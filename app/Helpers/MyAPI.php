@@ -26,4 +26,10 @@ class MyAPI {
         $words = explode(" ",$text);
         return implode(" ",array_splice($words,0,$limit));
     }
+    public static function getPost($post_id){
+        return Post::find($post_id);
+    }
+    public static function getTerm($term_id){
+        return Term::find($term_id);
+    }
 }

@@ -18,11 +18,6 @@
 				<img src="{{ asset('public/images/desktop/slide-0.png') }}" alt="" class="center-block img-responsive">
 			</a>
 		</div>
-		<div>
-			<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">
-				<img src="{{ asset('public/images/desktop/slide-1.png') }}" alt="" class="center-block img-responsive">
-			</a>
-		</div>
 	</div>
 	<script>
 		$('.slick-home').slick({
@@ -64,27 +59,21 @@
 	</div>
 	<div class="flex flex2 justify-content-between">
 		<div class="flex2col1">
-			<h2></h2>
+			<h2><a href="#"></a></h2>
 			<div class="flex flex3 justify-content-between">
 				<div class="flex3col1">
 					<div>
-						<h4><a href="#">BỆNH GOUT 7 NĂM CỦA ÔNG, ĐÃ ĐƯỢC HỒI PHỤC TẠI PHÒNG KHÁM ĐA KHOA NHÂN ÁI</a></h4>
+						<h4><a href="{{ MyAPI::getUrlPost(26) }}">BỆNH GOUT 7 NĂM CỦA ÔNG, ĐÃ ĐƯỢC HỒI PHỤC TẠI PHÒNG KHÁM ĐA KHOA NHÂN ÁI</a></h4>
 						<p>
-							(Thông tin liên quan của bệnh nhân này, đã được 
-							phòng khám đối chiếu kiểm tra nghiêm túc, xác thực 
-							là đúng. Nếu không được chúng tôi đồng ý các đồng 
-							nghiệp và các tổ chức, ...
-							<a href="#">[Xem thêm]</a>
+							7 năm trước đây, bệnh nhân Nguyễn Mạnh Hiến xuất hiện các hiện tượng sưng đỏ, đau ở các khớp ngón tay, ngón chân. Sau khi tới viện kiểm tra, được chẩn đoán là bị gout, ban đầu dùng thuốc bắc để điều trị bệnh...
+							<a href="{{ MyAPI::getUrlPost(26) }}">[Xem thêm]</a>
 						</p>
 					</div>
 					<div>
-						<h4><a href="#">4 NĂM BỊ VIÊM MÀNG HOẠT DỊCH KHỚP GỐI CUỐI CÙNG ĐÃ ĐƯỢC CHỮA KHỎI</a></h4>
+						<h4><a href="{{ MyAPI::getUrlPost(28) }}">4 NĂM BỊ VIÊM MÀNG HOẠT DỊCH KHỚP GỐI CUỐI CÙNG ĐÃ ĐƯỢC CHỮA KHỎI</a></h4>
 						<p>
-							(Thông tin liên quan của bệnh nhân này, đã được 
-							phòng khám đối chiếu kiểm tra nghiêm túc, xác thực 
-							là đúng. Nếu không được chúng tôi đồng ý các đồng 
-							nghiệp và các tổ chức, ...
-							<a href="#">[Xem thêm]</a>
+							Lã Thị Lan 4 năm trước xuất hiện tình trạng bệnh đầu gối bên phải, khi đi bộ thấy có cảm giác bị cọ sát, khi đi lên xuống cầu thang sẽ có cảm giác không ổn lắm, Lan đã đi thăm khám tại bệnh viện địa phương...
+							<a href="{{ MyAPI::getUrlPost(28) }}">[Xem thêm]</a>
 						</p>
 					</div>
 				</div>
@@ -203,120 +192,120 @@
 		<div class="active">
 			<div class="flex flex7 justify-content-center">
 				<div class="flex7col1 text-container-center">
-					<a href="#">Xưng đau cổ tay</a>
+					<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Xưng đau cổ tay</a>
 				</div>
 				<div class="flex7col1 text-container-center">
-					<a href="#">Mệt mỏi</a>
+					<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Mệt mỏi</a>
 				</div>
 				<div class="flex7col1 text-container-center">
-					<a href="#">Giảm cân</a>
+					<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Giảm cân</a>
 				</div>
 				<div class="flex7col1 text-container-center">
-					<a href="#">Khớp biến tính</a>
-				</div>
-			</div>
-		</div>
-		<div>
-			<div class="flex flex7 justify-content-center">
-				<div class="flex7col1 text-container-center">
-					<a href="#">Đau lưng </a>
-				</div>
-				<div class="flex7col1 text-container-center">
-					<a href="#">Không vươn vai được </a>
-				</div>
-				<div class="flex7col1 text-container-center">
-					<a href="#">Chán ăn</a>
-				</div>
-				<div class="flex7col1 text-container-center">
-					<a href="#">Khớp có tiếng cọt kẹt</a>
+					<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Khớp biến tính</a>
 				</div>
 			</div>
 		</div>
 		<div>
 			<div class="flex flex7 justify-content-center">
 				<div class="flex7col1 text-container-center">
-					<a href="#">Khớp đau nhói </a>
+					<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Đau lưng </a>
 				</div>
 				<div class="flex7col1 text-container-center">
-					<a href="#">Đầu ngón chân xưng đau nhức</a>
+					<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Không vươn vai được </a>
 				</div>
 				<div class="flex7col1 text-container-center">
-					<a href="#">Xưng khớp</a>
+					<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Chán ăn</a>
 				</div>
 				<div class="flex7col1 text-container-center">
-					<a href="#">Khớp chân tay nổi cục</a>
-				</div>
-				<div class="flex7col1 text-container-center">
-					<a href="#">Ớn lạnh, sốt</a>
-				</div>
-				<div class="flex7col1 text-container-center">
-					<a href="#">Axit uric quá cao</a>
+					<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Khớp có tiếng cọt kẹt</a>
 				</div>
 			</div>
 		</div>
 		<div>
 			<div class="flex flex7 justify-content-center">
 				<div class="flex7col1 text-container-center">
-					<a href="#">Đau khớp</a>
+					<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Khớp đau nhói </a>
 				</div>
 				<div class="flex7col1 text-container-center">
-					<a href="#">Xưng khớp</a>
+					<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Đầu ngón chân xưng đau nhức</a>
 				</div>
 				<div class="flex7col1 text-container-center">
-					<a href="#">Mệt mỏi</a>
+					<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Xưng khớp</a>
 				</div>
 				<div class="flex7col1 text-container-center">
-					<a href="#">Cử động khó khăn</a>
+					<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Khớp chân tay nổi cục</a>
 				</div>
 				<div class="flex7col1 text-container-center">
-					<a href="#">Ngồi xổm khó chịu</a>
+					<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Ớn lạnh, sốt</a>
 				</div>
 				<div class="flex7col1 text-container-center">
-					<a href="#">Đau khi gặp gió</a>
-				</div>
-			</div>
-		</div>
-		<div>
-			<div class="flex flex7 justify-content-center">
-				<div class="flex7col1 text-container-center">
-					<a href="#">Đau khớp</a>
-				</div>
-				<div class="flex7col1 text-container-center">
-					<a href="#">Xưng khớp</a>
-				</div>
-				<div class="flex7col1 text-container-center">
-					<a href="#">Mệt mỏi</a>
-				</div>
-				<div class="flex7col1 text-container-center">
-					<a href="#">Cử động khó khăn</a>
-				</div>
-				<div class="flex7col1 text-container-center">
-					<a href="#">Ngồi xổm khó chịu</a>
-				</div>
-				<div class="flex7col1 text-container-center">
-					<a href="#">Đau khi gặp gió</a>
+					<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Axit uric quá cao</a>
 				</div>
 			</div>
 		</div>
 		<div>
 			<div class="flex flex7 justify-content-center">
 				<div class="flex7col1 text-container-center">
-					<a href="#">Đau khớp</a>
+					<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Đau khớp</a>
 				</div>
 				<div class="flex7col1 text-container-center">
-					<a href="#">Xưng khớp</a>
+					<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Xưng khớp</a>
 				</div>
 				<div class="flex7col1 text-container-center">
-					<a href="#">Mệt mỏi</a>
+					<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Mệt mỏi</a>
 				</div>
 				<div class="flex7col1 text-container-center">
-					<a href="#">Cử động khó khăn</a>
+					<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Cử động khó khăn</a>
 				</div>
 				<div class="flex7col1 text-container-center">
-					<a href="#">Ngồi xổm khó chịu</a>
+					<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Ngồi xổm khó chịu</a>
 				</div>
 				<div class="flex7col1 text-container-center">
-					<a href="#">Đau khi gặp gió</a>
+					<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Đau khi gặp gió</a>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="flex flex7 justify-content-center">
+				<div class="flex7col1 text-container-center">
+					<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Đau khớp</a>
+				</div>
+				<div class="flex7col1 text-container-center">
+					<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Xưng khớp</a>
+				</div>
+				<div class="flex7col1 text-container-center">
+					<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Mệt mỏi</a>
+				</div>
+				<div class="flex7col1 text-container-center">
+					<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Cử động khó khăn</a>
+				</div>
+				<div class="flex7col1 text-container-center">
+					<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Ngồi xổm khó chịu</a>
+				</div>
+				<div class="flex7col1 text-container-center">
+					<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Đau khi gặp gió</a>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="flex flex7 justify-content-center">
+				<div class="flex7col1 text-container-center">
+					<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Đau khớp</a>
+				</div>
+				<div class="flex7col1 text-container-center">
+					<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Xưng khớp</a>
+				</div>
+				<div class="flex7col1 text-container-center">
+					<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Mệt mỏi</a>
+				</div>
+				<div class="flex7col1 text-container-center">
+					<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Cử động khó khăn</a>
+				</div>
+				<div class="flex7col1 text-container-center">
+					<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Ngồi xổm khó chịu</a>
+				</div>
+				<div class="flex7col1 text-container-center">
+					<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Đau khi gặp gió</a>
 				</div>
 			</div>
 		</div>
@@ -341,40 +330,141 @@
 			<div class="flex8col2">
 				<div class="flex8col2_topbv">
 					<div class="active">
+						@php 
+							$term = MyAPI::getTerm(24);
+							$posts = $term->post()->limit(6)->get();
+						@endphp
+						@if(count($posts))
 						<div>
-							<h3><a href="#">Nguyên nhân bệnh viêm khớp dạng thấp</a></h3>
+							<h3><a href="{{ MyAPI::getUrlPost($posts[0]->id) }}">{{ $posts[0]->post_name }}</a></h3>
 							<p>
-								Số liệu thống kê cho thấy, tỷ lệ mắc bệnh viêm xương khớp ở 
-								con của những người mắc ...>>> <a href="#">[chi tiết]</a>
+								{{ MyAPI::limitWord($posts[0]->post_description,25) }} >>> <a href="{{ MyAPI::getUrlPost($posts[0]->id) }}">[chi tiết]</a>
 							</p>
 						</div>
 						<div>
 							<ul>
-								<li><a href="#"><span>Nguyên nhân</span> Lorem ipsum dolor sit amet</a></li>
+								@php unset($posts[0]) @endphp
+								@foreach($posts as $post)
+								<li><a href="{{ MyAPI::getUrlPost($post->id) }}">{{ $post->post_name }}</a></li>
+								@endforeach
+								<!-- <li><a href="#"><span>Nguyên nhân</span> Lorem ipsum dolor sit amet</a></li>
 								<li><a href="#"><span>Triệu trứng</span> Lorem ipsum dolor sit amet</a></li>
 								<li><a href="#"><span>Nguy hại</span> Lorem ipsum dolor sit amet</a></li>
 								<li><a href="#"><span>Điều trị</span> Lorem ipsum dolor sit amet</a></li>
-								<li><a href="#"><span>Phòng tránh</span> Lorem ipsum dolor sit amet</a></li>
+								<li><a href="#"><span>Phòng tránh</span> Lorem ipsum dolor sit amet</a></li> -->
 							</ul>
 						</div>
+						@endif
 					</div>
 					<div>
+						@php 
+							$term = MyAPI::getTerm(27);
+							$posts = $term->post()->limit(6)->get();
+						@endphp
+						@if(count($posts))
 						<div>
-							<h3><a href="#">Nguyên nhân bệnh viêm xương cột sống dính khớp</a></h3>
+							<h3><a href="{{ MyAPI::getUrlPost($posts[0]->id) }}">{{ $posts[0]->post_name }}</a></h3>
 							<p>
-								Số liệu thống kê cho thấy, tỷ lệ mắc bệnh viêm xương khớp ở 
-								con của những người mắc ...>>> <a href="#">[chi tiết]</a>
+								{{ MyAPI::limitWord($posts[0]->post_description,25) }} >>> <a href="{{ MyAPI::getUrlPost($posts[0]->id) }}">[chi tiết]</a>
 							</p>
 						</div>
 						<div>
 							<ul>
-								<li><a href="#"><span>Nguyên nhân</span> Lorem ipsum dolor sit amet</a></li>
-								<li><a href="#"><span>Triệu trứng</span> Lorem ipsum dolor sit amet</a></li>
-								<li><a href="#"><span>Nguy hại</span> Lorem ipsum dolor sit amet</a></li>
-								<li><a href="#"><span>Điều trị</span> Lorem ipsum dolor sit amet</a></li>
-								<li><a href="#"><span>Phòng tránh</span> Lorem ipsum dolor sit amet</a></li>
+								@php unset($posts[0]) @endphp
+								@foreach($posts as $post)
+								<li><a href="{{ MyAPI::getUrlPost($post->id) }}">{{ $post->post_name }}</a></li>
+								@endforeach
 							</ul>
 						</div>
+						@endif
+					</div>
+					<div>
+						@php 
+							$term = MyAPI::getTerm(26);
+							$posts = $term->post()->limit(6)->get();
+						@endphp
+						@if(count($posts))
+						<div>
+							<h3><a href="{{ MyAPI::getUrlPost($posts[0]->id) }}">{{ $posts[0]->post_name }}</a></h3>
+							<p>
+								{{ MyAPI::limitWord($posts[0]->post_description,25) }} >>> <a href="{{ MyAPI::getUrlPost($posts[0]->id) }}">[chi tiết]</a>
+							</p>
+						</div>
+						<div>
+							<ul>
+								@php unset($posts[0]) @endphp
+								@foreach($posts as $post)
+								<li><a href="{{ MyAPI::getUrlPost($post->id) }}">{{ $post->post_name }}</a></li>
+								@endforeach
+							</ul>
+						</div>
+						@endif
+					</div>
+					<div>
+						@php 
+							$term = MyAPI::getTerm(25);
+							$posts = $term->post()->limit(6)->get();
+						@endphp
+						@if(count($posts))
+						<div>
+							<h3><a href="{{ MyAPI::getUrlPost($posts[0]->id) }}">{{ $posts[0]->post_name }}</a></h3>
+							<p>
+								{{ MyAPI::limitWord($posts[0]->post_description,25) }} >>> <a href="{{ MyAPI::getUrlPost($posts[0]->id) }}">[chi tiết]</a>
+							</p>
+						</div>
+						<div>
+							<ul>
+								@php unset($posts[0]) @endphp
+								@foreach($posts as $post)
+								<li><a href="{{ MyAPI::getUrlPost($post->id) }}">{{ $post->post_name }}</a></li>
+								@endforeach
+							</ul>
+						</div>
+						@endif
+					</div>
+					<div>
+						@php 
+							$term = MyAPI::getTerm(10);
+							$posts = $term->post()->limit(6)->get();
+						@endphp
+						@if(count($posts))
+						<div>
+							<h3><a href="{{ MyAPI::getUrlPost($posts[0]->id) }}">{{ $posts[0]->post_name }}</a></h3>
+							<p>
+								{{ MyAPI::limitWord($posts[0]->post_description,25) }} >>> <a href="{{ MyAPI::getUrlPost($posts[0]->id) }}">[chi tiết]</a>
+							</p>
+						</div>
+						<div>
+							<ul>
+								@php unset($posts[0]) @endphp
+								@foreach($posts as $post)
+								<li><a href="{{ MyAPI::getUrlPost($post->id) }}">{{ $post->post_name }}</a></li>
+								@endforeach
+							</ul>
+						</div>
+						@endif
+					</div>
+					<div>
+						@php 
+							$term = MyAPI::getTerm(4);
+							$posts = $term->post()->limit(6)->get();
+						@endphp
+						@if(count($posts))
+						<div>
+							<h3><a href="{{ MyAPI::getUrlPost($posts[0]->id) }}">{{ $posts[0]->post_name }}</a></h3>
+							<p>
+								{{ MyAPI::limitWord($posts[0]->post_description,25) }} >>> <a href="{{ MyAPI::getUrlPost($posts[0]->id) }}">[chi tiết]</a>
+							</p>
+						</div>
+						<div>
+							<ul>
+								@php unset($posts[0]) @endphp
+								@foreach($posts as $post)
+								<li><a href="{{ MyAPI::getUrlPost($post->id) }}">{{ $post->post_name }}</a></li>
+								@endforeach
+							</ul>
+						</div>
+						@endif
 					</div>
 				</div>
 				<div>

@@ -96,6 +96,6 @@
 	<h2 style="margin-top: 20px;">Bản đồ
 	</h2>
 	<h3>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.1104763899693!2d105.83899591548588!3d20.988208186020344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac6884bcff95%3A0x7f13d52db6cfd04b!2zNzA4IEdp4bqjaSBQaMOzbmcsIEdpw6FwIELDoXQsIFRoYW5oIFh1w6JuLCBIw6AgTuG7mWksIFZpZXRuYW0!5e0!3m2!1sen!2sus!4v1489465724699" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.1104763899693!2d105.83899591548587!3d20.988208186020348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac6884bcff95%3A0x7f13d52db6cfd04b!2zNzA4IEdp4bqjaSBQaMOzbmcsIEdpw6FwIELDoXQsIFRoYW5oIFh1w6JuLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1489652459964" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
 	</h3>
 </div>

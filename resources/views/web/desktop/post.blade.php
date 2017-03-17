@@ -53,9 +53,20 @@
 					</div>
 				</div>
 			</div>
+			@php 
+				$term = $data['post']->term;
+				$posts = $term->post()->where('id','<>',$data['post']->id)->limit(5)->get();
+			@endphp
+			@if(count($posts))
 			<div class="posts-lienquan">
-				
+				<h4>Người bệnh lên quan tâm</h4>
+				<ul>
+					@foreach($posts as $post)
+					<li><a href="{{ MyAPI::getUrlPost($post->id) }}">{{ $post->post_name }}</a></li>
+					@endforeach
+				</ul>
 			</div>
+			@endif
 		</div>
 		<div class="flex1col2">
 			@include('web.desktop.slidebar',['data'=>$data])

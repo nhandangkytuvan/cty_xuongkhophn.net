@@ -32,4 +32,8 @@ $(document).ready(function() {
 	}, function() {
 		
 	});
+
+	$('body a[href^="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en"]').each(function(index, el) {
+		$(this).attr('target', '_blank');		
+	});
 });

@@ -176,7 +176,7 @@
 	margin-top: 15px;
 }
 .home .flex8col2 .flex8col2_topbv >div >div:nth-child(1) p{
-	margin-top: 10px;color: #333333;
+	margin-top: 10px;color: #333333;line-height: 20px;
 }
 .home .flex8col2 .flex8col2_topbv >div >div:nth-child(1) p a{
 	color: #f26522;
@@ -187,10 +187,15 @@
 	padding-bottom: 20px;
 }
 .home .flex8col2 .flex8col2_topbv >div >div:nth-child(2) ul{
-	list-style: none;
+	list-style: square;
+	padding-left: 20px;
+	color: #953b08;
 }
 .home .flex8col2 .flex8col2_topbv >div >div:nth-child(2) ul li{
 	margin-top: 15px;
+}
+.home .flex8col2 .flex8col2_topbv >div >div:nth-child(2) ul li a{
+	color: #000;
 }
 .home .flex8col2 .flex8col2_topbv >div >div:nth-child(2) ul li span{
 	display: inline-block;

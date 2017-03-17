@@ -94,9 +94,9 @@
                             toolbar2: 'print preview media forecolor backcolor fontsizeselect link image code',
                             image_advtab: true,
                             content_css: [
-                                '//www.tinymce.com/css/codepen.min.css'
+                                '{{ asset("public/font/codepen.min.css") }}'
                             ],
-                            imagetools_cors_hosts: ['http://localhost/hethong.com'],
+                            imagetools_cors_hosts: ['//www.xuongkhophn.net'],
                         });
                     });
                 </script>

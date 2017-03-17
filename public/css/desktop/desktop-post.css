@@ -1,9 +1,10 @@
 .post-name{
 	text-align: center;
-	font-size: 18px;
-	font-weight: normal;
+	font-size: 22px;
+	font-weight: bold;
 	margin-bottom: 20px;
 	margin-top: 20px;
+    color: #000;
 }
 .post-detail {
 	line-height: 22px;
@@ -71,4 +72,19 @@
 .post-footer .datkhambenh a.btn-danger {
     background-color: #2982bb;
     border-color: #2982bb;
+}
+.posts-lienquan h4{
+    margin-top: 35px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    display: inline-block;
+    border-bottom: 3px solid #2982bb;
+    padding-bottom: 6px;
+}
+.posts-lienquan ul{
+    list-style: none;
+}
+.posts-lienquan ul li{
+    padding: 10px 0px;
+    border-bottom: 1px dashed #ddd;    
 }

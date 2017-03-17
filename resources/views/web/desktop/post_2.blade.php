@@ -33,7 +33,7 @@
 			<h1 class="post-name">{{ $data['post']->post_name }}</h1>
 			<div class="post-detail">
 				<div style="text-align: center;">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.1104763899693!2d105.83899591548588!3d20.988208186020344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac6884bcff95%3A0x7f13d52db6cfd04b!2zNzA4IEdp4bqjaSBQaMOzbmcsIEdpw6FwIELDoXQsIFRoYW5oIFh1w6JuLCBIw6AgTuG7mWksIFZpZXRuYW0!5e0!3m2!1sen!2sus!4v1489465724699" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.1104763899693!2d105.83899591548587!3d20.988208186020348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac6884bcff95%3A0x7f13d52db6cfd04b!2zNzA4IEdp4bqjaSBQaMOzbmcsIEdpw6FwIELDoXQsIFRoYW5oIFh1w6JuLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1489652459964" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 						
 					</iframe>
 				</div>
@@ -52,7 +52,7 @@
 					</div>
 					<div style="width: 67%;float: right;">
 						<p style="margin-top: 10px;color: #333333;">
-							<span> I.Chỉ dẫn đường đi đến phòng khám Nhân Ái Hà Nội?<br></span>
+							<span> I.Chỉ dẫn đường đi đến phòng khám Nhân Việt Hà Nội?<br></span>
 							<span> 1.Phòng khám cách bến xe Giáp Bát 800m, nằm cùng phía với bến xe, đi về hướng nội thành; đối diện siêu thị Thành Đô.</span>
 						</p>
 					</div>
@@ -64,7 +64,7 @@
 					</div>
 					<div style="width: 67%;float: right;">
 						<p style="margin-top: 10px;color: #333333;">
-							<span> II..Chỉ dẫn đến phòng khám Nhân Ái Hà Nội, nếu đi bằng taxi?<br></span>
+							<span> II..Chỉ dẫn đến phòng khám Nhân Việt Hà Nội, nếu đi bằng taxi?<br></span>
 						</p>
 						<img src="{{ asset('public/images/desktop/diachi-5.gif') }}" style="width: 100%;">
 					</div>
@@ -76,7 +76,7 @@
 					</div>
 					<div style="width: 67%;float: right;">
 						<p style="margin-top: 10px;color: #333333;">
-							<span>III.Chỉ dẫn đường đi đến phòng khám Nhân Ái Hà Nội bằng xe bus?<br></span>
+							<span>III.Chỉ dẫn đường đi đến phòng khám Nhân Việt Hà Nội bằng xe bus?<br></span>
 							<span>Tuyến bus đi qua phòng khám: 03 (A-B), 08, 16 (A,B), 21, 25, 28, 32, 41. Sau đó từ trạm xe bus đi bộ khoảng 200m.</span>
 						</p>
 					</div>
@@ -86,7 +86,7 @@
 					<label for="">Hướng dẫn đặt hẹn trên mạng：</label>
 					<ol style="list-style-type:decimal;">
 						<li>Hãy ghi rõ nội dung đặt hẹn, nếu không thể tự phán đoán nên chọn khám tại khoa nào, có thể để lại tin nhắn, miêu tả rõ tình trạng bệnh của bạn.</li>
-						<li>Phòng khám Nhân Ái Hà Nội sẽ liên hệ với bạn trong 12 tiếng đồng hồ, có thể xác định giúp bạn về thời gian chẩn đoán, khoa khám, bác sỹ cũng như phiếu khám bệnh.</li>
+						<li>Phòng khám Nhân Việt Hà Nội sẽ liên hệ với bạn trong 12 tiếng đồng hồ, có thể xác định giúp bạn về thời gian chẩn đoán, khoa khám, bác sỹ cũng như phiếu khám bệnh.</li>
 						<li>Khi bạn đến phòng khám để thăm khám bệnh, hãy thông báo tên cho y tá ở dưới tầng 1 mã hẹn khám trên mạng. Y tá có thể sắp xếp để bạn có thể được thăm khám trước, tránh tình trạng chờ đợi mất thời gian.</li>
 					</ol>
 				</div>

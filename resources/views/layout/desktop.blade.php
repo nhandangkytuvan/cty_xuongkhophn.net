@@ -22,7 +22,8 @@
 	<script type="text/javascript" src="{{ asset('public/js/global/jquery-1.12.3.min.js') }}"></script>
 	<script type="text/javascript" src="{{ asset('public/js/global/jquery-scrolltofixed-min.js') }}"></script>
 	<script type="text/javascript" src="{{ asset('public/js/global/slick/slick.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('public/js/desktop/index.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('public/js/desktop/right.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('public/js/desktop/swt.js') }}"></script>
 	<script type="text/javascript" src="{{ asset('public/js/desktop/desktop.js') }}"></script>
 	@yield('js')
 </head>
@@ -72,7 +73,7 @@
 											<div class="flex flex5 justify-content-between">
 												<div class="flex5col1">
 													<div class="text-container-center" style="height: 100%;">
-														<a href="{{ MyAPI::getUrlTerm(1) }}">Khoa cột sống</a>
+														Khoa cột sống
 													</div>
 												</div>
 												<div class="flex5col2">
@@ -100,7 +101,7 @@
 											<div class="flex flex5 justify-content-between">
 												<div class="flex5col1">
 													<div class="text-container-center" style="height: 100%;">
-														<a href="{{ MyAPI::getUrlTerm(6) }}">Khoa xương khớp </a>
+														Khoa xương khớp
 													</div>
 												</div>
 												<div class="flex5col2">
@@ -128,7 +129,7 @@
 											<div class="flex flex5 justify-content-between">
 												<div class="flex5col1">
 													<div class="text-container-center" style="height: 100%;">
-														<a href="{{ MyAPI::getUrlTerm(13) }}">Khoa dây thần kinh cột sống</a>
+														Khoa dây thần kinh cột sống
 													</div>
 												</div>
 												<div class="flex5col2">
@@ -158,7 +159,7 @@
 											<div class="flex flex5 justify-content-between">
 												<div class="flex5col1">
 													<div class="text-container-center" style="height: 100%;">
-														<a href="{{ MyAPI::getUrlTerm(20) }}">Ngoại khoa tay chân</a>
+														Ngoại khoa tay chân
 													</div>
 												</div>
 												<div class="flex5col2">
@@ -184,7 +185,7 @@
 											<div class="flex flex5 justify-content-between">
 												<div class="flex5col1">
 													<div class="text-container-center" style="height: 100%;">
-														<a href="{{ MyAPI::getUrlTerm(23) }}">Khoa thấp khớp</a>
+														Khoa thấp khớp
 													</div>
 												</div>
 												<div class="flex5col2">
@@ -243,7 +244,7 @@
 					<h3 style="text-transform: uppercase;">
 						<a href="{{ url('/') }}">
 							<img src="{{ asset('public/images/desktop/logo-footer.png') }}" class="center-block">
-							Phòng khám đa khoa Nhân Ái <br>Hà Nội
+							Phòng khám đa khoa Nhân Việt <br>Hà Nội
 						</a>
 					</h3>
 				</div>
@@ -253,7 +254,7 @@
 						( 8:00 -20:00) bao gồm cả ngày lễ tết 
 					</p>
 					<p>	 
-						Địa chỉ : <a href="{{ MyAPI::getUrlPost(2) }}">709 Giải Phóng - Hoàng Mai - Hà Nội</a>
+						Địa chỉ : <a href="{{ MyAPI::getUrlPost(2) }}">708 Giải Phóng - Hoàng Mai - Hà Nội</a>
 					</p>
 					<p class="phone-footer">
 						Điện thoại liên hệ : <br>
@@ -266,7 +267,7 @@
 				</div>
 				<div class="flex1col3">
 					<h4>Hiệu quả đến từ sự chuyên nghiệp</h4>
-					<h4>Việt Nam . Hà Nội . NHÂN Ái</h4>
+					<h4>Việt Nam . Hà Nội . NHÂN VIỆT</h4>
 				</div>
 			</div>
 		</div>

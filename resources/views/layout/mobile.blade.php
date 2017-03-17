@@ -30,7 +30,7 @@
 			<a href="{{ url('/') }}"><img src="{{ asset('public/images/mobile/header.png') }}" class="center-block img-responsive"></a>
 		</div>
 		<div class="box box2">
-			Phòng khám Nhân Ái chúc bạn sớm khỏi bệnh
+			Phòng khám Nhân Việt chúc bạn sớm khỏi bệnh
 		</div>
 	</header>
 	<menu class="container">
@@ -62,11 +62,6 @@
 					<img src="{{ asset('public/images/mobile/banner0.png') }}" alt="" class="center-block img-responsive">
 				</a>
 			</div>
-			<div>
-				<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">
-					<img src="{{ asset('public/images/mobile/banner.png') }}" alt="" class="center-block img-responsive">
-				</a>
-			</div>
 		</div>
 		<script>
 			$('.slick-home').slick({
@@ -84,14 +79,14 @@
 				<div class="flex1col1">
 					<div class="box">
 						<a href="{{ url('/') }}"><img src="{{ asset('public/images/mobile/footer-logo.png') }}" class="center-block img-responsive"></a>
-						<h2>Phòng khám <br>Đa khoa Nhân Ái Hà Nội</h2>
+						<h2>Phòng khám <br>Đa khoa Nhân Việt Hà Nội</h2>
 					</div>
 				</div>
 				<div class="flex1col2">
 					<div class="box">
 						<p>Thời gian làm việc của phòng khám</p> 
 						<p>( 8:00 - 20:00) bao gồm cả ngày lễ tết</p>  
-						<p><a href="{{ MyAPI::getUrlPost(2) }}">Địa chỉ : 709 Giải Phóng - Hoàng Mai - Hà Nội</a></p> 
+						<p><a href="{{ MyAPI::getUrlPost(2) }}">Địa chỉ : 708 Giải Phóng - Hoàng Mai - Hà Nội</a></p> 
 						<p>Điện thoại liên hệ : </p> 
 						<p style="font-size: 15px;"><a href="tel:0436.241.999">0436.241.999</a> - <a href="tel:0911.501.709">0911.501.709</a></p> 
 						<p><a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">[Tra cứu thông tin về lộ trình ]</a></p> 
