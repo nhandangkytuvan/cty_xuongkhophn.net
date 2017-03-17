@@ -80,23 +80,23 @@
                             menubar: false,
                             statusbar: false,
                             selector: '#post_detail',
-                            font_formats: 'Arial=arial,helvetica,sans-serif;',
-                            theme: 'modern',
-                            fontsize_formats: "8px 9px 10px 11px 12px 13px 14px 15px 16px 18px 20px 22px",
-                            height:600,
+                            theme: "modern",
+                            height: 300,
                             plugins: [
-                                'advlist autolink lists link image charmap print preview hr anchor pagebreak',
-                                'searchreplace wordcount visualblocks visualchars code fullscreen',
-                                'insertdatetime media nonbreaking save table contextmenu directionality',
-                                'paste textcolor colorpicker textpattern imagetools toc'
-                            ],
-                            toolbar1: 'undo redo insert styleselect bold italic alignleft aligncenter alignright alignjustify bullist numlist outdent indent',
-                            toolbar2: 'print preview media forecolor backcolor fontsizeselect link image code',
-                            image_advtab: true,
-                            content_css: [
-                                '{{ asset("public/font/codepen.min.css") }}'
-                            ],
-                            imagetools_cors_hosts: ['//www.xuongkhophn.net'],
+                                 "advlist autolink link image lists charmap print preview hr anchor pagebreak",
+                                 "searchreplace wordcount visualblocks visualchars insertdatetime media nonbreaking spellchecker",
+                                 "table contextmenu directionality emoticons paste textcolor filemanager "
+                           ],
+                            //relative_urls: false,
+
+                            //filemanager_title:"Responsive Filemanager",
+                            //filemanager_crossdomain: true,
+                            //external_filemanager_path:"http://localhost/cty_xuongkhophn.net/tinymce/p lugins/filemanager/",
+                            //external_plugins: { "filemanager" : "http://localhost/cty_xuongkhophn.net/tinymce/plugins/filemanager/plugin.min.js"},
+                          
+                           image_advtab: true,
+                           toolbar1: "undo redo | bold italic underline | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | styleselect",
+                           toolbar2: "filemanager | image | media | link unlink anchor | print preview"
                         });
                     });
                 </script>
