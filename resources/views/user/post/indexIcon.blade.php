@@ -44,6 +44,7 @@
 </div>
 <div class="panel panel-default">
     <div class="panel-heading text-center">
+        <a href="#" class="pull-left"><span class="label label-success">Tổng: {{ $data['posts']->total() }}</span></a>
         Danh sách bài viết
         <a href="{{ url('user/post/index?view=icon') }}" class="pull-right" style="margin-left: 5px;"> <span class="glyphicon glyphicon-th-large"></span> </a>
         <a href="{{ url('user/post/index?view=list') }}" class="pull-right" style="margin-left: 5px;"> <span class="glyphicon glyphicon-th-list"></span> </a>
