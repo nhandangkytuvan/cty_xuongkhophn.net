@@ -57,6 +57,7 @@
             <td>T.thái</td>
             <td>T.giả</td>
             <td>Tổng xem</td>
+            <td>Date</td>
             <td>#</td>
         </tr>
         @foreach($data['posts'] as $key => $post)
@@ -72,6 +73,7 @@
             </td>
             <td>{{ $post->user->user_name }}</td>
             <td>{{ isset($post->view) ? $post->view->view_sum : '' }}</td>
+            <td>{{ date('d/m',strtotime($post->created_at)) }}</td>
             <td>
                 <div class="clearfix">
                     <div class="pull-right">
