@@ -60,7 +60,7 @@
         </div>
     </div>
     <div class="panel-footer">
-        {{ $data['medias']->appends(['view' => $data['request']->input('view')])->links() }}
+        {{ $data['medias']->appends(request()->except('page'))->links() }}
     </div>
 </div>
 @endsection('content')
