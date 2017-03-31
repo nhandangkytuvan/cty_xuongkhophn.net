@@ -88,10 +88,10 @@
                                 'advlist autolink lists link image charmap print preview hr anchor pagebreak',
                                 'searchreplace wordcount visualblocks visualchars code fullscreen',
                                 'insertdatetime media nonbreaking save table contextmenu directionality',
-                                'paste textcolor colorpicker textpattern imagetools toc filemanager'
+                                'paste textcolor colorpicker textpattern imagetools toc'
                             ],
                             toolbar1: 'undo redo insert styleselect bold italic alignleft aligncenter alignright alignjustify bullist numlist outdent indent',
-                            toolbar2: 'filemanager print preview media forecolor backcolor fontsizeselect link image code',
+                            toolbar2: 'print preview media forecolor backcolor fontsizeselect link image code',
                             image_advtab: true,
                             content_css: [
                                 '{{ asset("public/font/codepen.min.css") }}'

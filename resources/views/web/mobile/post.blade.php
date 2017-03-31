@@ -49,7 +49,7 @@
 	<div class="container">
 		<div style="background-color: #fff;height: 10px;margin: 20px auto; "></div>
 		<div class="bai-lien-quan">
-			<h4>Người bệnh lên quan tâm</h4>
+			<h4>Người bệnh nên quan tâm</h4>
 			<ul>
 				@foreach($posts as $post)
 				<li class=""><a title="{{ $post->post_name }}" href="{{ MyAPI::getUrlPost($post->id) }}">{{ $post->post_name }}</a></li>

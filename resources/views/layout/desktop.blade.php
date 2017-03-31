@@ -87,7 +87,7 @@
 											<div class="flex flex6 justify-content-between">
 												<div class="flex6col1">
 													<a href="{{ MyAPI::getUrlTerm(4) }}">Thoát vị đã đệm đốt sống lưng</a>
-													<a href="{{ MyAPI::getUrlTerm(5) }}">Hẹp ống ống</a>
+													<a href="{{ MyAPI::getUrlTerm(5) }}">Hẹp ống sống</a>
 												</div>
 												<div class="flex6col1">
 													<a href="{{ MyAPI::getUrlTerm(2) }}">Bệnh đốt sống cổ</a>

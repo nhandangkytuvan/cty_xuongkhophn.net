@@ -59,7 +59,7 @@
 			@endphp
 			@if(count($posts))
 			<div class="posts-lienquan">
-				<h4>Người bệnh lên quan tâm</h4>
+				<h4>Người bệnh nên quan tâm</h4>
 				<ul>
 					@foreach($posts as $post)
 					<li><a href="{{ MyAPI::getUrlPost($post->id) }}">{{ $post->post_name }}</a></li>

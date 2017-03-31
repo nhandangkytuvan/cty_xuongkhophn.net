@@ -33,18 +33,18 @@ $(function() {
 	str += '</style>';
 	// html
 	str += '<div class="float_container cf" id="footTool">';
-	str += '<div class="ntitle"><img class="icon_swt" src="http://localhost/cty_xuongkhophn.net/public/images/global/chat/icon_swt.png" width="49" height="39"><span></span>TRUNG TÂM TƯ VẤN TRỰC TUYẾN KHOA XƯƠNG KHỚP<img class="close_swt" src="http://localhost/cty_xuongkhophn.net/public/images/global/chat/closeBtn_swt.png" width="30" height="30" ntitle="关闭"></div>';
+	str += '<div class="ntitle"><img class="icon_swt" src="http://xuongkhophn.net/public/images/global/chat/icon_swt.png" width="49" height="39"><span></span>TRUNG TÂM TƯ VẤN TRỰC TUYẾN KHOA XƯƠNG KHỚP<img class="close_swt" src="http://xuongkhophn.net/public/images/global/chat/closeBtn_swt.png" width="30" height="30" ntitle="关闭"></div>';
 	str += '<dl class="cf" id="tools2" style="display: block;">';
-	str += '<dt><img src="http://localhost/cty_xuongkhophn.net/public/images/global/chat/zjtouxiang.jpg"></dt>';
+	str += '<dt><img src="http://xuongkhophn.net/public/images/global/chat/zjtouxiang.jpg"></dt>';
 	str += '<dd>';
 	str += '<div class="time1" id="now1"></div>';
 	str += '<a style="text-decoration: none;" href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">';
-	str += '<div class="box11"><img alt="smile" src="http://localhost/cty_xuongkhophn.net/public/images/global/chat/smile.gif">Chào bạn, hôm nay đến ca trực của tôi, tôi có thể giúp gì được bạn?</div>';
+	str += '<div class="box11"><img alt="smile" src="http://xuongkhophn.net/public/images/global/chat/smile.gif">Chào bạn, hôm nay đến ca trực của tôi, tôi có thể giúp gì được bạn?</div>';
 	str += '</a>';
 	str += '</dd>';
 	str += '</dl>';
 	str += '<dl class="cf" id="tools3">';
-	str += '<dt><img src="http://localhost/cty_xuongkhophn.net/public/images/global/chat/zjtouxiang.jpg"></dt>';
+	str += '<dt><img src="http://xuongkhophn.net/public/images/global/chat/zjtouxiang.jpg"></dt>';
 	str += '<dd>';
 	str += '<div class="time1" id="now2"></div>';
 	str += '<a style="text-decoration: none;" href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">';
