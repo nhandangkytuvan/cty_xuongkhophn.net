@@ -88,3 +88,11 @@
     padding: 10px 0px;
     border-bottom: 1px dashed #ddd;    
 }
+/**/
+.post-footer .datkhambenh >div a:hover{
+    background-color: #7b310a;
+}
+.posts-lienquan ul li a:hover{
+    text-decoration: underline;
+    color: #7b310a;
+}

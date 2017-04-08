@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('public/css/global/font-awesome/css/font-awesome.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('public/css/global/slick/slick.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('public/css/global/slick/slick-theme.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('public/css/global/hover/css/hover.css') }}">
 
 	<link rel="stylesheet" type="text/css" href="{{ asset('public/css/desktop/desktop.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('public/css/desktop/desktop-header.css') }}">
@@ -216,22 +217,22 @@
 					</div>
 				</div>
 				<div class="flex1col1">
-					<h3 class="text-container-center"><a class="text-container-center" href="{{ url('/') }}">Trang chủ</a></h3>
+					<h3 class="text-container-center hvr-fade"><a class="text-container-center" href="{{ url('/') }}">Trang chủ</a></h3>
 				</div>
 				<div class="flex1col1">
-					<h3 class="text-container-center"><a class="text-container-center" href="{{ MyAPI::getUrlPost(3) }}">Giới thiệu <br>phòng khám</a></h3>
+					<h3 class="text-container-center hvr-fade"><a class="text-container-center" href="{{ MyAPI::getUrlPost(3) }}">Giới thiệu <br>phòng khám</a></h3>
 				</div>
 				<div class="flex1col1">
-					<h3 class="text-container-center"><a class="text-container-center" href="{{ MyAPI::getUrlTerm(28) }}">Kỹ thuật <br>chuyên nghiệp</a></h3>
+					<h3 class="text-container-center hvr-fade"><a class="text-container-center" href="{{ MyAPI::getUrlTerm(28) }}">Kỹ thuật <br>chuyên nghiệp</a></h3>
 				</div>
 				<div class="flex1col1">
-					<h3 class="text-container-center"><a class="text-container-center" href="{{ MyAPI::getUrlTerm(29) }}">Trường hợp<br> hồi phục</a></h3>
+					<h3 class="text-container-center hvr-fade"><a class="text-container-center" href="{{ MyAPI::getUrlTerm(29) }}">Trường hợp<br> hồi phục</a></h3>
 				</div>
 				<div class="flex1col1">
-					<h3 class="text-container-center"><a class="text-container-center" href="{{ MyAPI::getUrlPost(2) }}">Địa chỉ <br>phòng khám</a></h3>
+					<h3 class="text-container-center hvr-fade"><a class="text-container-center" href="{{ MyAPI::getUrlPost(2) }}">Địa chỉ <br>phòng khám</a></h3>
 				</div>
 				<div class="flex1col1">
-					<h3 class="text-container-center"><a class="text-container-center" href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Đặt hẹn <br>trực tuyến</a></h3>
+					<h3 class="text-container-center hvr-fade"><a class="text-container-center" href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Đặt hẹn <br>trực tuyến</a></h3>
 				</div>
 			</div>
 		</div>

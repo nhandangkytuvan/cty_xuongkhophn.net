@@ -70,3 +70,18 @@
 .flex1col1 .benhnormal .flex3col2 p.clearfix a:nth-child(1){
 	background-color: #a54228;
 }
+.flex1col1 .benhnormal .flex3col2 h3 a:hover{
+    color: #7b310a;
+    text-decoration: underline;
+}
+.flex1col1 .benhnormal .flex3col2 p a:hover{
+	color: #7b310a;
+    text-decoration: underline;
+}
+.flex1col1 .benhnormal .flex3col2 p.clearfix a:hover{
+	color: #fff;
+	background-color: #016d77;
+}
+.flex1col1 .benhprimary h3 a.pull-right:hover{
+	text-decoration: underline;
+}

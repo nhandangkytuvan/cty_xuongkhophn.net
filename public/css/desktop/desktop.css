@@ -370,3 +370,8 @@ a{text-decoration: none;}
 .my_pagination ul li a:hover{
 
 }
+/**/
+.float_container .sbtn a:hover{
+  border-color: red!important;
+  color: red;
+}

@@ -121,3 +121,8 @@ menu .chidanbenh .menu-items >.menu-item >.item >.khung:after {
 	border-width: 10px;
 	margin-top: -10px;
 }
+/**/
+menu .chidanbenh .menu-items >.menu-item >.item >.khung >.khung-content .flex6col1 a:hover{
+	text-decoration: underline;
+	color: #aa7a00;
+}

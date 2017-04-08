@@ -29,28 +29,28 @@
 <main class="container home">
 	<div class="flex flex1">
 		<div class="flex1col1">
-			<div class="box">
+			<div class="box hvr-float-shadow">
 				<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">
 					Lối tắt để<br>khám bệnh 
 				</a>
 			</div>
 		</div>
 		<div class="flex1col1">
-			<div class="box">
+			<div class="box hvr-float-shadow">
 				<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" style="background-position: -263px 0px;">
 					Nhân công<br>phục vụ 
 				</a>
 			</div>
 		</div>
 		<div class="flex1col1">
-			<div class="box">
+			<div class="box hvr-float-shadow">
 				<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" style="background-position: -538px 0px;">
 					Đặt hẹn<br>qua mạng 
 				</a>
 			</div>
 		</div>
 		<div class="flex1col1">
-			<div class="box">
+			<div class="box hvr-float-shadow">
 				<a href="{{ MyAPI::getUrlPost(2) }}" style="background-position: -801px 0px;">
 					Địa chỉ<br>phòng khám 
 				</a>

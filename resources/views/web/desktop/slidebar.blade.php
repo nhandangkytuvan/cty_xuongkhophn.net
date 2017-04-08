@@ -12,22 +12,22 @@
 	</p>
 	<div class=" flex flex2 flex-wrap-wrap justify-content-between">
 		<div class="flex2col1">
-			<a href="{{ MyAPI::getUrlPost(3) }}" class="bg1 text-container-center">
+			<a href="{{ MyAPI::getUrlPost(3) }}" class="bg1 text-container-center hvr-glow">
 				Giới thiệu<br>phòng khám
 			</a>
 		</div>
 		<div class="flex2col1">
-			<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" class="bg2 text-container-center">
+			<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" class="bg2 text-container-center hvr-glow">
 				Chuyên gia<br>uy tín
 			</a>
 		</div>
 		<div class="flex2col1">
-			<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" class="bg3 text-container-center">
+			<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" class="bg3 text-container-center hvr-glow">
 				Tư vấn<br>trực tuyến
 			</a>
 		</div>
 		<div class="flex2col1">
-			<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" class="bg4 text-container-center">
+			<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" class="bg4 text-container-center hvr-glow">
 				Đặt hẹn
 			</a>
 		</div>
