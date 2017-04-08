@@ -30,6 +30,7 @@ Route::group(['middleware' => ['check-user']], function () {
 	Route::any('user/media/show/{media_id?}','User\MediaController@show');
 	Route::any('user/media/delete/{media_id?}','User\MediaController@delete');
 	Route::any('user/media/index{query?}','User\MediaController@index');
+
 	// term
 	Route::any('user/term/create','User\TermController@create')->middleware('check-admin');
 	Route::any('user/term/edit/{term_id?}','User\TermController@edit')->middleware('check-admin');

@@ -15,11 +15,6 @@
 	<div class="slick-home">
 		<div>
 			<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">
-				<img src="{{ asset('public/images/desktop/slide-0.png') }}" alt="" class="center-block img-responsive">
-			</a>
-		</div>
-		<div>
-			<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">
 				<img src="{{ asset('public/images/desktop/slide-01.png') }}" alt="" class="center-block img-responsive">
 			</a>
 		</div>
