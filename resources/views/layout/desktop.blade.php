@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     @yield('title')
-    <meta name="author" content="xuongkhophn.net">
-    <meta property="og:site_name" content="xuongkhophn.net">
+    <meta name="author" content="{{ url('/') }}">
+    <meta property="og:site_name" content="{{ url('/') }}">
     <meta property="og:type" content="website">
     @yield('keyword')
     <link rel="shortcut icon" href="{{ asset('public/img/'.$setting->web_icon) }}" type="image/x-icon">
@@ -87,12 +87,12 @@
 											</div>
 											<div class="flex flex6 justify-content-between">
 												<div class="flex6col1">
-													<a href="{{ MyAPI::getUrlTerm(4) }}">Thoát vị đã đệm đốt sống lưng</a>
-													<a href="{{ MyAPI::getUrlTerm(5) }}">Hẹp ống sống</a>
+													<a href="{{ MyAPI::getUrlTermID(4) }}">Thoát vị đã đệm đốt sống lưng</a>
+													<a href="{{ MyAPI::getUrlTermID(5) }}">Hẹp ống sống</a>
 												</div>
 												<div class="flex6col1">
-													<a href="{{ MyAPI::getUrlTerm(2) }}">Bệnh đốt sống cổ</a>
-													<a href="{{ MyAPI::getUrlTerm(3) }}">Bệnh đốt sống lưng</a>
+													<a href="{{ MyAPI::getUrlTermID(2) }}">Bệnh đốt sống cổ</a>
+													<a href="{{ MyAPI::getUrlTermID(3) }}">Bệnh đốt sống lưng</a>
 												</div>
 												<div class="flex6col1">
 												</div>
@@ -115,12 +115,12 @@
 											</div>
 											<div class="flex flex6 justify-content-between">
 												<div class="flex6col1">
-													<a href="{{ MyAPI::getUrlTerm(7) }}">Viêm khớp gối </a>
-													<a href="{{ MyAPI::getUrlTerm(8) }}">Viêm quanh khớp vai </a>
+													<a href="{{ MyAPI::getUrlTermID(7) }}">Viêm khớp gối </a>
+													<a href="{{ MyAPI::getUrlTermID(8) }}">Viêm quanh khớp vai </a>
 												</div>
 												<div class="flex6col1">
-													<a href="{{ MyAPI::getUrlTerm(10) }}">Viêm màng bao hoạt dịch</a>
-													<a href="{{ MyAPI::getUrlTerm(11) }}">Hoại tử chỏm xương đùi</a>
+													<a href="{{ MyAPI::getUrlTermID(10) }}">Viêm màng bao hoạt dịch</a>
+													<a href="{{ MyAPI::getUrlTermID(11) }}">Hoại tử chỏm xương đùi</a>
 												</div>
 												<div class="flex6col1">
 												</div>
@@ -143,16 +143,16 @@
 											</div>
 											<div class="flex flex6 justify-content-between">
 												<div class="flex6col1">
-													<a href="{{ MyAPI::getUrlTerm(14) }}">Đau cổ vai lưng chân</a>
-													<a href="{{ MyAPI::getUrlTerm(15) }}">Viêm cơ mạc</a>
+													<a href="{{ MyAPI::getUrlTermID(14) }}">Đau cổ vai lưng chân</a>
+													<a href="{{ MyAPI::getUrlTermID(15) }}">Viêm cơ mạc</a>
 												</div>
 												<div class="flex6col1">
-													<a href="{{ MyAPI::getUrlTerm(16) }}">Đau thần kinh tọa</a>
-													<a href="{{ MyAPI::getUrlTerm(19) }}">Đau gót chân</a>
+													<a href="{{ MyAPI::getUrlTermID(16) }}">Đau thần kinh tọa</a>
+													<a href="{{ MyAPI::getUrlTermID(19) }}">Đau gót chân</a>
 												</div>
 												<div class="flex6col1">
-													<a href="{{ MyAPI::getUrlTerm(17) }}">Chứng loãng xương</a>
-													<a href="{{ MyAPI::getUrlTerm(18) }}">Gai xương</a>
+													<a href="{{ MyAPI::getUrlTermID(17) }}">Chứng loãng xương</a>
+													<a href="{{ MyAPI::getUrlTermID(18) }}">Gai xương</a>
 												</div>
 											</div>
 										</div>
@@ -173,8 +173,8 @@
 											</div>
 											<div class="flex flex6 justify-content-between">
 												<div class="flex6col1">
-													<a href="{{ MyAPI::getUrlTerm(21) }}">Viêm bao gân</a>
-													<a href="{{ MyAPI::getUrlTerm(22) }}">Viêm gân gót chân</a>
+													<a href="{{ MyAPI::getUrlTermID(21) }}">Viêm bao gân</a>
+													<a href="{{ MyAPI::getUrlTermID(22) }}">Viêm gân gót chân</a>
 												</div>
 												<div class="flex6col1">
 												</div>
@@ -199,12 +199,12 @@
 											</div>
 											<div class="flex flex6 justify-content-between">
 												<div class="flex6col1">
-													<a href="{{ MyAPI::getUrlTerm(24) }}">Viêm khớp dạng thấp</a>
-													<a href="{{ MyAPI::getUrlTerm(25) }}">Viêm khớp phong thấp</a>
+													<a href="{{ MyAPI::getUrlTermID(24) }}">Viêm khớp dạng thấp</a>
+													<a href="{{ MyAPI::getUrlTermID(25) }}">Viêm khớp phong thấp</a>
 												</div>
 												<div class="flex6col1">
-													<a href="{{ MyAPI::getUrlTerm(27) }}">Viêm cột sống dính khớp</a>
-													<a href="{{ MyAPI::getUrlTerm(26) }}">Gout</a>
+													<a href="{{ MyAPI::getUrlTermID(27) }}">Viêm cột sống dính khớp</a>
+													<a href="{{ MyAPI::getUrlTermID(26) }}">Gout</a>
 												</div>
 												<div class="flex6col1">
 												</div>
@@ -220,16 +220,16 @@
 					<h3 class="text-container-center hvr-fade"><a class="text-container-center" href="{{ url('/') }}">Trang chủ</a></h3>
 				</div>
 				<div class="flex1col1">
-					<h3 class="text-container-center hvr-fade"><a class="text-container-center" href="{{ MyAPI::getUrlPost(3) }}">Giới thiệu <br>phòng khám</a></h3>
+					<h3 class="text-container-center hvr-fade"><a class="text-container-center" href="{{ MyAPI::getUrlPostID(3) }}">Giới thiệu <br>phòng khám</a></h3>
 				</div>
 				<div class="flex1col1">
-					<h3 class="text-container-center hvr-fade"><a class="text-container-center" href="{{ MyAPI::getUrlTerm(28) }}">Kỹ thuật <br>chuyên nghiệp</a></h3>
+					<h3 class="text-container-center hvr-fade"><a class="text-container-center" href="{{ MyAPI::getUrlTermID(28) }}">Kỹ thuật <br>chuyên nghiệp</a></h3>
 				</div>
 				<div class="flex1col1">
-					<h3 class="text-container-center hvr-fade"><a class="text-container-center" href="{{ MyAPI::getUrlTerm(29) }}">Trường hợp<br> hồi phục</a></h3>
+					<h3 class="text-container-center hvr-fade"><a class="text-container-center" href="{{ MyAPI::getUrlTermID(29) }}">Trường hợp<br> hồi phục</a></h3>
 				</div>
 				<div class="flex1col1">
-					<h3 class="text-container-center hvr-fade"><a class="text-container-center" href="{{ MyAPI::getUrlPost(2) }}">Địa chỉ <br>phòng khám</a></h3>
+					<h3 class="text-container-center hvr-fade"><a class="text-container-center" href="{{ MyAPI::getUrlPostID(2) }}">Địa chỉ <br>phòng khám</a></h3>
 				</div>
 				<div class="flex1col1">
 					<h3 class="text-container-center hvr-fade"><a class="text-container-center" href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Đặt hẹn <br>trực tuyến</a></h3>
@@ -255,7 +255,7 @@
 						( 8:00 -20:00) bao gồm cả ngày lễ tết 
 					</p>
 					<p>	 
-						Địa chỉ : <a href="{{ MyAPI::getUrlPost(2) }}">708 Giải Phóng - Hoàng Mai - Hà Nội</a>
+						Địa chỉ : <a href="{{ MyAPI::getUrlPostID(2) }}">708 Giải Phóng - Hoàng Mai - Hà Nội</a>
 					</p>
 					<p class="phone-footer">
 						Điện thoại liên hệ : <br>

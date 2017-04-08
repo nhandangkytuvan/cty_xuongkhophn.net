@@ -51,7 +51,7 @@
 		</div>
 		<div class="flex1col1">
 			<div class="box hvr-float-shadow">
-				<a href="{{ MyAPI::getUrlPost(2) }}" style="background-position: -801px 0px;">
+				<a href="{{ MyAPI::getUrlPostID(2) }}" style="background-position: -801px 0px;">
 					Địa chỉ<br>phòng khám 
 				</a>
 			</div>
@@ -63,17 +63,17 @@
 			<div class="flex flex3 justify-content-between">
 				<div class="flex3col1">
 					<div>
-						<h4><a href="{{ MyAPI::getUrlPost(26) }}">BỆNH GOUT 7 NĂM CỦA ÔNG, ĐÃ ĐƯỢC HỒI PHỤC TẠI PHÒNG KHÁM ĐA KHOA NHÂN ÁI</a></h4>
+						<h4><a href="{{ MyAPI::getUrlPostID(26) }}">BỆNH GOUT 7 NĂM CỦA ÔNG, ĐÃ ĐƯỢC HỒI PHỤC TẠI PHÒNG KHÁM ĐA KHOA NHÂN ÁI</a></h4>
 						<p>
 							7 năm trước đây, bệnh nhân Nguyễn Mạnh Hiến xuất hiện các hiện tượng sưng đỏ, đau ở các khớp ngón tay, ngón chân. Sau khi tới viện kiểm tra, được chẩn đoán là bị gout, ban đầu dùng thuốc bắc để điều trị bệnh...
-							<a href="{{ MyAPI::getUrlPost(26) }}">[Xem thêm]</a>
+							<a href="{{ MyAPI::getUrlPostID(26) }}">[Xem thêm]</a>
 						</p>
 					</div>
 					<div>
-						<h4><a href="{{ MyAPI::getUrlPost(28) }}">4 NĂM BỊ VIÊM MÀNG HOẠT DỊCH KHỚP GỐI CUỐI CÙNG ĐÃ ĐƯỢC CHỮA KHỎI</a></h4>
+						<h4><a href="{{ MyAPI::getUrlPostID(28) }}">4 NĂM BỊ VIÊM MÀNG HOẠT DỊCH KHỚP GỐI CUỐI CÙNG ĐÃ ĐƯỢC CHỮA KHỎI</a></h4>
 						<p>
 							Lã Thị Lan 4 năm trước xuất hiện tình trạng bệnh đầu gối bên phải, khi đi bộ thấy có cảm giác bị cọ sát, khi đi lên xuống cầu thang sẽ có cảm giác không ổn lắm, Lan đã đi thăm khám tại bệnh viện địa phương...
-							<a href="{{ MyAPI::getUrlPost(28) }}">[Xem thêm]</a>
+							<a href="{{ MyAPI::getUrlPostID(28) }}">[Xem thêm]</a>
 						</p>
 					</div>
 				</div>
@@ -84,13 +84,13 @@
 		</div>
 		<div class="flex2col2">
 			<h2></h2>
-			<a href="{{ MyAPI::getUrlPost(3) }}"><img src="{{ asset('public/images/desktop/home-3.png') }}" class="center-block"></a>
+			<a href="{{ MyAPI::getUrlPostID(3) }}"><img src="{{ asset('public/images/desktop/home-3.png') }}" class="center-block"></a>
 			<div class="order3">
-				<h4><a href="{{ MyAPI::getUrlPost(3) }}">Giới thiệu phòng khám</a></h4>
+				<h4><a href="{{ MyAPI::getUrlPostID(3) }}">Giới thiệu phòng khám</a></h4>
 				<p>
 					Hiện nay số người mắc bệnh viêm quanh 
 					khớp vai ngày càng nhiều và tỷ lệ mắc bệnh 
-					tăng lên hàng năm, thậm  ... <a href="{{ MyAPI::getUrlPost(3) }}">[chi tiết]</a>
+					tăng lên hàng năm, thậm  ... <a href="{{ MyAPI::getUrlPostID(3) }}">[chi tiết]</a>
 				</p>
 			</div>
 			<div class="flex flex4 flex-wrap-wrap justify-content-between">
@@ -101,7 +101,7 @@
 					</a>
 				</div>
 				<div class="flex4col1">
-					<a href="{{ MyAPI::getUrlPost(2) }}" class="text-container-center">
+					<a href="{{ MyAPI::getUrlPostID(2) }}" class="text-container-center">
 						<i style="background-position: -30px 0px;"></i>
 						<span>Địa chỉ<br>phòng khám</span>
 					</a>
@@ -331,48 +331,21 @@
 				<div class="flex8col2_topbv">
 					<div class="active">
 						@php 
-							$term = MyAPI::getTerm(24);
+							$term = MyAPI::getTermID(24);
 							$posts = $term->post()->limit(6)->get();
 						@endphp
 						@if(count($posts))
 						<div>
-							<h3><a href="{{ MyAPI::getUrlPost($posts[0]->id) }}">{{ $posts[0]->post_name }}</a></h3>
+							<h3><a href="{{ MyAPI::getUrlPostObj($posts[0]) }}">{{ $posts[0]->post_name }}</a></h3>
 							<p>
-								{{ MyAPI::limitWord($posts[0]->post_description,25) }} >>> <a href="{{ MyAPI::getUrlPost($posts[0]->id) }}">[chi tiết]</a>
+								{{ MyAPI::getLimitWord($posts[0]->post_description,25) }} >>> <a href="{{ MyAPI::getUrlPostObj($posts[0]) }}">[chi tiết]</a>
 							</p>
 						</div>
 						<div>
 							<ul>
 								@php unset($posts[0]) @endphp
 								@foreach($posts as $post)
-								<li><a href="{{ MyAPI::getUrlPost($post->id) }}">{{ $post->post_name }}</a></li>
-								@endforeach
-								<!-- <li><a href="#"><span>Nguyên nhân</span> Lorem ipsum dolor sit amet</a></li>
-								<li><a href="#"><span>Triệu trứng</span> Lorem ipsum dolor sit amet</a></li>
-								<li><a href="#"><span>Nguy hại</span> Lorem ipsum dolor sit amet</a></li>
-								<li><a href="#"><span>Điều trị</span> Lorem ipsum dolor sit amet</a></li>
-								<li><a href="#"><span>Phòng tránh</span> Lorem ipsum dolor sit amet</a></li> -->
-							</ul>
-						</div>
-						@endif
-					</div>
-					<div>
-						@php 
-							$term = MyAPI::getTerm(27);
-							$posts = $term->post()->limit(6)->get();
-						@endphp
-						@if(count($posts))
-						<div>
-							<h3><a href="{{ MyAPI::getUrlPost($posts[0]->id) }}">{{ $posts[0]->post_name }}</a></h3>
-							<p>
-								{{ MyAPI::limitWord($posts[0]->post_description,25) }} >>> <a href="{{ MyAPI::getUrlPost($posts[0]->id) }}">[chi tiết]</a>
-							</p>
-						</div>
-						<div>
-							<ul>
-								@php unset($posts[0]) @endphp
-								@foreach($posts as $post)
-								<li><a href="{{ MyAPI::getUrlPost($post->id) }}">{{ $post->post_name }}</a></li>
+								<li><a href="{{ MyAPI::getUrlPostObj($post) }}">{{ $post->post_name }}</a></li>
 								@endforeach
 							</ul>
 						</div>
@@ -380,21 +353,21 @@
 					</div>
 					<div>
 						@php 
-							$term = MyAPI::getTerm(26);
+							$term = MyAPI::getTermID(27);
 							$posts = $term->post()->limit(6)->get();
 						@endphp
 						@if(count($posts))
 						<div>
-							<h3><a href="{{ MyAPI::getUrlPost($posts[0]->id) }}">{{ $posts[0]->post_name }}</a></h3>
+							<h3><a href="{{ MyAPI::getUrlPostObj($posts[0]) }}">{{ $posts[0]->post_name }}</a></h3>
 							<p>
-								{{ MyAPI::limitWord($posts[0]->post_description,25) }} >>> <a href="{{ MyAPI::getUrlPost($posts[0]->id) }}">[chi tiết]</a>
+								{{ MyAPI::getLimitWord($posts[0]->post_description,25) }} >>> <a href="{{ MyAPI::getUrlPostObj($posts[0]) }}">[chi tiết]</a>
 							</p>
 						</div>
 						<div>
 							<ul>
 								@php unset($posts[0]) @endphp
 								@foreach($posts as $post)
-								<li><a href="{{ MyAPI::getUrlPost($post->id) }}">{{ $post->post_name }}</a></li>
+								<li><a href="{{ MyAPI::getUrlPostObj($post) }}">{{ $post->post_name }}</a></li>
 								@endforeach
 							</ul>
 						</div>
@@ -402,21 +375,21 @@
 					</div>
 					<div>
 						@php 
-							$term = MyAPI::getTerm(25);
+							$term = MyAPI::getTermID(26);
 							$posts = $term->post()->limit(6)->get();
 						@endphp
 						@if(count($posts))
 						<div>
-							<h3><a href="{{ MyAPI::getUrlPost($posts[0]->id) }}">{{ $posts[0]->post_name }}</a></h3>
+							<h3><a href="{{ MyAPI::getUrlPostObj($posts[0]) }}">{{ $posts[0]->post_name }}</a></h3>
 							<p>
-								{{ MyAPI::limitWord($posts[0]->post_description,25) }} >>> <a href="{{ MyAPI::getUrlPost($posts[0]->id) }}">[chi tiết]</a>
+								{{ MyAPI::getLimitWord($posts[0]->post_description,25) }} >>> <a href="{{ MyAPI::getUrlPostObj($posts[0]) }}">[chi tiết]</a>
 							</p>
 						</div>
 						<div>
 							<ul>
 								@php unset($posts[0]) @endphp
 								@foreach($posts as $post)
-								<li><a href="{{ MyAPI::getUrlPost($post->id) }}">{{ $post->post_name }}</a></li>
+								<li><a href="{{ MyAPI::getUrlPostObj($post) }}">{{ $post->post_name }}</a></li>
 								@endforeach
 							</ul>
 						</div>
@@ -424,21 +397,21 @@
 					</div>
 					<div>
 						@php 
-							$term = MyAPI::getTerm(10);
+							$term = MyAPI::getTermID(25);
 							$posts = $term->post()->limit(6)->get();
 						@endphp
 						@if(count($posts))
 						<div>
-							<h3><a href="{{ MyAPI::getUrlPost($posts[0]->id) }}">{{ $posts[0]->post_name }}</a></h3>
+							<h3><a href="{{ MyAPI::getUrlPostObj($posts[0]) }}">{{ $posts[0]->post_name }}</a></h3>
 							<p>
-								{{ MyAPI::limitWord($posts[0]->post_description,25) }} >>> <a href="{{ MyAPI::getUrlPost($posts[0]->id) }}">[chi tiết]</a>
+								{{ MyAPI::getLimitWord($posts[0]->post_description,25) }} >>> <a href="{{ MyAPI::getUrlPostObj($posts[0]) }}">[chi tiết]</a>
 							</p>
 						</div>
 						<div>
 							<ul>
 								@php unset($posts[0]) @endphp
 								@foreach($posts as $post)
-								<li><a href="{{ MyAPI::getUrlPost($post->id) }}">{{ $post->post_name }}</a></li>
+								<li><a href="{{ MyAPI::getUrlPostObj($post) }}">{{ $post->post_name }}</a></li>
 								@endforeach
 							</ul>
 						</div>
@@ -446,21 +419,43 @@
 					</div>
 					<div>
 						@php 
-							$term = MyAPI::getTerm(4);
+							$term = MyAPI::getTermID(10);
 							$posts = $term->post()->limit(6)->get();
 						@endphp
 						@if(count($posts))
 						<div>
-							<h3><a href="{{ MyAPI::getUrlPost($posts[0]->id) }}">{{ $posts[0]->post_name }}</a></h3>
+							<h3><a href="{{ MyAPI::getUrlPostObj($posts[0]) }}">{{ $posts[0]->post_name }}</a></h3>
 							<p>
-								{{ MyAPI::limitWord($posts[0]->post_description,25) }} >>> <a href="{{ MyAPI::getUrlPost($posts[0]->id) }}">[chi tiết]</a>
+								{{ MyAPI::getLimitWord($posts[0]->post_description,25) }} >>> <a href="{{ MyAPI::getUrlPostObj($posts[0]) }}">[chi tiết]</a>
 							</p>
 						</div>
 						<div>
 							<ul>
 								@php unset($posts[0]) @endphp
 								@foreach($posts as $post)
-								<li><a href="{{ MyAPI::getUrlPost($post->id) }}">{{ $post->post_name }}</a></li>
+								<li><a href="{{ MyAPI::getUrlPostObj($post) }}">{{ $post->post_name }}</a></li>
+								@endforeach
+							</ul>
+						</div>
+						@endif
+					</div>
+					<div>
+						@php 
+							$term = MyAPI::getTermID(4);
+							$posts = $term->post()->limit(6)->get();
+						@endphp
+						@if(count($posts))
+						<div>
+							<h3><a href="{{ MyAPI::getUrlPostObj($posts[0]) }}">{{ $posts[0]->post_name }}</a></h3>
+							<p>
+								{{ MyAPI::getLimitWord($posts[0]->post_description,25) }} >>> <a href="{{ MyAPI::getUrlPostObj($posts[0]) }}">[chi tiết]</a>
+							</p>
+						</div>
+						<div>
+							<ul>
+								@php unset($posts[0]) @endphp
+								@foreach($posts as $post)
+								<li><a href="{{ MyAPI::getUrlPostObj($post) }}">{{ $post->post_name }}</a></li>
 								@endforeach
 							</ul>
 						</div>

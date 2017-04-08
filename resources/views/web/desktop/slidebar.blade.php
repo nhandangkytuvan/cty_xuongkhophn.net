@@ -1,9 +1,9 @@
 <div class="block1">
 	<h2>
-		<a href="{{ MyAPI::getUrlPost(3) }}">Giới thiệu phòng khám</a>
+		<a href="{{ MyAPI::getUrlPostID(3) }}">Giới thiệu phòng khám</a>
 	</h2>
 	<h3>
-		<a href="{{ MyAPI::getUrlPost(3) }}">
+		<a href="{{ MyAPI::getUrlPostID(3) }}">
 			<img src="{{ asset('public/images/desktop/home-3.png') }}" alt="">
 		</a>
 	</h3>
@@ -12,7 +12,7 @@
 	</p>
 	<div class=" flex flex2 flex-wrap-wrap justify-content-between">
 		<div class="flex2col1">
-			<a href="{{ MyAPI::getUrlPost(3) }}" class="bg1 text-container-center hvr-glow">
+			<a href="{{ MyAPI::getUrlPostID(3) }}" class="bg1 text-container-center hvr-glow">
 				Giới thiệu<br>phòng khám
 			</a>
 		</div>
@@ -81,7 +81,7 @@
 		<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" class="bg2"></a>
 	</h3>
 	<h3>
-		<a href="{{ MyAPI::getUrlPost(2) }}" class="bg3"></a>
+		<a href="{{ MyAPI::getUrlPostID(2) }}" class="bg3"></a>
 	</h3>
 </div>
 <div class="block4">

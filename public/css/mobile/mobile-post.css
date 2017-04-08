@@ -38,22 +38,24 @@ div.post-detail ul,div.post-detail ol{
     content: "/\00a0";
 }
 .tuvan{
-    margin:0px;
+    margin:0px 20px;
 }
 .tuvan>div{
-    padding:0px 10px;
+    width: 48%;
 }
-.tuvan .box{
+.tuvan>div h3{
+    width: 100%;
+}
+.tuvan>div a{
     background-color: #2fadbd;
     border-radius: 5px;
     color: #fff;
     text-align: center;
-    height: 100%;
-}
-.tuvan .box a{
     display: block;
-    padding:10px;
-    height: 100%;
+    padding:8px 2px;
+    font-weight: normal;
+    width: 100%;
+    font-size: 13px;
 } 
 .bai-lien-quan h4{
     text-align: center;
@@ -61,6 +63,9 @@ div.post-detail ul,div.post-detail ol{
     margin:10px auto;
     color: #953b08;
     text-transform: uppercase;
+    border-bottom: 2px solid #953b08;
+    padding-bottom: 5px;
+    margin-top: 20px;
 }
 .bai-lien-quan ul{
     list-style: none;
@@ -72,3 +77,4 @@ div.post-detail ul,div.post-detail ol{
     margin:0px 15px;
     padding:10px 0px;
 }
+.bai-lien-quan ul li i{color:#953b08 }

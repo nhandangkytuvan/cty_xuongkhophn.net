@@ -25,7 +25,7 @@
 		<i></i><a href="{{ url('/') }}">Trang chủ ></a>
 		@if($data['post']->term)
 		@php $term = $data['post']->term @endphp
-		<a href="{{ url($term->term_alias.'/'.$term->id) }}">{{ $term->term_name }}</a>
+		<a href="{{ MyAPI::getUrlTermObj($term) }}">{{ $term->term_name }}</a>
 		@endif
 	</div>
 	<div class="flex flex1 justify-content-between">
@@ -62,7 +62,7 @@
 				<h4>Người bệnh nên quan tâm</h4>
 				<ul>
 					@foreach($posts as $post)
-					<li><a href="{{ MyAPI::getUrlPost($post->id) }}">{{ $post->post_name }}</a></li>
+					<li><a href="{{ MyAPI::getUrlPostObj($post) }}">{{ $post->post_name }}</a></li>
 					@endforeach
 				</ul>
 			</div>

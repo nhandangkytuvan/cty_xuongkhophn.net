@@ -1,37 +1,29 @@
-header .box1{
+header .row1{
 	padding:15px 20px;
 }
-header .box2{
+header .row2{
 	background-color: #2facbe;
-	text-align: center;
+}
+header .row2 h2{
 	font-size: 16px;
 	color: #fff;
 	font-weight: bold;
 	padding:10px;
 	font-family: '[UTMSeagullBold]';
 }
-menu .box{
-	text-align: center;
-	display: flex;
-	justify-content: center; /* align horizontal */
-	align-items: center; /* align vertical */
-}
-menu .box a{
-	padding:13px 5px;
-}
-menu .box{
+/**/
+menu .flex1col1{
+	width: 33.33%;
 	border:1px solid #ddd;
 	border-top: none;
-	height: 100%;
 }
-menu .flex1{
-	margin-right: 0px;
-	margin-left: 0px;
-}
-menu .flex1col1{
-	padding:0;
-}
-menu .box.border1{
+menu .flex1col1:nth-child(2),menu .flex1col1:nth-child(5){
 	border-left: none;
 	border-right: none;
+}
+menu .flex1col1 a{
+	padding:10px 2px;
+	font-weight: normal;
+	font-size: 14px;
+	display: block;
 }

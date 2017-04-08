@@ -21,7 +21,7 @@
 		<ol class="breadcrumb">
 		  	<li><a href="{{ url('/') }}"><span class="fa fa-home"></span></a></li>
 		  	@php $term = $data['post']->term @endphp
-		  	<li><a href="{{ MyAPI::getUrlTerm($term->id) }}">{{ $term->term_name }}</a></li>
+		  	<li><a href="{{ MyAPI::getUrlTermObj($term) }}">{{ $term->term_name }}</a></li>
 		</ol>
 		<h1 class="post-name">{{ $data['post']->post_name }}</h1>
 		<div class="content-post post-detail post-{{ $data['post']->id }}">
@@ -113,16 +113,16 @@
 			</style>
 		</div>
 		<p class="nhacnho" style="padding:10px;line-height: 20px;"><span style="color: red;"><strong>Nhắc nhở:</strong></span> Phần lớn bệnh nhân không coi trọng việc điều trị, việc xem nhẹ rất có thể gây ra những nguy hại dẫn tới tình trạng bệnh ngày một nặng thêm. Nếu bạn có bất kể điều gì nghi vấn, hoan nghênh bạn click để <a  style="color: red;font-weight: bold;" href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">tư vấn giao lưu trực tuyến</a>. hoặc gọi điện đường dây nóng <a href="tel:0436.241.999" style="color: red;font-weight: bold;">0436.241.999</a> - <a href="tel:0911 501 709"  style="color: red;font-weight: bold;">0911 501 709</a> để được tư vấn.</p>
-		<div class="row tuvan" style="margin-bottom: 20px;">
-			<div class="col-xs-6">
-				<div class="box">
+		<div class="tuvan flex justify-content-between" style="margin-bottom: 20px;">
+			<div class=" flex align-items-center justify-content-center">
+				<h3>
 					<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Tư vấn qua điện thoại</a>
-				</div>
+				</h3>
 			</div>
-			<div class="col-xs-6">
-				<div class="box" style="background-color: #F49700;">
-					<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Đặt hẹn trực tuyến</a>
-				</div>
+			<div class=" flex align-items-center justify-content-center">
+				<h3>
+					<a style="background-color: #F49700;" href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Đặt hẹn trực tuyến</a>
+				</h3>
 			</div>
 		</div>
 	</div>

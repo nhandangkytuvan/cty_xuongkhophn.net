@@ -23,7 +23,7 @@
 			$term_parent = $data['term']->parent;
 		@endphp
 		@if($term_parent)
-		<a href="{{ url($term_parent->term_alias.'/'.$term_parent->id) }}">{{ $term_parent->term_name }} ></a>
+		<a href="#">{{ $term_parent->term_name }} ></a>
 		@endif
 		<a href="#">{{ $data['term']->term_name }}</a>
 	</div>
@@ -44,14 +44,14 @@
 			<div class="benhnormal" {{ $key==0 ? 'style="border-top: none;padding-top: 0px;"' : '' }}>
 				<div class="flex flex3">
 					<div class="flex3col1">
-						<a href="{{ MyAPI::getUrlPost($post->id) }}">
+						<a href="{{ MyAPI::getUrlPostObj($post) }}">
 							<img src="{{ asset('public/img/'.$post->post_avatar) }}" class="">
 						</a>
 					</div>
 					<div class="flex3col2">
-						<h3><a href="{{ MyAPI::getUrlPost($post->id) }}">{{ $post->post_name }}</a></h3>
-						<p>{{ MyAPI::limitWord($post->post_description,40) }}
-						<a href="{{ MyAPI::getUrlPost($post->id) }}">【Xem thêm】</a></p>
+						<h3><a href="{{ MyAPI::getUrlPostObj($post) }}">{{ $post->post_name }}</a></h3>
+						<p>{{ MyAPI::getLimitWord($post->post_description,40) }}
+						<a href="{{ MyAPI::getUrlPostObj($post) }}">【Xem thêm】</a></p>
 						<p class="clearfix">
 							<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" class="pull-right">Bác sĩ tư vấn <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
 							<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" class="pull-right">Trả lời trực tuyến <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>

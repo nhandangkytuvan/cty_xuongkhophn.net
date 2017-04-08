@@ -19,16 +19,16 @@ function showchat() {
     $('#my_popup').popup('show');
   }
 $(function(){
-    $('menu .flex1col1 >.box').css({'height':($('menu .flex1col1').height())+'px'});
-    $('main .flex1col1 >.box').css({'height':($('main .flex1col1').height())+'px'});
-    $('.sualoipvtruong .lists .flex3col1 >.box').css({'height':($('.sualoipvtruong .lists .flex3col1').height())+'px'});
-    $('.sualoipvtruong .lists .flex4col1 >.box').css({'height':($('.sualoipvtruong .lists .flex4col1').height())+'px'});
-    $('.sualoipvtruong .lists .flex2col1 >.box').css({'height':($('.sualoipvtruong .lists .flex2col1').height())+'px'});
-    $(window).resize(function(){
-        $('menu .flex1col1 >.box').css({'height':($('menu .flex1col1').height())+'px'});
-        $('main .flex1col1 >.box').css({'height':($('main .flex1col1').height())+'px'});
-        $('.sualoipvtruong .lists .flex3col1 >.box').css({'height':($('.sualoipvtruong .lists .flex3col1').height())+'px'});
-        $('.sualoipvtruong .lists .flex4col1 >.box').css({'height':($('.sualoipvtruong .lists .flex4col1').height())+'px'});
-        $('.sualoipvtruong .lists .flex2col1 >.box').css({'height':($('.sualoipvtruong .lists .flex2col1').height())+'px'});
-    });
+    // $('menu .flex1col1 >.box').css({'height':($('menu .flex1col1').height())+'px'});
+    // $('main .flex1col1 >.box').css({'height':($('main .flex1col1').height())+'px'});
+    // $('.sualoipvtruong .lists .flex3col1 >.box').css({'height':($('.sualoipvtruong .lists .flex3col1').height())+'px'});
+    // $('.sualoipvtruong .lists .flex4col1 >.box').css({'height':($('.sualoipvtruong .lists .flex4col1').height())+'px'});
+    // $('.sualoipvtruong .lists .flex2col1 >.box').css({'height':($('.sualoipvtruong .lists .flex2col1').height())+'px'});
+    // $(window).resize(function(){
+    //     $('menu .flex1col1 >.box').css({'height':($('menu .flex1col1').height())+'px'});
+    //     $('main .flex1col1 >.box').css({'height':($('main .flex1col1').height())+'px'});
+    //     $('.sualoipvtruong .lists .flex3col1 >.box').css({'height':($('.sualoipvtruong .lists .flex3col1').height())+'px'});
+    //     $('.sualoipvtruong .lists .flex4col1 >.box').css({'height':($('.sualoipvtruong .lists .flex4col1').height())+'px'});
+    //     $('.sualoipvtruong .lists .flex2col1 >.box').css({'height':($('.sualoipvtruong .lists .flex2col1').height())+'px'});
+    // });
 });

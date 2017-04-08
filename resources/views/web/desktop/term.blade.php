@@ -28,8 +28,8 @@
 			<div class="benhprimary">
 				<div>
 					<h3 class="clearfix">
-						<a href="{{ url($term_child->term_alias.'/'.$term_child->id) }}" class="pull-left">{{ $term_child->term_name }}</a>
-						<a href="{{ url($term_child->term_alias.'/'.$term_child->id) }}" class="pull-right">+ Xem thêm</a>
+						<a href="{{ MyAPI::getUrlTermObj($term_child) }}" class="pull-left">{{ $term_child->term_name }}</a>
+						<a href="{{ MyAPI::getUrlTermObj($term_child) }}" class="pull-right">+ Xem thêm</a>
 					</h3>
 					<div class="flex flex3">
 						@php 
@@ -37,14 +37,14 @@
 						@endphp
 						@if(count($posts)>0)
 						<div class="flex3col1">
-							<a href="{{ MyAPI::getUrlPost($posts[0]->id) }}">
+							<a href="{{ MyAPI::getUrlPostObj($posts[0]) }}">
 								<img src="{{ asset('public/img/'.$posts[0]->post_avatar) }}" class="">
 							</a>
 						</div>
 						<div class="flex3col2">
 							<ul>
 								@foreach($posts as $post)
-								<li><a href="{{ MyAPI::getUrlPost($post->id) }}" title="{{ $post->post_name }}">{{ $post->post_name }}</a></li>
+								<li><a href="{{ MyAPI::getUrlPostObj($post) }}" title="{{ $post->post_name }}">{{ $post->post_name }}</a></li>
 								@endforeach
 							</ul>
 						</div>
