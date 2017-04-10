@@ -4,6 +4,9 @@
 .home .flex1col1{
 	flex-basis: 25%;
 }
+.home .flex1col1 >div.hvr-float-shadow{
+	display: block;
+}
 .home .flex1col1 a{
 	display: block;
 	height: 91px;

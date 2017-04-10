@@ -8,6 +8,8 @@
 <meta id="metaKeywords" name="keywords" content="{{ $data['term']->term_keyword }}">
 @endsection('keyword')
 @section('css')
+<link rel="stylesheet" href="{{ asset('public/css/desktop/desktop-carousel.css') }}">
+<link rel="stylesheet" href="{{ asset('public/css/desktop/desktop-pagination.css') }}">
 <link rel="stylesheet" href="{{ asset('public/css/desktop/desktop-sidebar.css') }}">
 <link rel="stylesheet" href="{{ asset('public/css/desktop/desktop-term.css') }}">
 @endsection('css')

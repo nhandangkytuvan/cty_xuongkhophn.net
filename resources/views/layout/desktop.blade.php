@@ -35,7 +35,6 @@
 				<div class="flex1col1">
 					<div class="text-container-center">
 						<div>
-							<div class="bg"></div>
 							<a href="{{ url('/') }}">
 								<img src="{{ asset('public/images/desktop/header-1.png') }}" alt="">
 							</a>
@@ -268,7 +267,7 @@
 				</div>
 				<div class="flex1col3">
 					<h4>Hiệu quả đến từ sự chuyên nghiệp</h4>
-					<h4>Việt Nam . Hà Nội . NHÂN VIỆT</h4>
+					<h4>NHÂN VIỆT . Hà Nội . Việt Nam</h4>
 				</div>
 			</div>
 		</div>

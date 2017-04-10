@@ -12,6 +12,8 @@
 <meta id="metaKeywords" name="keywords" content="{{ $data['post']->post_keyword }}">
 @endsection('keyword')
 @section('css')
+<link rel="stylesheet" href="{{ asset('public/css/desktop/desktop-carousel.css') }}">
+<link rel="stylesheet" href="{{ asset('public/css/desktop/desktop-pagination.css') }}">
 <link rel="stylesheet" href="{{ asset('public/font/post-detail-css.css') }}">
 <link rel="stylesheet" href="{{ asset('public/css/desktop/desktop-post.css') }}">
 <link rel="stylesheet" href="{{ asset('public/css/desktop/desktop-sidebar.css') }}">
