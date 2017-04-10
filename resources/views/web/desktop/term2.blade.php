@@ -23,7 +23,7 @@
 			$term_parent = $data['term']->parent;
 		@endphp
 		@if($term_parent)
-		<a href="#">{{ $term_parent->term_name }} ></a>
+		<a href="{{ MyAPI::getUrlTermObj($term_parent) }}">{{ $term_parent->term_name }} ></a>
 		@endif
 		<a href="#">{{ $data['term']->term_name }}</a>
 	</div>
