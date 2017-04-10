@@ -99,7 +99,7 @@
 	display: inline-block;
 }
 .my_pagination ul li a,.my_pagination ul li span{
-	border-radius: 5px;
+	border-radius: 2px;
 }
 .my_pagination{
   text-align: center;
