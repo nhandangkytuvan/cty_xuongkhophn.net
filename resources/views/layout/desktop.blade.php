@@ -32,26 +32,34 @@
     <header>
 		<div class="container">
 			<div class="flex flex1 justify-content-between">
-				<div class="flex1col1">
-					<div class="text-container-center">
+				<div class="flex1col1 flex flex2 justify-content-between">
+					<div class="flex2col1 flex align-items-center justify-content-center">
+						<div><h2><a href="{{ url('/') }}"><img src="{{ asset('public/images/desktop/logo.png') }}" alt=""></a></h2></div>
+					</div>
+					<div class="flex2col2 flex align-items-center justify-content-center">
 						<div>
-							<a href="{{ url('/') }}">
-								<img src="{{ asset('public/images/desktop/header-1.png') }}" alt="">
-							</a>
+							<h2 class="text-uppercase"><a href="{{ MyAPI::getUrlPostID(3) }}">Phòng khám đa khoa nhân việt</a></h2>
+							<h3 class="text-uppercase"><a href="{{ url('/') }}">Khoa xương khớp</a></h3>
+							<h5><a href="{{ MyAPI::getUrlPostID(2) }}">Địa chỉ: 708 Giải Phóng - Hoàng Mai - Hà Nội</a></h5>
 						</div>
 					</div>
 				</div>
-				<div class="flex1col1">
-					<div class="text-container-center">
-						<img src="{{ asset('public/images/desktop/header-2.png') }}" alt="">
+				<div class="flex1col1 flex flex3 justify-content-center align-items-center">
+					<div class="flex3col1">
+						<h3>Nhân Việt . Hà Nội . Việt Nam</h3>
 					</div>
 				</div>
 				<div class="flex1col1">
-					<div class="text-container-center">
-						<a href="tel:0911.501.709">
-							<img src="{{ asset('public/images/desktop/header-3.png') }}" alt="">
-						</a>
+					<div class="flex flex4 justify-content-end">
+						<div class="flex4col1">
+							<h3><a href="tel:0911.501.709"><i class="fa fa-whatsapp"></i></a></h3>
+						</div>
+						<div class="flex4col2">
+							<h3><a href="tel:0436 241 999">0436 241 999</a></h3>
+							<h3><a href="tel:0911 501 709">0911 501 709</a></h3>
+						</div>
 					</div>
+					<h5><a href="{{ MyAPI::getUrlPostID(2) }}">( 8:00 - 20:00) bao gồm cả ngày lễ tết</a></h5>
 				</div>
 			</div>
 		</div>

@@ -1,4 +1,43 @@
-header .flex1{margin:40px 0px;}
+header .flex1{margin:25px 0px;}
+header .flex1col1 .flex2col1{
+	padding-right: 10px;
+}
+header .flex1col1 .flex2col2 h2{
+	color: rgb(123, 49, 10);
+	font-size: 18px;
+}
+header .flex1col1 .flex2col2 h3{
+	color: rgb(218, 37, 28);
+	margin-top: 5px;
+}
+header .flex1col1 .flex2col2 h5{
+	margin-top: 5px;
+}
+/**/
+header .flex3col1 h3{
+	font-style: italic;
+	font-size: 20px;
+	color: rgb(102, 102, 102);
+	font-weight: normal;
+}
+/**/
+header .flex4col1{
+	padding-right: 10px;
+}
+header .flex4col1 i{
+	font-size: 30px;color: rgb(102, 102, 102);
+}
+header .flex4col2 h3{
+	color:rgb(123, 49, 10);
+	font-size: 22px;
+	margin-bottom: 5px;
+}
+header .flex1col1:last-child h5{
+	/*color: rgb(218, 37, 28);*/
+	color:rgb(123, 49, 10);
+	/*font-size: 11px;*/
+}
+/**/
 menu{
 	background-color: rgb(170, 122, 0);
 	color: #fff;
