@@ -29,4 +29,8 @@ $(document).ready(function() {
     });
     $('[data-toggle="tooltip"]').tooltip();
     autosize($("textarea.autosize"));
+    jQuery('#datetimepicker').datetimepicker({
+    	timepicker:false,
+    	format:'d.m.Y',
+    });
 });

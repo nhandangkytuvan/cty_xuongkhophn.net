@@ -108,6 +108,10 @@ class PostController extends Controller{
         if($request->input('post_name')){
             $posts = $posts->where('post_name','like','%'.$request->input('post_name').'%');
         }
+        if($request->input('post_created')){
+            $created_at = date('Y-m-d',strtotime($request->input('post_created')));
+            $posts = $posts->whereDate('created_at',$created_at);
+        }
         if($request->input('term_id')){
             $term_ids = [];
             $term = Term::find($request->input('term_id'));

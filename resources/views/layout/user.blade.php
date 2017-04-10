@@ -8,7 +8,8 @@
     <title>168 - Quản trị</title>
     <link rel="stylesheet" href="{{ asset('public/css/global/bootstrap/css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('public/css/global/font-awesome/css/font-awesome.css') }}">
-    <link rel="stylesheet" href="{{ asset('public/css/user/user-checkbox.css') }}">   
+    <link rel="stylesheet" href="{{ asset('public/css/user/user-checkbox.css') }}">  
+    <link rel="stylesheet" href="{{ asset('public/css/global/datetimepicker/jquery.datetimepicker.css') }}">  
     <link rel="stylesheet" href="{{ asset('public/css/user/user.css') }}">   
     <script src="{{ asset('public/js/global/jquery-1.12.3.min.js') }}"></script>
     <script src="{{ asset('public/js/global/tinymce/js/tinymce/tinymce.min.js') }}"></script>
@@ -16,6 +17,7 @@
     <script src="{{ asset('public/js/global/bootstrap/js/bootstrap.js') }}"></script>
     <script src="{{ asset('public/js/global/jquery-scrolltofixed-min.js') }}"></script>
     <script src="{{ asset('public/js/global/autosize/dist/autosize.min.js') }}"></script>
+    <script src="{{ asset('public/js/global/datetimepicker/build/jquery.datetimepicker.full.js') }}"></script>
     <script src="{{ asset('public/js/user/user.js') }}"></script>
 </head>
 <body style="padding-top: 70px;">
