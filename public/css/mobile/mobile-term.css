@@ -25,11 +25,15 @@ main .flex1col1:last-child{
 }
 /**/
 main .term-name{
-	color: #008a9c;
-    font-size: 16px;
-    border-left: 3px solid #008a9c;
-    padding: 0px 10px;
-    margin: 10px 0px 0px 10px;
+	background-color: #2facbe;
+}
+main .term-name h2{
+	color: #fff;
+	font-size: 15px;
+	padding:8px 15px;
+}
+main .term-name h2 i{
+	font-size: 18px;
 }
 /**/
 main .lists{
@@ -46,8 +50,7 @@ main .lists .post h3{
 	border-bottom: 1px solid #ddd;
 	margin:0;
 	color: #008a9c;
-	font-weight: normal;
-	font-size: 15px;
+	font-size: 13px;
 }
 main .lists .post h3 i{
 	background-repeat: no-repeat;

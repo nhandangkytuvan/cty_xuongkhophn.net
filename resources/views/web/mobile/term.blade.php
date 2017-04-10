@@ -36,7 +36,11 @@
                 </h3>
             </div>
         </div>
-        <h2 class="term-name">{{ $data['term']->term_name }}</h2>
+    </div>
+</div>
+<div class="term-name">
+    <div class="container">
+        <h2 class="text-uppercase"><i class="fa fa-user-md"></i> {{ $data['term']->term_name }}</h2>
     </div>
 </div>
 <div class="container">

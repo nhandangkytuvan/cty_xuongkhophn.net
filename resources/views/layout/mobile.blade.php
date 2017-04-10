@@ -149,8 +149,8 @@
 	<script language="javascript" src="http://drt.zoosnet.net/JS/LsJS.aspx?siteid=DRT84001515&float=1&lng=en"></script>
 	<div id="my_popup">
 	    <p class="text-center">Bác sỹ đang yêu cầu được chát với bạn</p>
-	    <a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Đồng ý</a>
 	    <a class="my_popup_close">Từ chối</a>
+	    <a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en">Đồng ý</a>
 	</div>
 </body>
 </html>
