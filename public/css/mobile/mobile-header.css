@@ -1,6 +1,24 @@
 header .row1{
-	padding:15px 20px;
+	padding:10px 0px;
 }
+header .row1 .flex1col1{
+	padding-right: 5px;
+}
+header .row1 .flex1col2 h2{
+	font-size: 15px;
+	color: #da251c;
+	/*font-weight: normal;*/
+}
+header .row1 .flex1col2 h3{
+	font-size: 15px;
+	color: #016d77;
+	/*font-weight: normal;*/
+	margin-top: 5px;
+}
+header .row1 .flex1col2 h5{
+	margin-top: 5px;
+}
+/**/
 header .row2{
 	background-color: #2facbe;
 }

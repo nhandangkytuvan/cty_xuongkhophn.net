@@ -27,7 +27,18 @@
 <body>
 	<header>
 		<div class="container row1">
-			<a href="{{ url('/') }}"><img src="{{ asset('public/images/mobile/header.png') }}" class="center-block img-responsive"></a>
+			<div class="flex flex1 justify-content-around">
+				<div class="flex1col1 flex justify-content-center align-items-center">
+					<div><h2><a href="{{ url('/') }}"><img src="{{ asset('public/images/mobile/logo.png') }}"></a></h2></div>
+				</div>
+				<div class="flex1col2 flex justify-content-center align-items-center">
+					<div>
+						<h2 class="text-uppercase"><a href="{{ url('/') }}">phòng khám đa khoa Nhân Việt Hà Nội</a></h2>
+						<h3 class="text-uppercase"><a href="{{ url('/') }}">Khoa xương khớp</a></h3>
+						<h5><a href="{{ MyAPI::getUrlPostID(2) }}">Địa chỉ : 708 Giải Phóng - Hoàng Mai - Hà Nội</a></h5>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="row2">
 			<div class="container">
