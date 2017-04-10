@@ -44,6 +44,7 @@
 </div>
 <div class="panel panel-default">
     <div class="panel-heading text-center">
+        <a href="#" class="pull-left"><span class="label label-success">Tổng: {{ $data['medias']->total() }}</span></a>
         Danh sách ảnh
         <a href="{{ url('user/media/index?view=thumbnail') }}" class="pull-right" style="margin-left: 5px;"> <span class="glyphicon glyphicon-th-list"></span> </a>
         <a href="{{ url('user/media/index?view=icon') }}" class="pull-right" style="margin-left: 5px;"> <span class="glyphicon glyphicon-th-large"></span> </a>

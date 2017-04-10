@@ -106,7 +106,7 @@ class MediaController extends Controller{
         if($request->input('user_id')){
             $medias = $medias->where('user_id',$request->input('user_id'));
         }
-        $medias = $medias->paginate(22);
+        $medias = $medias->paginate(24);
         $data['user'] = $user;
         $data['users'] = $users;
         $data['request'] = $request;

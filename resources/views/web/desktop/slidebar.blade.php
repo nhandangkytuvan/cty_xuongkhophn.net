@@ -75,13 +75,13 @@
 </div>
 <div class="block3">
 	<h3>
-		<a href="tel:0911.501.709" class="bg1"></a>
+		<a href="tel:0911.501.709" class="bg1 hvr-glow"></a>
 	</h3>
 	<h3>
-		<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" class="bg2"></a>
+		<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&lng=en" class="bg2 hvr-glow"></a>
 	</h3>
 	<h3>
-		<a href="{{ MyAPI::getUrlPostID(2) }}" class="bg3"></a>
+		<a href="{{ MyAPI::getUrlPostID(2) }}" class="bg3 hvr-glow"></a>
 	</h3>
 </div>
 <div class="block4">
