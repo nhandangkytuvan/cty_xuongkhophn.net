@@ -3,9 +3,7 @@ namespace App\Http\Controllers\Web;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Post;
-use App\Setting;
-use App\View;
-use Session;
+use App\Events\ViewPostEvent;
 use BrowserDetect;
 class PostController extends Controller{
     public function show($post_alias,$post_id,Request $request){
@@ -13,15 +11,8 @@ class PostController extends Controller{
         if(!$post){
             return redirect('/');
         }
-        // --------------
-        if(View::where('post_id',$post_id)->exists()){
-            $view = View::where('post_id',$post_id)->first();
-        }else{
-            $view = new View;
-            $view->post_id = $post_id;
-        }
-        $view->view_sum ++;
-        $view->save();
+        // event view post active
+        event(new ViewPostEvent($post));
         // ------------
         $data['post'] = $post;
         if(BrowserDetect::isDesktop()){
