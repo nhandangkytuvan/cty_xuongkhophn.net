@@ -2,7 +2,7 @@
 
 namespace App\Listeners;
 
-use App\Events\ViewTermEvent;
+use App\Events\VisitTermEvent;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use App\Visit;
@@ -21,19 +21,19 @@ class VisitTermListener
     /**
      * Handle the event.
      *
-     * @param  ViewTermEvent  $event
+     * @param  VisitTermEvent  $event
      * @return void
      */
-    public function handle(ViewTermEvent $event)
+    public function handle(VisitTermEvent $event)
     {
         $term_id = $event->term->id;
         if(Visit::where('term_id',$term_id)->exists()){
-            $view = Visit::where('term_id',$term_id)->first();
+            $visit = Visit::where('term_id',$term_id)->first();
         }else{
-            $view = new Visit;
-            $view->term_id = $term_id;
+            $visit = new Visit;
+            $visit->term_id = $term_id;
         }
-        $view->view_sum ++;
-        $view->save();
+        $visit->visit_sum ++;
+        $visit->save();
     }
 }
