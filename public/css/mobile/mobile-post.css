@@ -78,3 +78,16 @@ div.post-detail ul,div.post-detail ol{
     padding:10px 0px;
 }
 .bai-lien-quan ul li i{color:#953b08 }
+/**/
+.post-footer{
+    line-height: 20px;
+    padding:10px;
+}
+.post-footer p{
+    text-align: justify;
+    margin-top: 15px;
+}
+.post-footer span,.post-footer a{
+    color: red;
+    font-weight: bold;
+}

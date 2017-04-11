@@ -38,8 +38,10 @@
 			</div>
 			<div class="post-footer">
 				<p>
-					<span style="color: red;"><strong>Nhắc nhở:</strong></span> Phần lớn bệnh nhân không coi trọng việc điều trị, việc xem nhẹ rất có thể gây ra những nguy hại dẫn tới tình trạng bệnh ngày một nặng thêm. Nếu bạn có bất kể điều gì nghi vấn, hoan nghênh bạn click để <a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&amp;lng=en"  style="color: red;"><strong>tư vấn giao lưu trực tuyến</strong></a>. hoặc gọi điện đường dây nóng <a href="tel:0436.241.999"  style="color: red;"><strong>0436.241.999</strong></a> - <a href="tel:0911.501.709"  style="color: red;"><strong>0911.501.709</strong></a> để được tư vấn.
+					<span>Nhắc nhở: </span>
+					Nếu muốn chữa khỏi bệnh, trước tiên bệnh nhân cần có lòng tin rằng bệnh của mình có thể hồi phục. Để hiệu quả chữa trị được tốt, người bệnh hãy tích cực phối hợp và nghiêm ngặt tuân theo yêu cầu của bác sỹ điều trị thì bệnh sẽ được hồi phục nhanh chóng. Bệnh nhân khi thấy có vấn đề bất thường thì cần phải đến bệnh viện thăm khám và chữa trị kịp thời. Bệnh không thể tự khỏi khi bạn kéo dài thời gian, không kịp thời chữa trị sẽ làm cho bệnh phát triển nặng thêm. Vì vậy, bạn hãy kịp thời đi khám, kiểm tra, điều trị sớm mới là tốt.
 				</p>
+				<h4>Số điện thoại tư vấn : <a href="tel:0436.241.999">0436.241.999</a> - <a href="tel:0911 501 709">0911 501 709</a></h4>
 				<div class="datkhambenh flex justify-content-between">
 					<div>
 						<a href="http://drt.zoosnet.net/LR/Chatpre.aspx?id=DRT84001515&amp;lng=en" class="btn btn-primary">
