@@ -8,19 +8,19 @@ use Illuminate\Broadcasting\PrivateChannel;
 use Illuminate\Broadcasting\PresenceChannel;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
-use App\Term;
-class ViewTermEvent
+use App\Post;
+class VisitPostEvent
 {
     use InteractsWithSockets, SerializesModels;
-    public $term;
+    public $post;
     /**
      * Create a new event instance.
      *
      * @return void
      */
-    public function __construct(Term $term)
+    public function __construct(Post $post)
     {
-        $this->term = $term;
+        $this->post = $post;
     }
 
     /**

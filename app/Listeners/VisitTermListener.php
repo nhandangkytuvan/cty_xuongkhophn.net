@@ -5,8 +5,8 @@ namespace App\Listeners;
 use App\Events\ViewTermEvent;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
-use App\View;
-class ViewTermListener
+use App\Visit;
+class VisitTermListener
 {
     /**
      * Create the event listener.
@@ -27,10 +27,10 @@ class ViewTermListener
     public function handle(ViewTermEvent $event)
     {
         $term_id = $event->term->id;
-        if(View::where('term_id',$term_id)->exists()){
-            $view = View::where('term_id',$term_id)->first();
+        if(Visit::where('term_id',$term_id)->exists()){
+            $view = Visit::where('term_id',$term_id)->first();
         }else{
-            $view = new View;
+            $view = new Visit;
             $view->term_id = $term_id;
         }
         $view->view_sum ++;

@@ -104,7 +104,7 @@
             <!-- <td>{{ $term->term_description }}</td> -->
             <!-- <td>{{ $term->term_meta }}</td> -->
             <td>{{ $term_child->post()->count() }}</td>
-            <td>{{ $term_child->view->view_sum }}</td>
+            <td>{{ $term_child->visit->visit_sum }}</td>
             <td>
                 <div class="clearfix">
                     <div class="pull-right">
@@ -154,7 +154,7 @@
             <!-- <td>{{ $term->term_description }}</td> -->
             <!-- <td>{{ $term->term_meta }}</td> -->
             <td>{{ $term->post()->count() }}</td>
-            <td>{{ $term->view->view_sum }}</td>
+            <td>{{ $term->visit->visit_sum }}</td>
             <td>
                 <div class="clearfix">
                     <div class="pull-right">
