@@ -9,7 +9,6 @@ use Session;
 use BrowserDetect;
 class TermController extends Controller{
     public function show($term_alias,$term_id,Request $request){
-    	$setting = Setting::first();
         $term = Term::find($term_id);
         if(!$term){
             return redirect('/');
@@ -25,7 +24,6 @@ class TermController extends Controller{
         $view->save();
         // -----------
         $data['term'] = $term;
-        $data['setting'] = $setting;
         if(BrowserDetect::isDesktop()){
             if(count($term->children)){
             	return view('web.desktop.term',['data'=>$data]); 

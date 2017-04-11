@@ -9,8 +9,6 @@ use Session;
 use BrowserDetect;
 class PostController extends Controller{
     public function show($post_alias,$post_id,Request $request){
-    	$setting = Setting::first();
-    	$user = Session::get('user');
     	$post = Post::find($post_id);
         if(!$post){
             return redirect('/');
@@ -26,7 +24,6 @@ class PostController extends Controller{
         $view->save();
         // ------------
         $data['post'] = $post;
-        $data['setting'] = $setting;
         if(BrowserDetect::isDesktop()){
     		if($post_id == 2){
     			return view('web.desktop.post_2',['data'=>$data]); 

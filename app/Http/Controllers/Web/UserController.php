@@ -16,7 +16,6 @@ class UserController extends Controller{
         'password' => 'required|min:6',
     ];
 	public function login(Request $request){
-		$setting = Setting::first();
 		if(Session::get('user')){
 			return redirect('user/post/index');
 		}
@@ -37,8 +36,7 @@ class UserController extends Controller{
 				return back();
 			}
 		}else{
-			$data['setting'] =$setting;
-			return view('web.user.login',['data'=>$data]);
+			return view('web.user.login');
 		}
 	}
 }
