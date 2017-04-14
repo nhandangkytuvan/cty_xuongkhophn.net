@@ -1,6 +1,7 @@
 <?php
 // web
 Route::get('/', 'Web\HomeController@show');
+Route::get('/sitemap.xml', 'Web\HomeController@sitemap');
 // Term
 Route::get('/{term_alias?}/{term_id?}', 'Web\TermController@show')->where(['term_alias'=>'[-a-z0-9]+','term_id'=>'[0-9]+']);
 // Post
