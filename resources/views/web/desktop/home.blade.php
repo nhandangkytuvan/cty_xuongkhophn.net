@@ -570,10 +570,10 @@
 			</div>
 			<div class="flex13col2">
 				<div class="active">
-					<img src="{{ asset('public/images/desktop/home-9-1.png') }}" alt="">
+					<img src="{{ asset('public/images/desktop/home-9-3.png') }}" alt="">
 				</div>
 				<div>
-					<img src="{{ asset('public/images/desktop/home-9-3.png') }}" alt="">
+					<img src="{{ asset('public/images/desktop/home-9-1.png') }}" alt="">
 				</div>
 				<div>
 					<img src="{{ asset('public/images/desktop/home-9-4.png') }}" alt="">
