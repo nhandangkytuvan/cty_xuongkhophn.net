@@ -132,7 +132,6 @@ class PostController extends Controller{
         $posts = $posts->paginate(22);
         $data['user'] = $user;
         $data['users'] = $users;
-        $data['request'] = $request;
         $data['posts'] = $posts;
         $data['terms'] = $terms; 
         if($request->input('view')=='list'){

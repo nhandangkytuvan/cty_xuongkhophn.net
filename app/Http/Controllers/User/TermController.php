@@ -79,7 +79,6 @@ class TermController extends Controller{
         }
         $terms = $terms->get();
         $data['user'] = $user;
-        $data['request'] = $request;
         $data['terms'] = $terms;
         $data['terms_search'] = Term::get();
         return view('user.term.index',['data'=>$data]); 

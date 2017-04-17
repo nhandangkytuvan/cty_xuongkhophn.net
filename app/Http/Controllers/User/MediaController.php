@@ -105,7 +105,6 @@ class MediaController extends Controller{
         $medias = $medias->paginate(24);
         $data['user'] = $user;
         $data['users'] = $users;
-        $data['request'] = $request;
         $data['medias'] = $medias;
         $data['terms'] = $terms;
         $data['menu'] = 'menu.menuUser'; 
