@@ -98,7 +98,7 @@
             </td>
             <td><a href="{{ MyAPI::getUrlTermObj($term_child) }}">{{ $term_child->term_name }}</a></td>
             <td>{{ $term_child->post()->count() }}</td>
-            <td>{{ $term_child->visit->visit_sum }}</td>
+            <td>{{ $term_child->visit ? $term_child->visit->visit_sum : '' }}</td>
             <td>
                 <div class="clearfix">
                     <div class="pull-right">
@@ -146,7 +146,7 @@
             </td>
             <td><a href="{{ MyAPI::getUrlTermObj($term) }}">{{ $term->term_name }}</a></td>
             <td>{{ $term->post()->count() }}</td>
-            <td>{{ $term->visit->visit_sum }}</td>
+            <td>{{ $term->visit ? $term->visit->visit_sum : '' }}</td>
             <td>
                 <div class="clearfix">
                     <div class="pull-right">
