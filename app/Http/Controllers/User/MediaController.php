@@ -8,6 +8,7 @@ use App\Term;
 use File;
 use Gate;
 use Session;
+use DB;
 class MediaController extends Controller{
     protected $rules_create = [
         'media_name' => 'required',
@@ -48,7 +49,6 @@ class MediaController extends Controller{
             Session::flash('success','Upload ảnh thành công.');
             return redirect('user/media/index');
         }else{
-            $data['user'] = $user;
             $data['terms'] = $terms;
             return view('user.media.create',['data'=>$data]); 
         }
@@ -73,7 +73,6 @@ class MediaController extends Controller{
                 return back();
             }
         }else{
-            $data['user'] = $user;
         	$data['media'] = $media;
             $data['terms'] = $terms;
             return view('user.media.edit',['data'=>$data]); 
@@ -103,7 +102,6 @@ class MediaController extends Controller{
             $medias = $medias->where('user_id',$request->input('user_id'));
         }
         $medias = $medias->paginate(24);
-        $data['user'] = $user;
         $data['users'] = $users;
         $data['medias'] = $medias;
         $data['terms'] = $terms;
@@ -125,6 +123,7 @@ class MediaController extends Controller{
                 return back();
             }
             if($media->delete()){
+                DB::statement('ALTER TABLE media AUTO_INCREMENT = 1');
                 Session::flash('success','Xóa thành công.');
                 File::delete(public_path().'/img/'.$media->media_file);
                 return redirect('user/media/index');

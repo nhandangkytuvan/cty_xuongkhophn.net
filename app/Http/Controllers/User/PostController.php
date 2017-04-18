@@ -8,6 +8,7 @@ use App\Term;
 use File;
 use Gate;
 use Session;
+use DB;
 class PostController extends Controller{
     protected $rules = [
         'post_name' => 'required',
@@ -54,7 +55,6 @@ class PostController extends Controller{
                 return back();
             }
         }else{
-            $data['user'] = $user;
             $data['terms'] = $terms;
             return view('user.post.create',['data'=>$data]); 
         }
@@ -96,7 +96,6 @@ class PostController extends Controller{
                 return back();
             }
         }else{
-            $data['user'] = $user;
         	$data['post'] = $post;
             $data['terms'] = $terms;
             return view('user.post.edit',['data'=>$data]); 
@@ -130,7 +129,6 @@ class PostController extends Controller{
             $posts = $posts->where('user_id',$request->input('user_id'));
         }
         $posts = $posts->paginate(22);
-        $data['user'] = $user;
         $data['users'] = $users;
         $data['posts'] = $posts;
         $data['terms'] = $terms; 
@@ -151,6 +149,10 @@ class PostController extends Controller{
                 return back();
             }
             if($post->delete()){
+                $post->visit()->delete();
+                DB::statement('ALTER TABLE visit AUTO_INCREMENT = 1');
+                DB::statement('ALTER TABLE post AUTO_INCREMENT = 1');
+
                 Session::flash('success','Xóa thành công.');
                 File::delete(public_path().'/img/'.$post->post_avatar);
                 return redirect('user/post/index');

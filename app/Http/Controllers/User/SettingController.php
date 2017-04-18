@@ -43,7 +43,6 @@ class SettingController extends Controller{
         }
     }
     public function edit($setting_id,Request $request){
-        $user = Session::get('user');
         $setting = Setting::find($setting_id);
         if($request->isMethod('post')){
             foreach ($setting->column as $key => $value) {
