@@ -32,7 +32,8 @@ class PostController extends Controller{
             $post->post_alias = str_slug($request->input('post_name'),'-');
             $post->post_description = $request->input('post_description');
             $post->post_detail = $request->input('post_detail');
-            $post->post_detail = str_replace("src=\"../../public/img","src=\"../../../public/img",$post->post_detail);
+            //$post->post_detail = str_replace("src=\"../../public/img","src=\"../../../public/img",$post->post_detail);
+            $post->post_detail = str_replace("src=\"../../public/img","src=\"".str_replace('www.','',asset('public/img')),$post->post_detail);
             $post->post_keyword = $request->input('post_keyword');
             if($request->has('post_status')){
                 $post->post_status = 1;
@@ -74,7 +75,8 @@ class PostController extends Controller{
             $post->post_alias = str_slug($request->input('post_name'),'-');
             $post->post_description = $request->input('post_description');
             $post->post_detail = $request->input('post_detail');
-            $post->post_detail = str_replace("src=\"../../public/img","src=\"../../../public/img",$post->post_detail);
+            //$post->post_detail = str_replace("src=\"../../public/img","src=\"../../../public/img",$post->post_detail);
+            $post->post_detail = str_replace("src=\"../../public/img","src=\"".str_replace('www.','',asset('public/img')),$post->post_detail);
             $post->post_keyword = $request->input('post_keyword');
             if($request->has('post_status')){
                 $post->post_status = 1;
