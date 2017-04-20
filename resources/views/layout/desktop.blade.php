@@ -9,7 +9,6 @@
 	<meta name="distribution" content="Bệnh viện, phòng khám, Y tế" />
 	<meta name="rating" content="General" />
 	<meta name="robots" content="index, follow" />
-	<meta name="revisit-after" content="30 days" />
 	<meta name="creator" content="Phòng khám Nhân Ái,709 Giải Phóng - Hoàng Mai - Hà Nội" />
 	<meta name="publisher" content="Phòng khám Nhân Ái,709 Giải Phóng - Hoàng Mai - Hà Nội" />
     <meta name="author" content="{{ $setting->web_name }}">
@@ -294,5 +293,6 @@
 			</div>
 		</div>
 	</footer>
+	<script language="javascript" src="http://drt.zoosnet.net/JS/LsJS.aspx?siteid=DRT84001515&float=1&lng=en"></script>
 </body>
 </html>
