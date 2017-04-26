@@ -101,11 +101,14 @@
                                 'advlist autolink lists link image charmap print preview hr anchor pagebreak',
                                 'searchreplace wordcount visualblocks visualchars code fullscreen',
                                 'insertdatetime media nonbreaking save table contextmenu directionality',
-                                'paste textcolor colorpicker textpattern imagetools toc'
+                                'paste textcolor colorpicker textpattern imagetools toc responsivefilemanager'
                             ],
                             toolbar1: 'undo redo insert styleselect bold italic alignleft aligncenter alignright alignjustify bullist numlist outdent indent',
-                            toolbar2: 'print preview media forecolor backcolor fontsizeselect link image code',
+                            toolbar2: 'print preview media forecolor backcolor fontsizeselect link image code responsivefilemanager ',
                             image_advtab: true,
+                            filemanager_crossdomain: true,
+                            external_filemanager_path:"{{ asset('filemanager').'/' }}",
+                            external_plugins: { "filemanager" : "{{ asset('public/js/global/tinymce/js/tinymce/plugins/responsivefilemanager/plugin.min.js') }}"},
                             content_css: [
                                 '{{ asset("public/font/codepen.min.css") }}'
                             ],
